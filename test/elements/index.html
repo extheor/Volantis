@@ -671,7 +671,7 @@
               
             
               
-                <p>The permanent link to this article is:<a href="https://extheor.club/volantis/test/elements/">https://extheor.club/volantis/test/elements/</a></p>
+                <p>The permanent link to this article is:<a href="http://extheor.club/volantis/test/elements/">http://extheor.club/volantis/test/elements/</a></p>
               
             
           </blockquote>
@@ -708,7 +708,7 @@
   <div class="-mob-share-list share-body">
     
       
-        <a class="-mob-share-qq" title rel="external nofollow noopener noreferrer" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://extheor.club/volantis/test/elements/&title=Elements - 码小余の文档&summary=">
+        <a class="-mob-share-qq" title rel="external nofollow noopener noreferrer" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://extheor.club/volantis/test/elements/&title=Elements - 码小余の文档&summary=">
           
             <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,666">
           
@@ -716,7 +716,7 @@
       
     
       
-        <a class="-mob-share-qzone" title rel="external nofollow noopener noreferrer" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://extheor.club/volantis/test/elements/&title=Elements - 码小余の文档&summary=">
+        <a class="-mob-share-qzone" title rel="external nofollow noopener noreferrer" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://extheor.club/volantis/test/elements/&title=Elements - 码小余の文档&summary=">
           
             <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,666">
           
@@ -724,7 +724,7 @@
       
     
       
-        <a class="-mob-share-weibo" title rel="external nofollow noopener noreferrer" target="_blank" href="http://service.weibo.com/share/share.php?url=https://extheor.club/volantis/test/elements/&title=Elements - 码小余の文档&summary=">
+        <a class="-mob-share-weibo" title rel="external nofollow noopener noreferrer" target="_blank" href="http://service.weibo.com/share/share.php?url=http://extheor.club/volantis/test/elements/&title=Elements - 码小余の文档&summary=">
           
             <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,666">
           
@@ -1478,7 +1478,7 @@ var loadCSS = function( href, before, media, attributes ){
   <script>
   const disqus_shortname = 'volantis';
   const autoload = 'false';
-  const global_url = 'https://extheor.club/volantis';  //  must use an absolute URL; relative URLs won’t work.
+  const global_url = 'http://extheor.club/volantis';  //  must use an absolute URL; relative URLs won’t work.
 
 
   function checkDisqus() {
@@ -1706,7 +1706,7 @@ function setSearchService() {
       // 请求 PV 并自增
       var pvCtn = document.querySelector('#lc-sv');
       if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'https://extheor.club/volantis' + '/#lc-sv', 'Visits').then((record) => {
+        var pvGetter = this.getRecord(Counter, 'http://extheor.club/volantis' + '/#lc-sv', 'Visits').then((record) => {
           incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-sv #number');
           if (eles.length > 0) {
@@ -1724,7 +1724,7 @@ function setSearchService() {
       // 请求 UV 并自增
       var uvCtn = document.querySelector('#lc-uv');
       if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'https://extheor.club/volantis' + '/#lc-uv', 'Visitors').then((record) => {
+        var uvGetter = this.getRecord(Counter, 'http://extheor.club/volantis' + '/#lc-uv', 'Visitors').then((record) => {
           var vuv = this.validUV();
           vuv && incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-uv #number');
@@ -1746,7 +1746,7 @@ function setSearchService() {
         for (i = 0; i < allPV.length; i++) {
           let pv = allPV[i];
           let title = pv.getAttribute('data-title');
-          var url = 'https://extheor.club/volantis' + pv.getAttribute('data-path');
+          var url = 'http://extheor.club/volantis' + pv.getAttribute('data-path');
           if (url) {
             var viewGetter = this.getRecord(Counter, url, title).then((record) => {
               // 是当前页面就自增
