@@ -605,56 +605,30 @@
   
   <h2 id="文章摘要和截断"><a href="#文章摘要和截断" class="headerlink" title="文章摘要和截断"></a>文章摘要和截断</h2><p>在文章中使用 <code>&lt;!-- more --&gt;</code>，那么 <code>&lt;!-- more --&gt;</code> 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。详见 Hexo 官方文档：</p>
 <div class="tag link"><a class="link-card" title="标签插件" target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/zh-cn/docs/tag-plugins"><div class="left"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/logo/hexo.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/logo/hexo.jpg" srcset="data:image/png;base64,666"></div><div class="right"><p class="text">标签插件</p><p class="url">https://hexo.io/zh-cn/docs/tag-plugins</p></div></a></div>
-
-
 <h2 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h2><p>引用书上的句子</p>
 <blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
 <footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
-
 <h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;</span><br><span class="line">code snippet</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
-
 <h3 id="指定语言"><a href="#指定语言" class="headerlink" title="指定语言"></a>指定语言</h3><figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% codeblock lang:objc %&#125;</span><br><span class="line">[rectangle setX: 10 y: 10 width: 20 height: 20];</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
-
 <h3 id="附加说明"><a href="#附加说明" class="headerlink" title="附加说明"></a>附加说明</h3><figure class="highlight plain"><figcaption><span>Array.map</span></figcaption><table><tr><td class="code"><pre><span class="line">array.map(callback[, thisArg])</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% codeblock Array.map %&#125;</span><br><span class="line">array.map(callback[, thisArg])</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="行标、高亮"><a href="#行标、高亮" class="headerlink" title="行标、高亮"></a>行标、高亮</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">n=<span class="built_in">eval</span>(<span class="built_in">input</span>())</span><br><span class="line"><span class="keyword">if</span> n==<span class="number">0</span>:</span><br><span class="line marked">   print(<span class="string">&quot;Hello World&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> n&gt;<span class="number">0</span>:</span><br><span class="line marked">   print(<span class="string">&quot;He\nll\no \nWo\nrl\nd&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   <span class="keyword">for</span> c <span class="keyword">in</span> <span class="string">&quot;Hello World&quot;</span>:</span><br><span class="line marked">   print(c)</span><br></pre></td></tr></table></figure>
-
+<h3 id="行标、高亮"><a href="#行标、高亮" class="headerlink" title="行标、高亮"></a>行标、高亮</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">n=<span class="built_in">eval</span>(<span class="built_in">input</span>())</span><br><span class="line"><span class="keyword">if</span> n==<span class="number">0</span>:</span><br><span class="line marked">   <span class="built_in">print</span>(<span class="string">&quot;Hello World&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> n&gt;<span class="number">0</span>:</span><br><span class="line marked">   <span class="built_in">print</span>(<span class="string">&quot;He\nll\no \nWo\nrl\nd&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   <span class="keyword">for</span> c <span class="keyword">in</span> <span class="string">&quot;Hello World&quot;</span>:</span><br><span class="line marked">   <span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
 <figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% codeblock lang:python line<span class="emphasis">_number:true mark:3,5,8 %&#125;</span></span><br><span class="line"><span class="emphasis">n=eval(input())</span></span><br><span class="line"><span class="emphasis">if n==0:</span></span><br><span class="line"><span class="emphasis">   print(&quot;Hello World&quot;)</span></span><br><span class="line"><span class="emphasis">elif n&gt;0:</span></span><br><span class="line"><span class="emphasis">   print(&quot;He\nll\no \nWo\nrl\nd&quot;)</span></span><br><span class="line"><span class="emphasis">else:</span></span><br><span class="line"><span class="emphasis">   for c in &quot;Hello World&quot;:</span></span><br><span class="line"><span class="emphasis">   print(c)</span></span><br><span class="line"><span class="emphasis">&#123;% endcodeblock %&#125;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Pull-Quote"><a href="#Pull-Quote" class="headerlink" title="Pull Quote"></a>Pull Quote</h2><p>在文章中插入 Pull quote</p>
-<figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% pullquote [class] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endpullquote %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="jsFiddle"><a href="#jsFiddle" class="headerlink" title="jsFiddle"></a>jsFiddle</h2><p>在文章中嵌入 jsFiddle</p>
-<figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Gist"><a href="#Gist" class="headerlink" title="Gist"></a>Gist</h2><p>在文章中嵌入 Gist，<u>注意</u>：在国内无法加载。</p>
-<figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% gist gist<span class="emphasis">_id [filename] %&#125;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="iframe"><a href="#iframe" class="headerlink" title="iframe"></a>iframe</h2><p>在文章中插入 iframe</p>
-<figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% iframe url [width] [height] %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h2><p>在文章中插入指定大小的图片。</p>
-<figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% img [class names] /path/to/image [width] [height] &#x27;&quot;title text&quot; &quot;alt text&quot;&#x27; %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h2><p>在文章中插入链接，并自动给外部链接添加 <code>target=&quot;_blank&quot;</code> 属性。</p>
-<figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% link text url [external] [title] %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Include-Code"><a href="#Include-Code" class="headerlink" title="Include Code"></a>Include Code</h2><p>插入 <code>source/downloads/code</code> 文件夹内的代码文件。<code>source/downloads/code</code> 不是固定的，取决于你在配置文件中 <code>code_dir</code> 的配置。</p>
-<figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% include<span class="emphasis">_code [title] [lang:language] [from:line] [to:line] path/to/file %&#125;</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="Pull-Quote"><a href="#Pull-Quote" class="headerlink" title="Pull Quote"></a>Pull Quote</h2><p>在文章中插入 Pull quote<br><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% pullquote [class] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endpullquote %&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="jsFiddle"><a href="#jsFiddle" class="headerlink" title="jsFiddle"></a>jsFiddle</h2><p>在文章中嵌入 jsFiddle<br><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Gist"><a href="#Gist" class="headerlink" title="Gist"></a>Gist</h2><p>在文章中嵌入 Gist，<u>注意</u>：在国内无法加载。<br><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% gist gist<span class="emphasis">_id [filename] %&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="iframe"><a href="#iframe" class="headerlink" title="iframe"></a>iframe</h2><p>在文章中插入 iframe<br><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% iframe url [width] [height] %&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h2><p>在文章中插入指定大小的图片。<br><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% img [class names] /path/to/image [width] [height] &#x27;&quot;title text&quot; &quot;alt text&quot;&#x27; %&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h2><p>在文章中插入链接，并自动给外部链接添加 <code>target=&quot;_blank&quot;</code> 属性。<br><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% link text url [external] [title] %&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Include-Code"><a href="#Include-Code" class="headerlink" title="Include Code"></a>Include Code</h2><p>插入 <code>source/downloads/code</code> 文件夹内的代码文件。<code>source/downloads/code</code> 不是固定的，取决于你在配置文件中 <code>code_dir</code> 的配置。<br><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% include<span class="emphasis">_code [title] [lang:language] [from:line] [to:line] path/to/file %&#125;</span></span><br></pre></td></tr></table></figure></p>
 <details><summary> 示例 </summary>
               <div class="content">
-              <p>嵌入 <code>test.js</code> 文件全文</p><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% include<span class="emphasis">_code lang:javascript test.js %&#125;</span></span><br></pre></td></tr></table></figure><p>只嵌入第 3 行</p><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% include<span class="emphasis">_code lang:javascript from:3 to:3 test.js %&#125;</span></span><br></pre></td></tr></table></figure><p>嵌入第 5 行至第 8 行</p><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% include<span class="emphasis">_code lang:javascript from:5 to:8 test.js %&#125;</span></span><br></pre></td></tr></table></figure><p>嵌入第 5 行至文件结束</p><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% include<span class="emphasis">_code lang:javascript from:5 test.js %&#125;</span></span><br></pre></td></tr></table></figure><p>嵌入第 1 行至第 8 行</p><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% include<span class="emphasis">_code lang:javascript to:8 test.js %&#125;</span></span><br></pre></td></tr></table></figure>
+              <p>嵌入 <code>test.js</code> 文件全文<br><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% include<span class="emphasis">_code lang:javascript test.js %&#125;</span></span><br></pre></td></tr></table></figure><br>只嵌入第 3 行<br><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% include<span class="emphasis">_code lang:javascript from:3 to:3 test.js %&#125;</span></span><br></pre></td></tr></table></figure><br>嵌入第 5 行至第 8 行<br><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% include<span class="emphasis">_code lang:javascript from:5 to:8 test.js %&#125;</span></span><br></pre></td></tr></table></figure><br>嵌入第 5 行至文件结束<br><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% include<span class="emphasis">_code lang:javascript from:5 test.js %&#125;</span></span><br></pre></td></tr></table></figure><br>嵌入第 1 行至第 8 行<br><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% include<span class="emphasis">_code lang:javascript to:8 test.js %&#125;</span></span><br></pre></td></tr></table></figure></p>
               </div>
             </details>
-
 <h2 id="引用文章"><a href="#引用文章" class="headerlink" title="引用文章"></a>引用文章</h2><p>引用其他文章的链接。</p>
 <figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% post<span class="emphasis">_path filename %&#125;</span></span><br><span class="line"><span class="emphasis">&#123;% post_</span>link filename [title] [escape] %&#125;</span><br></pre></td></tr></table></figure>
-
 <details><summary> 示例 </summary>
               <div class="content">
               <p>引用这篇文章：<a href="/volantis/news/2020-02-22/" title="主题更名为「Volantis」">主题更名为「Volantis」</a></p><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">引用这篇文章：&#123;% post<span class="emphasis">_link news/2020-02-22 %&#125;</span></span><br></pre></td></tr></table></figure>
@@ -1172,20 +1146,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2386,5 +2360,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

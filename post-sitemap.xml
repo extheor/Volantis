@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>http://extheor.club/volantis/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/Regressio%20-%20Case%20Study/</loc>
+        <lastmod>2021-03-20T16:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://extheor.club/volantis/test/videos/</loc>
         <lastmod>2020-11-13T08:51:58.871Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -64,6 +72,14 @@
     </url>
 
     <url>
+        <loc>http://extheor.club/volantis/test/hello-world/</loc>
+        <lastmod>2020-11-13T08:51:58.869Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://extheor.club/volantis/test/gallery-post/</loc>
         <lastmod>2020-11-13T08:51:58.869Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -96,7 +112,7 @@
     </url>
 
     <url>
-        <loc>http://extheor.club/volantis/test/hello-world/</loc>
+        <loc>http://extheor.club/volantis/test/link-post-without-title/</loc>
         <lastmod>2020-11-13T08:51:58.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -112,7 +128,7 @@
     </url>
 
     <url>
-        <loc>http://extheor.club/volantis/test/link-post-without-title/</loc>
+        <loc>http://extheor.club/volantis/test/link-post/</loc>
         <lastmod>2020-11-13T08:51:58.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -120,8 +136,8 @@
     </url>
 
     <url>
-        <loc>http://extheor.club/volantis/test/link-post/</loc>
-        <lastmod>2020-11-13T08:51:58.869Z</lastmod>
+        <loc>http://extheor.club/volantis/test/elements/</loc>
+        <lastmod>2020-11-13T08:51:58.868Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -144,14 +160,6 @@
     </url>
 
     <url>
-        <loc>http://extheor.club/volantis/test/elements/</loc>
-        <lastmod>2020-11-13T08:51:58.868Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://extheor.club/volantis/news/2020-03-06-2.0-beta/</loc>
         <lastmod>2020-11-13T08:51:58.867Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -160,7 +168,7 @@
     </url>
 
     <url>
-        <loc>http://extheor.club/volantis/news/2020-03-10-2.0/</loc>
+        <loc>http://extheor.club/volantis/news/2020-04-04/</loc>
         <lastmod>2020-11-13T08:51:58.867Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -168,7 +176,7 @@
     </url>
 
     <url>
-        <loc>http://extheor.club/volantis/news/2020-04-04/</loc>
+        <loc>http://extheor.club/volantis/news/2020-03-10-2.0/</loc>
         <lastmod>2020-11-13T08:51:58.867Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -208,7 +216,7 @@
     </url>
 
     <url>
-        <loc>http://extheor.club/volantis/news/2020-02-19/</loc>
+        <loc>http://extheor.club/volantis/news/2020-02-20/</loc>
         <lastmod>2020-11-13T08:51:58.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -216,7 +224,7 @@
     </url>
 
     <url>
-        <loc>http://extheor.club/volantis/news/2020-02-20/</loc>
+        <loc>http://extheor.club/volantis/news/2020-02-19/</loc>
         <lastmod>2020-11-13T08:51:58.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

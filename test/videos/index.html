@@ -606,7 +606,6 @@
   <p>This is a video test post.</p>
 <p><strong>Youtube</strong></p>
 <div class="video-container"><iframe src="https://www.youtube.com/embed/TIbZDRXM-Tg" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
-
 <p><strong>Vimeo</strong></p>
 <div class="video-container"><iframe src="https://player.vimeo.com/video/82090131" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
 
@@ -711,8 +710,7 @@
           <p class="title"><i class="fas fa-chevron-left" aria-hidden="true"></i>Excerpts</p>
           <p class="content">The following contents should be invisible in home/archive page.
 
-
-Lorem ipsum dolor sit amet, co...</p>
+Lorem ipsum dolor sit amet, con...</p>
         </a>
       
       
@@ -862,20 +860,20 @@ Small...</p>
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2076,5 +2074,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

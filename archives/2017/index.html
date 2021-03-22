@@ -565,12 +565,10 @@
   <div class="md">
     
       
-        <p>
+        <p></p><p>
 <span class="p logo center large">Volantis</span>
 <span class="p center small">A Wonderful Theme for Hexo</span>
-</p>
-<br>
-
+</p><br><br><p></p>
 <p>Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博客主题，既可以用作个人博客，也适合用来搭建文档。</p>
 <span class="btn solid large center"><a class="button" href="/getting-started/" title="开始使用"><i class="fas fa-download"></i>开始使用</a></span>
 
@@ -649,6 +647,8 @@
 
     <div class="content">
       <ul class="entry navigation">
+        
+          <li><a class="flat-box" title="/volantis/categories/regression-case-study/" href="/volantis/categories/regression-case-study/" id="volantiscategoriesregression-case-study"><div class="name">Regression - Case Study</div><div class="badge">(1)</div></a></li>
         
           <li><a class="flat-box" title="/volantis/categories/%E5%AE%98%E6%96%B9%E8%B5%84%E8%AE%AF/" href="/volantis/categories/%E5%AE%98%E6%96%B9%E8%B5%84%E8%AE%AF/" id="volantiscategoriesE5AE98E696B9E8B584E8AEAF"><div class="name">官方资讯</div><div class="badge">(10)</div></a></li>
         
@@ -783,20 +783,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -1997,5 +1997,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

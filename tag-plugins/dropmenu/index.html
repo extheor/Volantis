@@ -555,22 +555,16 @@
 
   
   <div class="note warning"><p>the label of this page will be refactored soon</p></div>
-
-
-
 <h2 id="Drop-down-menu"><a href="#Drop-down-menu" class="headerlink" title="Drop-down menu"></a>Drop-down menu</h2><p>Please upgrade your Volantis to version <u>3.0</u> and above.</p>
 <div class="tabs" id="menu"><ul class="nav-tabs"><li class="tab"><a class="#menu-1">syntax format</a></li><li class="tab"><a class="#menu-2">example effect</a></li></ul><div class="tab-content"><div class="tab-pane" id="menu-1"><p class="p subtitle">container</p>
 
 <figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% menu prefix (can be omitted), title, suffix (can be omitted) %&#125;</span><br><span class="line">Menu content</span><br><span class="line">&#123;% endmenu %&#125;</span><br></pre></td></tr></table></figure>
-
 <p class="p subtitle">menu content</p>
 
 <p>Menu Item</p>
 <figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% menuitem text, link, icon %&#125;</span><br></pre></td></tr></table></figure>
-
 <p>Dividing line</p>
 <figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% menuitem hr %&#125;</span><br></pre></td></tr></table></figure>
-
 <p>Submenu</p>
 <figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% submenu Nested menu, icon %&#125;</span><br><span class="line">Menu content</span><br><span class="line">&#123;% endsubmenu %&#125;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="menu-2"><p class="p subtitle">example 1</p>
 
@@ -1124,20 +1118,20 @@ quotenote...</p>
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2338,5 +2332,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

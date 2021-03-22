@@ -603,12 +603,10 @@
 
 
   
-  <p>
+  <p></p><p>
 <span class="p logo center large"><sup>&ensp;</sup>Volantis<sup>2</sup></span>
 <span class="p center small">A Wonderful Theme for Hexo</span>
-</p>
-<br>
-
+</p><br><br><p></p>
 <p>Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博客主题，既可以用作个人博客，也适合用来搭建文档。</p>
 <p>这些是使用了本主题的博客： <span class="btn"><a class="button" href="/examples/" title="示例博客"><i class="fas fa-play-circle"></i>示例博客</a></span></p>
 <h2 id="能力要求"><a href="#能力要求" class="headerlink" title="能力要求"></a>能力要求</h2><p>自建博客需要一定的相关知识，在开始前，请务必确保：</p>
@@ -624,7 +622,6 @@
 <div class="checkbox red checked"><input type="checkbox" checked="checked">
             <p>会阅读文档、搜索文档</p>
             </div>
-
 <p>为了更好地使用，还建议掌握以下知识：</p>
 <div class="checkbox checked"><input type="checkbox" checked="checked">
             <p>规范地使用 GitHub Issues（解决文档中没有的问题）</p>
@@ -632,24 +629,15 @@
 <div class="checkbox checked"><input type="checkbox" checked="checked">
             <p>GitHub Fork、Pull Request 操作（使主题保持更新）</p>
             </div>
-
 <h2 id="环境要求"><a href="#环境要求" class="headerlink" title="环境要求"></a>环境要求</h2><p>如果您从旧版本更新或着其它主题迁移，请确保环境版本不要太低，否则会产生兼容性问题。</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">Hexo:</span> <span class="number">4.2</span></span><br><span class="line"><span class="attr">hexo-cli:</span> <span class="number">3.1</span></span><br><span class="line"><span class="attr">node.js:</span> <span class="number">12.16</span> <span class="comment"># LTS版</span></span><br><span class="line"><span class="attr">npm:</span> <span class="number">6.13</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="下载与安装"><a href="#下载与安装" class="headerlink" title="下载与安装"></a>下载与安装</h2><div class="tabs" id="install"><ul class="nav-tabs"><li class="tab"><a class="#install-1">脚本自动安装</a></li><li class="tab active"><a class="#install-2">手动安装</a></li></ul><div class="tab-content"><div class="tab-pane" id="install-1"><p>在博客路径打开终端，下载安装并应用主题：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">curl -s https://volantis.js.org/start | bash</span><br></pre></td></tr></table></figure>
-<p>如果您还没有博客，执行这行命令将会自动检测并安装所需环境，初始化博客，然后下载安装并应用主题。</p>
-<div class="note link blue"><p>脚本更多使用方法：<a href="https://xaoxuu.com/wiki/hexo.sh/" target="_blank" rel="external nofollow noopener noreferrer">#hexo.sh</a></p></div></div><div class="tab-pane active" id="install-2"><p>第1/3步：下载主题源码到 <code>themes/</code> 文件夹</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/volantis-x/hexo-theme-volantis themes/volantis</span><br></pre></td></tr></table></figure>
-
-<p>第2/3步：修改站点配置文件</p>
-<figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">volantis</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="下载与安装"><a href="#下载与安装" class="headerlink" title="下载与安装"></a>下载与安装</h2><div class="tabs" id="install"><ul class="nav-tabs"><li class="tab"><a class="#install-1">脚本自动安装</a></li><li class="tab active"><a class="#install-2">手动安装</a></li></ul><div class="tab-content"><div class="tab-pane" id="install-1"><p>在博客路径打开终端，下载安装并应用主题：<br><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">curl -s https://volantis.js.org/start | bash</span><br></pre></td></tr></table></figure><br>如果您还没有博客，执行这行命令将会自动检测并安装所需环境，初始化博客，然后下载安装并应用主题。</p>
+<div class="note link blue"><p>脚本更多使用方法：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://xaoxuu.com/wiki/hexo.sh/">#hexo.sh</a></p></div></div><div class="tab-pane active" id="install-2"><p>第1/3步：下载主题源码到 <code>themes/</code> 文件夹<br><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/volantis-x/hexo-theme-volantis themes/volantis</span><br></pre></td></tr></table></figure></p>
+<p>第2/3步：修改站点配置文件<br><figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">volantis</span></span><br></pre></td></tr></table></figure></p>
 <p>第3/3步：检查并安装依赖</p>
 <figure class="highlight sh"><figcaption><span>安装 Hexo 搜索的依赖包：</span></figcaption><table><tr><td class="code"><pre><span class="line">npm i -S hexo-generator-search hexo-generator-json-content</span><br></pre></td></tr></table></figure>
 <figure class="highlight sh"><figcaption><span>安装 stylus 渲染器：</span></figcaption><table><tr><td class="code"><pre><span class="line">npm i -S hexo-renderer-stylus</span><br></pre></td></tr></table></figure></div></div></div>
-
-<h2 id="升级小助手"><a href="#升级小助手" class="headerlink" title="升级小助手"></a>升级小助手</h2><p>升级前请查看 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases/" target="_blank" rel="external nofollow noopener noreferrer">更新日志</a></p>
+<h2 id="升级小助手"><a href="#升级小助手" class="headerlink" title="升级小助手"></a>升级小助手</h2><p>升级前请查看 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/releases/">更新日志</a></p>
 <details open green><summary> 2.6.3 -> 2.6.6 </summary>
               <div class="content">
               <p>不需要额外处理。</p>
@@ -660,8 +648,7 @@
               <ol><li>全局搜索 <code>seotitle</code> 并替换为 <code>seo_title</code>。</li><li>group 组件的索引规则有变，使用 group 组件的文章内，<code>group: group_name</code> 对应的组件名必须是 <code>group_name</code>。</li><li>group 组件的列表名优先显示文章的 <code>short_title</code> 其次是 <code>title</code>。</li></ol>
               </div>
             </details>
-
-<h2 id="许可协议"><a href="#许可协议" class="headerlink" title="许可协议"></a>许可协议</h2><p>本主题采用 <a href="https://cdn.jsdelivr.net/gh/theme-volantis/hexo-theme-volantis/LICENSE" target="_blank" rel="external nofollow noopener noreferrer">MIT开源许可协议</a> ，永久无限制免费使用。</p>
+<h2 id="许可协议"><a href="#许可协议" class="headerlink" title="许可协议"></a>许可协议</h2><p>本主题采用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://cdn.jsdelivr.net/gh/theme-volantis/hexo-theme-volantis/LICENSE">MIT开源许可协议</a> ，永久无限制免费使用。</p>
 <div class="note quote"><p><strong>MIT开源许可协议</strong></p><p>被授权人有权利使用、复制、修改、合并、出版发行、散布、再授权及贩售软件及软件的副本。<br>被授权人可根据程式的需要修改授权条款为适当的内容。<br>在软件和软件的所有副本中都必须包含版权声明和许可声明。</p></div>
 
   
@@ -986,20 +973,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2200,5 +2187,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

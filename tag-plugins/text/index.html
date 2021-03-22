@@ -555,27 +555,14 @@
 
   
   <p>Here are some text style tags:</p>
-<br>
+<p><br></p>
+<p>Text with <u>underline</u><br><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">Text with &#123;% u underline %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Text with <emp>emphasis</emp><br><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">Text with &#123;% emp emphasis %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Text with <wavy></wavy><br><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">Text with &#123;% wavy %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Text with <del>strikethrough</del><br><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">Text with &#123;% del strikethrough %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Keyboard style text <kbd>command</kbd> + <kbd>D</kbd><br><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">Keyboard style text &#123;% kbd command %&#125; + &#123;% kbd D %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Password style text: <psw>There is no verification code here</psw><br><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">Password style text: &#123;% psw There is no verification code here %&#125;</span><br></pre></td></tr></table></figure></p>
 
-<p>Text with <u>underline</u></p>
-<figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">Text with &#123;% u underline %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Text with <emp>emphasis</emp></p>
-<figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">Text with &#123;% emp emphasis %&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>Text with <wavy></wavy></p>
-<figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">Text with &#123;% wavy %&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>Text with <del>strikethrough</del></p>
-<figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">Text with &#123;% del strikethrough %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Keyboard style text <kbd>command</kbd> + <kbd>D</kbd></p>
-<figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">Keyboard style text &#123;% kbd command %&#125; + &#123;% kbd D %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Password style text: <psw>There is no verification code here</psw></p>
-<figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">Password style text: &#123;% psw There is no verification code here %&#125;</span><br></pre></td></tr></table></figure>
   
   
     
@@ -976,20 +963,20 @@ quotenote...</p>
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2190,5 +2177,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

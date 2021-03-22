@@ -603,91 +603,79 @@
 
 
   
-  <h2 id="Layout-template"><a href="#Layout-template" class="headerlink" title="Layout template"></a>Layout template</h2><div class="table"><table>
+  <h2 id="Layout-template"><a href="#Layout-template" class="headerlink" title="Layout template"></a>Layout template</h2><div class="table"><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="left">Value</th>
-<th align="left">Meaning</th>
+<th style="text-align:left">Value</th>
+<th style="text-align:left">Meaning</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">page</td>
-<td align="left">Independent page</td>
+<tbody>
+<tr>
+<td style="text-align:left">page</td>
+<td style="text-align:left">Independent page</td>
 </tr>
 <tr>
-<td align="left">post</td>
-<td align="left">Article page</td>
+<td style="text-align:left">post</td>
+<td style="text-align:left">Article page</td>
 </tr>
 <tr>
-<td align="left">docs</td>
-<td align="left">Documentation page</td>
+<td style="text-align:left">docs</td>
+<td style="text-align:left">Documentation page</td>
 </tr>
 <tr>
-<td align="left">category</td>
-<td align="left">Category page</td>
+<td style="text-align:left">category</td>
+<td style="text-align:left">Category page</td>
 </tr>
 <tr>
-<td align="left">tag</td>
-<td align="left">Tag page</td>
+<td style="text-align:left">tag</td>
+<td style="text-align:left">Tag page</td>
 </tr>
 <tr>
-<td align="left">friends</td>
-<td align="left">Friends link page</td>
+<td style="text-align:left">friends</td>
+<td style="text-align:left">Friends link page</td>
 </tr>
 <tr>
-<td align="left">list</td>
-<td align="left">List page</td>
+<td style="text-align:left">list</td>
+<td style="text-align:left">List page</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 </div>
-
+</div>
 <h2 id="page-amp-post-amp-docs"><a href="#page-amp-post-amp-docs" class="headerlink" title="page &amp; post &amp; docs"></a>page &amp; post &amp; docs</h2><p>These three types of pages are the same, but have the following subtle differences:</p>
 <ul>
 <li>When the post article has a title, scroll down the web page, the navigation bar will move up and out of the screen to display the article title, but page and docs will not.</li>
-<li>post At the end of the article, up to four modules can be displayed: &quot;Reference&quot;, &quot;Related Article&quot;, &quot;Copyright Mark&quot;, and &quot;Reward&quot;.</li>
-<li>At most one module of &quot;reference&quot; can be displayed at the end of the docs article.</li>
+<li>post At the end of the article, up to four modules can be displayed: “Reference”, “Related Article”, “Copyright Mark”, and “Reward”.</li>
+<li>At most one module of “reference” can be displayed at the end of the docs article.</li>
 </ul>
 <p>Except that the archive page is automatically generated, other independent pages need to be created manually.</p>
 <h2 id="Archive-page"><a href="#Archive-page" class="headerlink" title="Archive page"></a>Archive page</h2><p>The archive page is automatically generated and has been generated during initialization. The path is as follows:</p>
 <figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Directory</span></span><br><span class="line"><span class="attr">archive_dir:</span> <span class="string">archives</span></span><br></pre></td></tr></table></figure>
-
 <h2 id="About-page"><a href="#About-page" class="headerlink" title="About page"></a>About page</h2><figure class="highlight yaml"><figcaption><span>Create file if not exists: source/about/index.md</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">docs</span></span><br><span class="line"><span class="attr">seo_title:</span> <span class="string">About</span></span><br><span class="line"><span class="attr">bottom_meta:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">sidebar:</span> []</span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">What</span> <span class="string">do</span> <span class="string">you</span> <span class="string">want</span> <span class="string">to</span> <span class="string">tell</span> <span class="string">me?</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"></span><br><span class="line"><span class="string">Write</span> <span class="string">about</span> <span class="string">yourself</span> <span class="string">below</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <h2 id="Category-page"><a href="#Category-page" class="headerlink" title="Category page"></a>Category page</h2><figure class="highlight yaml"><figcaption><span>Create file if not exists: source/categories/index.md</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">category</span></span><br><span class="line"><span class="attr">index:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">All</span> <span class="string">categories</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
 <h2 id="Tag-page"><a href="#Tag-page" class="headerlink" title="Tag page"></a>Tag page</h2><figure class="highlight yaml"><figcaption><span>Create file if not exists: source/tags/index.md</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">tag</span></span><br><span class="line"><span class="attr">index:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">all</span> <span class="string">tags</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
 <h2 id="List-page"><a href="#List-page" class="headerlink" title="List page"></a>List page</h2><figure class="highlight yaml"><figcaption><span>Create file if not exists: source/mylist/index.md</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">list</span></span><br><span class="line"><span class="attr">group:</span> <span class="string">mylist</span></span><br><span class="line"><span class="attr">index:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
 <p>The result is to filter out all articles that contain <code>group: mylist</code> in the <code>front-matter</code> section.</p>
 <h2 id="Friends-link-page"><a href="#Friends-link-page" class="headerlink" title="Friends link page"></a>Friends link page</h2><h3 id="Create-page-file"><a href="#Create-page-file" class="headerlink" title="Create page file"></a>Create page file</h3><figure class="highlight yaml"><figcaption><span>Create file if not exists: source/friends/index.md</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">friends</span> <span class="comment"># required</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">My</span> <span class="string">friends</span> <span class="comment"># Optional, this is the title of the friend link page</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"></span><br><span class="line"><span class="string">Write</span> <span class="string">the</span> <span class="string">content</span> <span class="string">above</span> <span class="string">the</span> <span class="string">friend</span> <span class="string">chain</span> <span class="string">here.</span></span><br><span class="line"></span><br><span class="line"><span class="string">&lt;!--</span> <span class="string">more</span> <span class="string">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="string">Here</span> <span class="string">you</span> <span class="string">can</span> <span class="string">write</span> <span class="string">text</span> <span class="string">notes</span> <span class="string">at</span> <span class="string">the</span> <span class="string">bottom</span> <span class="string">of</span> <span class="string">the</span> <span class="string">friend</span> <span class="string">chain</span> <span class="string">page,</span> <span class="string">such</span> <span class="string">as</span> <span class="string">your</span> <span class="string">own</span> <span class="string">friend</span> <span class="string">chain</span> <span class="string">specifications,</span> <span class="string">examples,</span> <span class="string">etc.</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <h3 id="Choose-a-layout"><a href="#Choose-a-layout" class="headerlink" title="Choose a layout"></a>Choose a layout</h3><p>Find the following in the theme configuration file:</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">pages:</span></span><br><span class="line">  <span class="comment"># Friends link page configuration</span></span><br><span class="line">  <span class="attr">friends:</span></span><br><span class="line">    <span class="attr">layout_scheme:</span> <span class="string">traditional</span> <span class="comment"># simple: simple layout, traditional: traditional layout, sites: website card layout</span></span><br></pre></td></tr></table></figure>
-
 <p>Three layout schemes are currently provided:</p>
 <ul>
 <li>simple: Simple layout, only avatar and title.</li>
 <li>traditional: Traditional layout, the style of the old version of Volantis.</li>
 <li>sites: site card layout, which is the new style of website card tags added in Volantis 4.x.</li>
 </ul>
-<h3 id="Set-data-source"><a href="#Set-data-source" class="headerlink" title="Set data source"></a>Set data source</h3><div class="tabs" id="about"><ul class="nav-tabs"><li class="tab active"><a class="#about-1">static data source</a></li><li class="tab"><a class="#about-2">dynamic data source</a></li></ul><div class="tab-content"><div class="tab-pane active" id="about-1"><p>The data source of Friends Chain is written in the following path, if not, please create it yourself:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">blog&#x2F;source&#x2F;_data&#x2F;friends.yml</span><br></pre></td></tr></table></figure>
-<p>The content format is:</p>
-<figure class="highlight yaml"><figcaption><span>blog/source/_data/friends.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="string">-group:</span> <span class="comment"># Group title</span></span><br><span class="line">  <span class="attr">description:</span> <span class="comment"># Group description</span></span><br><span class="line">  <span class="attr">items:</span></span><br><span class="line">    <span class="string">-title:</span> <span class="comment"># name</span></span><br><span class="line">      <span class="attr">avatar:</span> <span class="comment"># Avatar</span></span><br><span class="line">      <span class="attr">url:</span> <span class="comment"># link</span></span><br><span class="line">      <span class="attr">screenshot:</span> <span class="comment"># Screenshot</span></span><br><span class="line">      <span class="attr">keywords:</span> <span class="comment"># Keywords</span></span><br><span class="line">      <span class="attr">description:</span> <span class="comment"># description</span></span><br><span class="line">    <span class="string">-title:</span> <span class="comment"># name</span></span><br><span class="line">      <span class="attr">avatar:</span> <span class="comment"># Avatar</span></span><br><span class="line">      <span class="attr">url:</span> <span class="comment"># link</span></span><br><span class="line">      <span class="attr">screenshot:</span> <span class="comment"># Screenshot</span></span><br><span class="line">      <span class="attr">keywords:</span> <span class="comment"># Keywords</span></span><br><span class="line">      <span class="attr">description:</span> <span class="comment"># description</span></span><br></pre></td></tr></table></figure>
-
-<p>Different layout methods will use some fields. Generally speaking, <code>title</code>, ʻavatar<code> and ʻurl</code> are all required. These data are converted into HTML tags and inserted into the <code>&lt;!-- more --&gt;</code> part of the friend link page.</p></div><div class="tab-pane" id="about-2"><p>Use the issues tag to get JSON data from issues to parse and generate HTML to fill in the page. The usage is as follows:</p>
+<h3 id="Set-data-source"><a href="#Set-data-source" class="headerlink" title="Set data source"></a>Set data source</h3><div class="tabs" id="about"><ul class="nav-tabs"><li class="tab active"><a class="#about-1">static data source</a></li><li class="tab"><a class="#about-2">dynamic data source</a></li></ul><div class="tab-content"><div class="tab-pane active" id="about-1"><p>The data source of Friends Chain is written in the following path, if not, please create it yourself:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">blog&#x2F;source&#x2F;_data&#x2F;friends.yml</span><br></pre></td></tr></table></figure><br>The content format is:<br><figure class="highlight yaml"><figcaption><span>blog/source/_data/friends.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="string">-group:</span> <span class="comment"># Group title</span></span><br><span class="line">  <span class="attr">description:</span> <span class="comment"># Group description</span></span><br><span class="line">  <span class="attr">items:</span></span><br><span class="line">    <span class="string">-title:</span> <span class="comment"># name</span></span><br><span class="line">      <span class="attr">avatar:</span> <span class="comment"># Avatar</span></span><br><span class="line">      <span class="attr">url:</span> <span class="comment"># link</span></span><br><span class="line">      <span class="attr">screenshot:</span> <span class="comment"># Screenshot</span></span><br><span class="line">      <span class="attr">keywords:</span> <span class="comment"># Keywords</span></span><br><span class="line">      <span class="attr">description:</span> <span class="comment"># description</span></span><br><span class="line">    <span class="string">-title:</span> <span class="comment"># name</span></span><br><span class="line">      <span class="attr">avatar:</span> <span class="comment"># Avatar</span></span><br><span class="line">      <span class="attr">url:</span> <span class="comment"># link</span></span><br><span class="line">      <span class="attr">screenshot:</span> <span class="comment"># Screenshot</span></span><br><span class="line">      <span class="attr">keywords:</span> <span class="comment"># Keywords</span></span><br><span class="line">      <span class="attr">description:</span> <span class="comment"># description</span></span><br></pre></td></tr></table></figure></p>
+<p>Different layout methods will use some fields. Generally speaking, <code>title</code>, ʻavatar<code>and ʻurl</code> are all required. These data are converted into HTML tags and inserted into the <code>&lt;!-- more --&gt;</code> part of the friend link page.</p></div><div class="tab-pane" id="about-2"><p>Use the issues tag to get JSON data from issues to parse and generate HTML to fill in the page. The usage is as follows:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% issues sites | api&#x3D;https:&#x2F;&#x2F;api.github.com&#x2F;repos&#x2F;xaoxuu&#x2F;friends&#x2F;issues?sort&#x3D;updated&amp;state&#x3D;open&amp;page&#x3D;1&amp;per_page&#x3D;100&amp;labels&#x3D;active %&#125;</span><br></pre></td></tr></table></figure>
-
 <p>In this way, the way to add a friend chain becomes: the other party raises an Issue, reviews it by yourself, then adds the ʻactive` tag, and then refreshes the webpage to take effect. It is also very convenient to update the content of the friend chain. The creator of the issue has the right to modify and close it.</p>
 <p>Create a new GitHub or Gitee repository and create the Issues template as follows:</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;title&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;screenshot&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;url&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;avatar&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;keywords&quot;</span>: <span class="string">&quot;&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>For details on how to use the issues tag, see this article:</p>
 <div class="tag link"><a class="link-card" title href><div class="left"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" srcset="data:image/png;base64,666"></div><div class="right"><p class="text"></p><p class="url"></p></div></a></div></div></div></div>
-
 <div class="note idea"><p><strong>suggest</strong></p><ul><li>Both can be used at the same time. It is recommended to open the issues friend chain to everyone, and save it to the static friend chain if you contact yourself frequently.</li><li>The actual speed and stability of the GitHub API is not as good as Gitee. If you pursue stability, it is recommended to use Gitee.</li></ul></div>
-
 <h2 id="404-page"><a href="#404-page" class="headerlink" title="404 page"></a>404 page</h2><figure class="highlight yaml"><figcaption><span>Create file if not exists: source/404.md</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">cover:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">robots:</span> <span class="string">noindex,nofollow</span></span><br><span class="line"><span class="attr">sitemap:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">seo_title:</span> <span class="number">404</span> <span class="string">Not</span> <span class="string">Found</span></span><br><span class="line"><span class="attr">bottom_meta:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">sidebar:</span> []</span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">/404.html</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">Please</span> <span class="string">leave</span> <span class="string">a</span> <span class="string">message</span> <span class="string">and</span> <span class="string">tell</span> <span class="string">me</span> <span class="string">which</span> <span class="string">page</span> <span class="string">you</span> <span class="string">want</span> <span class="string">to</span> <span class="string">visit</span> <span class="string">is</span> <span class="string">not</span> <span class="string">found</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"></span><br><span class="line">&#123;<span class="string">%</span> <span class="string">p</span> <span class="string">logo</span> <span class="string">center</span> <span class="string">huge</span>, <span class="number">404</span> <span class="string">%</span>&#125;</span><br><span class="line">&#123;<span class="string">%</span> <span class="string">p</span> <span class="string">center</span> <span class="string">bold</span>, <span class="string">sorry</span>, <span class="string">the</span> <span class="string">page</span> <span class="string">you</span> <span class="string">visited</span> <span class="string">does</span> <span class="string">not</span> <span class="string">exist</span> <span class="string">%</span>&#125;</span><br><span class="line">&#123;<span class="string">%</span> <span class="string">p</span> <span class="string">center</span> <span class="string">small</span>, <span class="string">the</span> <span class="string">address</span> <span class="string">may</span> <span class="string">be</span> <span class="string">entered</span> <span class="string">incorrectly</span> <span class="string">or</span> <span class="string">the</span> <span class="string">address</span> <span class="string">has</span> <span class="string">been</span> <span class="string">deleted</span> <span class="string">%</span>&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
   
   
@@ -1098,20 +1086,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2312,5 +2300,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

@@ -614,15 +614,7 @@
 <h4 id="遇到问题怎么办"><a href="#遇到问题怎么办" class="headerlink" title="遇到问题怎么办"></a>遇到问题怎么办</h4><ol>
 <li>确定已经查阅文档找不到相关内容。</li>
 <li>前往「常见问题」页面，查看是否有解决方案。</li>
-<li>访问在线示例，查看是否具有相同第问题。</li>
-<li><ol>
-<li>如果在线示例表示正常，则说明自己配置有误，检查开发环境、主题配置是否正确。如果检查不出问题，提Issue询问。</li>
-</ol>
-</li>
-<li><ol start="2">
-<li>如果在线示例也存在相同问题，则说明存在BUG，请提Issue反馈。</li>
-</ol>
-</li>
+<li>访问在线示例，查看是否具有相同第问题。<br>3.1. 如果在线示例表示正常，则说明自己配置有误，检查开发环境、主题配置是否正确。如果检查不出问题，提Issue询问。<br>3.2. 如果在线示例也存在相同问题，则说明存在BUG，请提Issue反馈。</li>
 <li>如果在线示例没有相关内容，下载示例博客源码，修改运行本地预览，进行第3步判断操作。</li>
 </ol>
 
@@ -711,10 +703,9 @@
         <a class="next" href="/volantis/news/2020-02-19/">
           <p class="title">版本命名规范化<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
           <p class="content">主版本号.子版本号.修订版本号
-
 主题从2017年至今，已经经历了相当多的大版本迭代和数不尽的小版本更新，但是版本号的更新一直没有遵循规范。从下次更新开始，将遵循下述的规范：
 
-主版本号： 较大...</p>
+主版本号： 较大改...</p>
         </a>
       
     </div>
@@ -853,20 +844,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2067,5 +2058,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

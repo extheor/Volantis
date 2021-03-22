@@ -604,12 +604,11 @@
 
   
   <figure class="highlight md"><figcaption><span>最后更新于 <u>2.6</u> 版本</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% checkbox 样式参数（可选）, 文本（支持简单md） %&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="演示效果"><a href="#演示效果" class="headerlink" title="演示效果"></a>演示效果</h2><div class="checkbox"><input type="checkbox">
             <p>纯文本测试</p>
             </div>
 <div class="checkbox checked"><input type="checkbox" checked="checked">
-            <p>支持简单的 <a href="https://guides.github.com/features/mastering-markdown/" target="_blank" rel="external nofollow noopener noreferrer">markdown</a> 语法</p>
+            <p>支持简单的 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://guides.github.com/features/mastering-markdown/">markdown</a> 语法</p>
             </div>
 <div class="checkbox red"><input type="checkbox">
             <p>支持自定义颜色</p>
@@ -635,13 +634,9 @@
 <div class="checkbox times red checked"><input type="checkbox" checked="checked">
             <p>叉</p>
             </div>
-
 <h2 id="上述示例的源码"><a href="#上述示例的源码" class="headerlink" title="上述示例的源码"></a>上述示例的源码</h2><figure class="highlight md"><figcaption><span>example:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% checkbox 纯文本测试 %&#125;</span><br><span class="line">&#123;% checkbox checked, 支持简单的 [<span class="string">markdown</span>](<span class="link">https://guides.github.com/features/mastering-markdown/</span>) 语法 %&#125;</span><br><span class="line">&#123;% checkbox red, 支持自定义颜色 %&#125;</span><br><span class="line">&#123;% checkbox green checked, 绿色 + 默认选中 %&#125;</span><br><span class="line">&#123;% checkbox yellow checked, 黄色 + 默认选中 %&#125;</span><br><span class="line">&#123;% checkbox cyan checked, 青色 + 默认选中 %&#125;</span><br><span class="line">&#123;% checkbox blue checked, 蓝色 + 默认选中 %&#125;</span><br><span class="line">&#123;% checkbox plus green checked, 增加 %&#125;</span><br><span class="line">&#123;% checkbox minus yellow checked, 减少 %&#125;</span><br><span class="line">&#123;% checkbox times red checked, 叉 %&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="可以支持的参数"><a href="#可以支持的参数" class="headerlink" title="可以支持的参数"></a>可以支持的参数</h2><h3 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">red, yellow, green, cyan, blue</span><br></pre></td></tr></table></figure>
-
 <h3 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">plus, minus, times</span><br></pre></td></tr></table></figure>
-
 <h3 id="选中状态"><a href="#选中状态" class="headerlink" title="选中状态"></a>选中状态</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">checked</span><br></pre></td></tr></table></figure>
 
   
@@ -1048,20 +1043,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2262,5 +2257,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

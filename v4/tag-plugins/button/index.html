@@ -604,14 +604,11 @@
 
   
   <div class="note warning"><p>这个页面的标签将会在不久后重构</p></div>
-
 <h2 id="基础按钮"><a href="#基础按钮" class="headerlink" title="基础按钮"></a>基础按钮</h2><p>请将您的 Volantis 升级至 <u>2.4</u> 版本以上使用。</p>
 <div class="tabs" id="btn"><ul class="nav-tabs"><li class="tab"><a class="#btn-1">语法格式</a></li><li class="tab"><a class="#btn-2">参数列表</a></li><li class="tab"><a class="#btn-3">示例写法</a></li><li class="tab active"><a class="#btn-4">示例效果</a></li></ul><div class="tab-content"><div class="tab-pane" id="btn-1"><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% btn 样式参数（可选）, 标题, 链接, 图标（可选） %&#125;</span><br></pre></td></tr></table></figure>
-
 <div class="note warning"><p>可选的参数可以省略，但是前后顺序不能乱。</p></div></div><div class="tab-pane" id="btn-2"><p class="p subtitle">样式参数</p>
 
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">regular, large, center</span><br></pre></td></tr></table></figure>
-
 <p class="p subtitle">图标</p>
 
 <p>第1个或者第2个参数包含 <code>fa-</code> 的那个被识别为图标。</p></div><div class="tab-pane" id="btn-3"><figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">不设置任何参数的 &#123;% btn 按钮, / %&#125; 适合融入段落中。</span><br><span class="line"></span><br><span class="line">regular 按钮适合独立于段落之外：</span><br><span class="line"></span><br><span class="line">&#123;% btn regular, 示例博客, https://xaoxuu.com, fas fa-play-circle %&#125;</span><br><span class="line"></span><br><span class="line">large 按钮更具有强调作用，建议搭配 center 使用：</span><br><span class="line"></span><br><span class="line">&#123;% btn center large, 开始使用, https://volantis.js.org/v3/getting-started/, fas fa-download %&#125;</span><br></pre></td></tr></table></figure></div><div class="tab-pane active" id="btn-4"><p class="p subtitle">行内按钮</p>
@@ -629,69 +626,67 @@
 <p><span class="btn solid large"><a class="button" href="/" title="示例博客"><i class="fas fa-rss"></i>示例博客</a></span> <span class="btn solid large"><a class="button" title="示例博客"><i class="fas fa-rss"></i>示例博客</a></span></p>
 <p>居中：</p>
 <p><span class="btn solid center large"><a class="button" target="_blank" rel="external nofollow noopener noreferrer" href="https://volantis.js.org/v3/getting-started/" title="开始使用"><i class="fas fa-download"></i>开始使用</a></span></p></div></div></div>
-
-
 <h2 id="富文本按钮"><a href="#富文本按钮" class="headerlink" title="富文本按钮"></a>富文本按钮</h2><p>请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。</p>
 <div class="tabs" id="btns"><ul class="nav-tabs"><li class="tab"><a class="#btns-1">语法格式</a></li><li class="tab"><a class="#btns-2">参数列表</a></li><li class="tab"><a class="#btns-3">示例写法</a></li><li class="tab active"><a class="#btns-4">示例效果</a></li></ul><div class="tab-content"><div class="tab-pane" id="btns-1"><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% btns 样式参数 %&#125;</span><br><span class="line">&#123;% cell 标题, 链接, 图片或者图标 %&#125;</span><br><span class="line">&#123;% cell 标题, 链接, 图片或者图标 %&#125;</span><br><span class="line">&#123;% endbtns %&#125;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="btns-2"><p>样式参数位置可以写图片样式、布局方式，多个样式参数用空格隔开。</p>
 <p class="p subtitle">圆角样式</p>
 
 <p>默认为方形</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rounded, circle</span><br></pre></td></tr></table></figure>
-
-
 <p class="p subtitle">布局方式</p>
 
 <p>默认为自动宽度，适合视野内只有一两个的情况。</p>
-<div class="table"><table>
+<div class="table"><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="left">参数</th>
-<th align="left">含义</th>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">含义</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">wide</td>
-<td align="left">宽一点的按钮</td>
+<tbody>
+<tr>
+<td style="text-align:left">wide</td>
+<td style="text-align:left">宽一点的按钮</td>
 </tr>
 <tr>
-<td align="left">fill</td>
-<td align="left">填充布局，自动铺满至少一行，多了会换行。</td>
+<td style="text-align:left">fill</td>
+<td style="text-align:left">填充布局，自动铺满至少一行，多了会换行。</td>
 </tr>
 <tr>
-<td align="left">center</td>
-<td align="left">居中，按钮之间是固定间距。</td>
+<td style="text-align:left">center</td>
+<td style="text-align:left">居中，按钮之间是固定间距。</td>
 </tr>
 <tr>
-<td align="left">around</td>
-<td align="left">居中分散</td>
+<td style="text-align:left">around</td>
+<td style="text-align:left">居中分散</td>
 </tr>
 <tr>
-<td align="left">grid2</td>
-<td align="left">等宽最多2列，屏幕变窄会适当减少列数。</td>
+<td style="text-align:left">grid2</td>
+<td style="text-align:left">等宽最多2列，屏幕变窄会适当减少列数。</td>
 </tr>
 <tr>
-<td align="left">grid3</td>
-<td align="left">等宽最多3列，屏幕变窄会适当减少列数。</td>
+<td style="text-align:left">grid3</td>
+<td style="text-align:left">等宽最多3列，屏幕变窄会适当减少列数。</td>
 </tr>
 <tr>
-<td align="left">grid4</td>
-<td align="left">等宽最多4列，屏幕变窄会适当减少列数。</td>
+<td style="text-align:left">grid4</td>
+<td style="text-align:left">等宽最多4列，屏幕变窄会适当减少列数。</td>
 </tr>
 <tr>
-<td align="left">grid5</td>
-<td align="left">等宽最多5列，屏幕变窄会适当减少列数。</td>
+<td style="text-align:left">grid5</td>
+<td style="text-align:left">等宽最多5列，屏幕变窄会适当减少列数。</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 </div>
 
 <p class="p subtitle">增加文字样式</p>
 
 <p>可以在容器内增加 <code>&lt;b&gt;标题&lt;/b&gt;</code> 和 <code>&lt;p&gt;描述文字&lt;/p&gt;</code></p></div><div class="tab-pane" id="btns-3"><p>如果需要显示类似「团队成员」之类的一组含有头像的链接：</p>
 <figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% btns circle grid5 %&#125;</span><br><span class="line">&#123;% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %&#125;</span><br><span class="line">&#123;% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %&#125;</span><br><span class="line">&#123;% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %&#125;</span><br><span class="line">&#123;% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %&#125;</span><br><span class="line">&#123;% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %&#125;</span><br><span class="line">&#123;% endbtns %&#125;</span><br></pre></td></tr></table></figure>
-
 <p>或者含有图标的按钮：</p>
 <figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% btns rounded grid5 %&#125;</span><br><span class="line">&#123;% cell 下载源码, /, fas fa-download %&#125;</span><br><span class="line">&#123;% cell 查看文档, /, fas fa-book-open %&#125;</span><br><span class="line">&#123;% endbtns %&#125;</span><br></pre></td></tr></table></figure>
-
 <p>圆形图标 + 标题 + 描述 + 图片 + 网格5列 + 居中</p>
 <figure class="highlight md"><figcaption><span>example.md:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% btns circle center grid5 %&#125;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&#x27;https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1&#x27;</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&#x27;fab fa-apple&#x27;</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">b</span>&gt;</span></span>心率管家<span class="xml"><span class="tag">&lt;/<span class="name">b</span>&gt;</span></span></span><br><span class="line">  &#123;% p red, 专业版 %&#125;</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&#x27;https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png&#x27;</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&#x27;https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1&#x27;</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&#x27;fab fa-apple&#x27;</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">b</span>&gt;</span></span>心率管家<span class="xml"><span class="tag">&lt;/<span class="name">b</span>&gt;</span></span></span><br><span class="line">  &#123;% p green, 免费版 %&#125;</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&#x27;https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png&#x27;</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line">&#123;% endbtns %&#125;</span><br></pre></td></tr></table></figure></div><div class="tab-pane active" id="btns-4"><p>如果需要显示类似「团队成员」之类的一组含有头像的链接：</p>
 <div class="btns circle grid5">
@@ -1129,20 +1124,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2343,5 +2338,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

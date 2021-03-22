@@ -603,10 +603,8 @@
 
 
   
-  <p>Through <code>layout</code>, you can freely lay out the content of website footer ʻaplayer<code>, </code>social<code>, </code>license<code>, ʻinfo</code>, <code>copyright</code>.</p>
-<figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">site_footer:</span></span><br><span class="line">  <span class="comment"># layout of footer: [aplayer, social, license, info, copyright]</span></span><br><span class="line">  <span class="attr">layout:</span> [<span class="string">aplayer</span>, <span class="string">social</span>, <span class="string">license</span>, <span class="string">info</span>, <span class="string">copyright</span>]</span><br><span class="line">  <span class="attr">social:</span></span><br><span class="line">    <span class="string">-icon:</span> <span class="string">fas</span> <span class="string">fa-rss</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">atom.xml</span></span><br><span class="line">    <span class="string">-icon:</span> <span class="string">fas</span> <span class="string">fa-envelope</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">mailto:me@xaoxuu.com</span></span><br><span class="line">    <span class="string">-icon:</span> <span class="string">fab</span> <span class="string">fa-github</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">https://github.com/xaoxuu</span></span><br><span class="line">    <span class="string">-icon:</span> <span class="string">fas</span> <span class="string">fa-headphones-alt</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">https://music.163.com/#/user/home?id=63035382</span></span><br><span class="line">  <span class="string">copyright:&#x27;[Copyright</span> <span class="string">©</span> <span class="number">2017</span><span class="number">-2020</span> <span class="string">Mr.</span> <span class="string">X](https://xaoxuu.com)&#x27;</span></span><br><span class="line">  <span class="comment"># You can add your own property here. (Support markdown, for example: br:&#x27;&lt;br&gt;&#x27;)</span></span><br><span class="line">  <span class="string">br:&#x27;&lt;br&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
-<p>Among them, ʻaplayer` needs to be enabled in the plugin settings. You can add text attributes to display other text information, for example:</p>
-<figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">site_footer:</span></span><br><span class="line">  <span class="attr">layout:</span> [<span class="string">...</span>, <span class="string">br</span>, <span class="string">hello</span>, <span class="string">...</span>]</span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment"># You can add your own property here. (Support markdown, for example: br:&#x27;&lt;br&gt;&#x27;)</span></span><br><span class="line">  <span class="string">br:&#x27;&lt;br&gt;&#x27;</span></span><br><span class="line">  <span class="string">hello:&#x27;[Hello</span> <span class="string">World](/)&#x27;</span></span><br></pre></td></tr></table></figure>
+  <p>Through <code>layout</code>, you can freely lay out the content of website footer ʻaplayer<code>,</code>social<code>,</code>license<code>, ʻinfo</code>, <code>copyright</code>.<br><figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">site_footer:</span></span><br><span class="line">  <span class="comment"># layout of footer: [aplayer, social, license, info, copyright]</span></span><br><span class="line">  <span class="attr">layout:</span> [<span class="string">aplayer</span>, <span class="string">social</span>, <span class="string">license</span>, <span class="string">info</span>, <span class="string">copyright</span>]</span><br><span class="line">  <span class="attr">social:</span></span><br><span class="line">    <span class="string">-icon:</span> <span class="string">fas</span> <span class="string">fa-rss</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">atom.xml</span></span><br><span class="line">    <span class="string">-icon:</span> <span class="string">fas</span> <span class="string">fa-envelope</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">mailto:me@xaoxuu.com</span></span><br><span class="line">    <span class="string">-icon:</span> <span class="string">fab</span> <span class="string">fa-github</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">https://github.com/xaoxuu</span></span><br><span class="line">    <span class="string">-icon:</span> <span class="string">fas</span> <span class="string">fa-headphones-alt</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">https://music.163.com/#/user/home?id=63035382</span></span><br><span class="line">  <span class="string">copyright:&#x27;[Copyright</span> <span class="string">©</span> <span class="number">2017</span><span class="number">-2020</span> <span class="string">Mr.</span> <span class="string">X](https://xaoxuu.com)&#x27;</span></span><br><span class="line">  <span class="comment"># You can add your own property here. (Support markdown, for example: br:&#x27;&lt;br&gt;&#x27;)</span></span><br><span class="line">  <span class="string">br:&#x27;&lt;br&gt;&#x27;</span></span><br></pre></td></tr></table></figure><br>Among them, ʻaplayer` needs to be enabled in the plugin settings. You can add text attributes to display other text information, for example:<br><figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">site_footer:</span></span><br><span class="line">  <span class="attr">layout:</span> [<span class="string">...</span>, <span class="string">br</span>, <span class="string">hello</span>, <span class="string">...</span>]</span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment"># You can add your own property here. (Support markdown, for example: br:&#x27;&lt;br&gt;&#x27;)</span></span><br><span class="line">  <span class="string">br:&#x27;&lt;br&gt;&#x27;</span></span><br><span class="line">  <span class="string">hello:&#x27;[Hello</span> <span class="string">World](/)&#x27;</span></span><br></pre></td></tr></table></figure></p>
+
   
   
     
@@ -698,8 +696,7 @@
           <a class="next" href="/volantis/theme-settings/cover/">
             <p class="title">website and article cover<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
             <p class="content">Cover heightblog/_config.volantis.ymlcover:  height_scheme: full # full, half  ...
-
-Currently the...</p>
+Currently the ...</p>
           </a>
         
       </div>
@@ -1004,20 +1001,20 @@ Currently the...</p>
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2218,5 +2215,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

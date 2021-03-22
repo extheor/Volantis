@@ -572,8 +572,6 @@
 </li>
 <li><p>安装 <code>stylus</code></p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure>
-
-
 </li>
 </ol>
     
@@ -624,7 +622,7 @@
     
       <details open><summary> Beta6 </summary>
               <div class="content">
-              <ul><li><input checked disabled type="checkbox"> 导航栏N级菜单支持分割线和小标题，详见我的个人博客。</li></ul>
+              <ul><li>[x] 导航栏N级菜单支持分割线和小标题，详见我的个人博客。</li></ul>
               </div>
             </details>
     
@@ -674,11 +672,10 @@
   <div class="md">
     
       
-        <p>5、测试Tomcat是否配置成功：打开浏览器，输入在地址栏中输入： <a href="http://localhost:8080/" target="_blank" rel="external nofollow noopener noreferrer">http://localhost:8080</a> 的运行结果如下图即为即为配置成功！（因为Tomcat已经在运行再次打开会报错）</p>
-<p>相关 Issue： <a href="https://github.com/volantis-x/hexo-theme-volantis/issues/164" target="_blank" rel="external nofollow noopener noreferrer">#164</a></p>
+        <p>5、测试Tomcat是否配置成功：打开浏览器，输入在地址栏中输入： <a target="_blank" rel="external nofollow noopener noreferrer" href="http://localhost:8080">http://localhost:8080</a> 的运行结果如下图即为即为配置成功！（因为Tomcat已经在运行再次打开会报错）</p>
+<p>相关 Issue： <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/issues/164">#164</a></p>
 <div class="note success"><p>结论：存在这篇文章的情况下能够成功 deploy ，说明这不是主题的 BUG。</p></div>
-
-<div class="note "><p><code>markdwon</code> 解析插件为 <code>hexo-renderer-marked</code> 时此插件默认会自动识别 URL ，且原文链接前后没有空格，所以链接前后增加一个空格或者在根目录配置文件中设置 <code>autolink: false</code> 都可以避免 deploy 报错。<br>插件：<a href="https://github.com/hexojs/hexo-renderer-marked" target="_blank" rel="external nofollow noopener noreferrer">hexo-renderer-marked</a></p></div>
+<div class="note "><p><code>markdwon</code> 解析插件为 <code>hexo-renderer-marked</code> 时此插件默认会自动识别 URL ，且原文链接前后没有空格，所以链接前后增加一个空格或者在根目录配置文件中设置 <code>autolink: false</code> 都可以避免 deploy 报错。<br>插件：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a></p></div>
 
       
     
@@ -727,7 +724,7 @@
 <li>很多未知问题</li>
 </ul>
 <blockquote>
-<p>感谢 <a href="https://inkss.cn/" target="_blank" rel="external nofollow noopener noreferrer">@inkss</a> 发布的这篇教程 <a href="https://inkss.cn/article/other/80b5f235.html" target="_blank" rel="external nofollow noopener noreferrer">《Hexo 博客部署 Pjax 局部刷新》</a><br>当所有兼容性问题解决或妥协之后，pjax 分支会合并入 master。</p>
+<p>感谢 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://inkss.cn/">@inkss</a> 发布的这篇教程 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://inkss.cn/article/other/80b5f235.html">《Hexo 博客部署 Pjax 局部刷新》</a><br>当所有兼容性问题解决或妥协之后，pjax 分支会合并入 master。</p>
 </blockquote>
 
       
@@ -816,7 +813,7 @@
   <div class="md">
     
       
-        <p>主题经过几年迭代，现已高度模块化和可定制化，功能相对完善，适合用作文档。原来的 <a href="https://github.com/xaoxuu/hexo-theme-vuex" target="_blank" rel="external nofollow noopener noreferrer">文档主题</a> 将不再维护和更新。</p>
+        <p>主题经过几年迭代，现已高度模块化和可定制化，功能相对完善，适合用作文档。原来的 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/xaoxuu/hexo-theme-vuex">文档主题</a> 将不再维护和更新。</p>
 <p>现在使用的文档页面源码是： <span class="btn"><a class="button" target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs" title="volantis-docs">volantis-docs</a></span></p>
 
       
@@ -865,15 +862,7 @@
 <h4 id="遇到问题怎么办"><a href="#遇到问题怎么办" class="headerlink" title="遇到问题怎么办"></a>遇到问题怎么办</h4><ol>
 <li>确定已经查阅文档找不到相关内容。</li>
 <li>前往「常见问题」页面，查看是否有解决方案。</li>
-<li>访问在线示例，查看是否具有相同第问题。</li>
-<li><ol>
-<li>如果在线示例表示正常，则说明自己配置有误，检查开发环境、主题配置是否正确。如果检查不出问题，提Issue询问。</li>
-</ol>
-</li>
-<li><ol start="2">
-<li>如果在线示例也存在相同问题，则说明存在BUG，请提Issue反馈。</li>
-</ol>
-</li>
+<li>访问在线示例，查看是否具有相同第问题。<br>3.1. 如果在线示例表示正常，则说明自己配置有误，检查开发环境、主题配置是否正确。如果检查不出问题，提Issue询问。<br>3.2. 如果在线示例也存在相同问题，则说明存在BUG，请提Issue反馈。</li>
 <li>如果在线示例没有相关内容，下载示例博客源码，修改运行本地预览，进行第3步判断操作。</li>
 </ol>
 
@@ -920,7 +909,6 @@
     
       
         <p class="p red bold">主版本号.子版本号.修订版本号</p>
-
 <p>主题从2017年至今，已经经历了相当多的大版本迭代和数不尽的小版本更新，但是版本号的更新一直没有遵循规范。从下次更新开始，将遵循下述的规范：</p>
 <ul>
 <li><strong>主版本号</strong>： 较大改动、框架调整或重构</li>
@@ -971,9 +959,8 @@
     
       
         <div class="gallery ">
-              <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot01.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot01.jpg" srcset="data:image/png;base64,666"><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot02.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot02.jpg" srcset="data:image/png;base64,666"><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot03.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot03.jpg" srcset="data:image/png;base64,666"><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot04.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot04.jpg" srcset="data:image/png;base64,666"><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot05.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot05.jpg" srcset="data:image/png;base64,666"><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot06.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot06.jpg" srcset="data:image/png;base64,666">
+              <p><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot01.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot01.jpg" srcset="data:image/png;base64,666"><br><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot02.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot02.jpg" srcset="data:image/png;base64,666"><br><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot03.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot03.jpg" srcset="data:image/png;base64,666"><br><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot04.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot04.jpg" srcset="data:image/png;base64,666"><br><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot05.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot05.jpg" srcset="data:image/png;base64,666"><br><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot06.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/screenshot06.jpg" srcset="data:image/png;base64,666"></p>
             </div>
-
 <p>心率管家 App（仅iOS端），专业版不定期限免，欢迎下载体验。</p>
 <p>如果您看到的时候已经过了限免期，可以先下载免费版使用。为了吸引 app 推荐类网站的爬虫进行推荐，专业版的价格通常在0元到68元之间浮动变化的。</p>
 <div class="btns circle center grid5">
@@ -1081,6 +1068,8 @@
 
     <div class="content">
       <ul class="entry navigation">
+        
+          <li><a class="flat-box" title="/volantis/categories/regression-case-study/" href="/volantis/categories/regression-case-study/" id="volantiscategoriesregression-case-study"><div class="name">Regression - Case Study</div><div class="badge">(1)</div></a></li>
         
           <li><a class="flat-box" title="/volantis/categories/%E5%AE%98%E6%96%B9%E8%B5%84%E8%AE%AF/" href="/volantis/categories/%E5%AE%98%E6%96%B9%E8%B5%84%E8%AE%AF/" id="volantiscategoriesE5AE98E696B9E8B584E8AEAF"><div class="name">官方资讯</div><div class="badge">(10)</div></a></li>
         
@@ -1215,20 +1204,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2429,5 +2418,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

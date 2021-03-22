@@ -605,17 +605,12 @@
   
   <p>NoteBlock 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。而 Note 是 NoteBlock 的简便写法。</p>
 <figure class="highlight md"><figcaption><span>最后更新于 <u>4.0</u> 版本</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% noteblock 样式参数（可选）, 标题（可选） %&#125;</span><br><span class="line">文本段落</span><br><span class="line">&#123;% endnoteblock %&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="演示效果"><a href="#演示效果" class="headerlink" title="演示效果"></a>演示效果</h2><p>可以在区块中放置一些复杂的结构，支持嵌套。</p>
-<div class="note "><p><strong>标题（可选）</strong></p><p>Windows 10不是為所有人設計,而是為每個人設計</p><div class="note done"><p>嵌套测试： 请坐和放宽，我正在帮你搞定一切...</p></div><details yellow><summary> Folding 测试： 点击查看更多 </summary>              <div class="content">              <div class="note warning"><p>不要说我们没有警告过你</p></div><div class="note bug red"><p>我们都有不顺利的时候</p></div>              </div>            </details></div>
-
+<div class="note "><p><strong>标题（可选）</strong></p><p></p><p>Windows 10不是為所有人設計,而是為每個人設計</p><p></p><p><div class="note done"><p>嵌套测试： 请坐和放宽，我正在帮你搞定一切…</p></div></p><details yellow><summary> Folding 测试： 点击查看更多 </summary>              <div class="content">              <div class="note warning"><p>不要说我们没有警告过你</p></div><div class="note bug red"><p>我们都有不顺利的时候</p></div>              </div>            </details></div>
 <h2 id="上述示例的源码"><a href="#上述示例的源码" class="headerlink" title="上述示例的源码"></a>上述示例的源码</h2><figure class="highlight md"><figcaption><span>example:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% noteblock, 标题（可选） %&#125;</span><br><span class="line"></span><br><span class="line">Windows 10不是為所有人設計,而是為每個人設計</span><br><span class="line"></span><br><span class="line">&#123;% noteblock done %&#125;</span><br><span class="line">嵌套测试： 请坐和放宽，我正在帮你搞定一切...</span><br><span class="line">&#123;% endnoteblock %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% folding yellow, Folding 测试： 点击查看更多 %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning, 不要说我们没有警告过你 %&#125;</span><br><span class="line">&#123;% noteblock bug red %&#125;</span><br><span class="line">我们都有不顺利的时候</span><br><span class="line">&#123;% endnoteblock %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br><span class="line">&#123;% endnoteblock %&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="可以支持的参数"><a href="#可以支持的参数" class="headerlink" title="可以支持的参数"></a>可以支持的参数</h2><p>样式参数位置可以写图标和颜色，多个样式参数用空格隔开。</p>
 <h3 id="图标"><a href="#图标" class="headerlink" title="图标"></a>图标</h3><figure class="highlight md"><figcaption><span>彩色的</span></figcaption><table><tr><td class="code"><pre><span class="line">quote, info, warning, done/success, error/danger</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight md"><figcaption><span>灰色的，也可以指定颜色</span></figcaption><table><tr><td class="code"><pre><span class="line">radiation, bug, idea, link, paperclip, todo, message, guide, download, up, undo</span><br></pre></td></tr></table></figure>
-
 <h3 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h3><figure class="highlight md"><figcaption><span>指定颜色</span></figcaption><table><tr><td class="code"><pre><span class="line">clear, light, gray, red, yellow, green, cyan, blue</span><br></pre></td></tr></table></figure>
 
   
@@ -1022,20 +1017,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2236,5 +2231,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

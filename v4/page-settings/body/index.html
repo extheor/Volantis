@@ -556,35 +556,20 @@
   
   <h2 id="显示迷你音乐播放器"><a href="#显示迷你音乐播放器" class="headerlink" title="显示迷你音乐播放器"></a>显示迷你音乐播放器</h2><p>标题右边显示迷你音乐播放器，支持的字段有：<code>server</code>、<code>type</code>、<code>id</code>。</p>
 <figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">music:</span></span><br><span class="line"> <span class="attr">server:</span> <span class="string">netease</span>   <span class="comment"># netease, tencent, kugou, xiami, baidu</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">song</span>        <span class="comment"># song, playlist, album, search, artist</span></span><br><span class="line"> <span class="attr">id:</span> <span class="number">16846091</span>      <span class="comment"># song id / playlist id / album id / search keyword</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
 <div class="note play"><p>实际效果见： <a href="/contributors/">#contributors</a></p></div>
-
 <h2 id="显示-meta-标签"><a href="#显示-meta-标签" class="headerlink" title="显示 meta 标签"></a>显示 meta 标签</h2><p>文章顶部和底部的日期、分类、更新日期、标签、分享等属于 meta 标签。</p>
 <figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">top_meta:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">bottom_meta:</span> <span class="literal">false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 <p>如果一个页面没有 title 则不会显示 top_meta ，像404、关于页面就可以完全隐藏：</p>
 <figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">seo_title:</span> <span class="string">关于</span></span><br><span class="line"><span class="attr">top_meta:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">bottom_meta:</span> <span class="literal">false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-
 <h2 id="标题右边显示缩略图"><a href="#标题右边显示缩略图" class="headerlink" title="标题右边显示缩略图"></a>标题右边显示缩略图</h2><figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">thumbnail:</span> <span class="string">https://img.vim-cn.com/17/0c7b02722686d1527a1df807dae0794d995860.png</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
 <p>缩略图仅在文章列表和文章页面显示，不会在归档页面显示。</p>
 <h2 id="标题右边显示图标"><a href="#标题右边显示图标" class="headerlink" title="标题右边显示图标"></a>标题右边显示图标</h2><figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">icons:</span> [<span class="string">fas</span> <span class="string">fa-fire</span> <span class="string">red</span>, <span class="string">fas</span> <span class="string">fa-star</span> <span class="string">green</span>]</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
 <p>图标仅在归档页面中显示，可以用来标注热门文章。</p>
 <div class="note info"><p>可以通过 red / blue / green / yellow / orange / theme / accent 来设置图标的颜色</p></div>
-
-
-<h2 id="是否要显示封面"><a href="#是否要显示封面" class="headerlink" title="是否要显示封面"></a>是否要显示封面</h2><p>如果某个页面需要封面，可以这样写：</p>
-<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">cover:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-
+<h2 id="是否要显示封面"><a href="#是否要显示封面" class="headerlink" title="是否要显示封面"></a>是否要显示封面</h2><p>如果某个页面需要封面，可以这样写：<br><figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">cover:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="显示侧边栏"><a href="#显示侧边栏" class="headerlink" title="显示侧边栏"></a>显示侧边栏</h2><p>通过自由设置边栏卡片来删减对应页面的冗余信息，提高有价值的信息在页面中的权重。</p>
-<p>如果某个页面不需要侧边栏，可以这样写：</p>
-<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">sidebar:</span> []</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-<p>某个页面想指定显示某几个侧边栏，就这样写:</p>
-<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">sidebar:</span> [<span class="string">grid</span>, <span class="string">toc</span>, <span class="string">tags</span>] <span class="comment"># 放置任何你想要显示的侧边栏部件</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
+<p>如果某个页面不需要侧边栏，可以这样写：<br><figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">sidebar:</span> []</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure></p>
+<p>某个页面想指定显示某几个侧边栏，就这样写:<br><figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">sidebar:</span> [<span class="string">grid</span>, <span class="string">toc</span>, <span class="string">tags</span>] <span class="comment"># 放置任何你想要显示的侧边栏部件</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="关闭评论"><a href="#关闭评论" class="headerlink" title="关闭评论"></a>关闭评论</h2><figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">comments:</span> <span class="literal">false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 
   
@@ -991,20 +976,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2205,5 +2190,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

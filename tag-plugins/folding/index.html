@@ -555,42 +555,34 @@
 
   
   <figure class="highlight md"><figcaption><span>was last updated in version <u>2.3</u></span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% folding parameter (optional), title %&#125;</span><br><span class="line">![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)</span><br><span class="line">&#123;% endfolding %&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="Demo-effect"><a href="#Demo-effect" class="headerlink" title="Demo effect"></a>Demo effect</h2><details><summary> View image test </summary>
               <div class="content">
-              <p><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg" srcset="data:image/png;base64,666"></p>
+              <p><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg" srcset="data:image/png;base64,666" alt></p>
               </div>
             </details>
-
 <details cyan open><summary> view the folding box opened by default </summary>
               <div class="content">
               <p>This is a folding box that is opened by default.</p>
               </div>
             </details>
-
 <details green><summary> view code test </summary>
               <div class="content">
               <figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% folding green, view code test %&#125;</span><br><span class="line"></span><br><span class="line">View code test</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br></pre></td></tr></table></figure>
               </div>
             </details>
-
 <details yellow><summary> view list test </summary>
               <div class="content">
               <p>-haha<br>-hehe</p>
               </div>
             </details>
-
 <details red><summary> view nested tests </summary>
               <div class="content">
               <details blue><summary> view nested test 2 </summary>              <div class="content">              <details><summary> View nested test 3 </summary>              <div class="content">              <p>hahaha <span><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E6%BB%91%E7%A8%BD.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E6%BB%91%E7%A8%BD.png" srcset="data:image/png;base64,666" style="height :24px"></span></p>              </div>            </details>              </div>            </details>
               </div>
             </details>
-
 <h2 id="Source-code-of-the-above-example"><a href="#Source-code-of-the-above-example" class="headerlink" title="Source code of the above example"></a>Source code of the above example</h2><figure class="highlight md"><figcaption><span>example:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% folding View image test %&#125;</span><br><span class="line"></span><br><span class="line">![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% folding cyan open, view the folding box opened by default %&#125;</span><br><span class="line"></span><br><span class="line">This is a folding box that opens by default.</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% folding green, view code test %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% folding yellow, view list test %&#125;</span><br><span class="line"></span><br><span class="line">-haha</span><br><span class="line">-hehe</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% folding red, view nested tests %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% folding blue, view nested test 2 %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% folding View nested test 3 %&#125;</span><br><span class="line"></span><br><span class="line">hahaha <span class="xml"><span class="tag">&lt;<span class="name">span</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&#x27;https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E6%BB%91%E7%A8%BD.png&#x27;</span> <span class="attr">style</span>=<span class="string">&#x27;height :24px&#x27;</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="Supportable-parameters"><a href="#Supportable-parameters" class="headerlink" title="Supportable parameters"></a>Supportable parameters</h2><p>The color and status can be filled in the parameter position, and multiple parameters are separated by spaces.</p>
 <h3 id="colour"><a href="#colour" class="headerlink" title="colour"></a>colour</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">blue, cyan, green, yellow, red</span><br></pre></td></tr></table></figure>
-
 <h3 id="Status"><a href="#Status" class="headerlink" title="Status"></a>Status</h3><p>Fill in the status with ʻopen` to represent the default open.</p>
 
   
@@ -1007,20 +999,20 @@ quotenote...</p>
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2221,5 +2213,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

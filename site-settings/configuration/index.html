@@ -605,16 +605,11 @@
   
   <p>The <code>_config.yml</code> file in the blog root directory is usually responsible for site-related configuration and third-party npm plugin-related configuration.</p>
 <h2 id="Site-title"><a href="#Site-title" class="headerlink" title="Site title"></a>Site title</h2><figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site title</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">my</span> <span class="string">blog</span></span><br></pre></td></tr></table></figure>
-
 <h2 id="Website-icon"><a href="#Website-icon" class="headerlink" title="Website icon"></a>Website icon</h2><div class="tabs" id="favicon"><ul class="nav-tabs"><li class="tab"><a class="#favicon-1">simple way</a></li></ul><div class="tab-content"><div class="tab-pane" id="favicon-1"><figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Website icons, more sizes and other icons, please use the import method to batch import</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicon.ico</span></span><br></pre></td></tr></table></figure></div></div></div>
-
-
 <h2 id="Multi-language-settings"><a href="#Multi-language-settings" class="headerlink" title="Multi-language settings"></a>Multi-language settings</h2><figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">language:</span></span><br><span class="line">  <span class="string">-zh-CN</span></span><br><span class="line">  <span class="string">-en</span></span><br><span class="line">  <span class="string">-zh-HK</span></span><br><span class="line">  <span class="string">-zh-TW</span></span><br></pre></td></tr></table></figure>
-
 <p>Corresponding translation file path: <code>themes/volantis/languages/</code></p>
 <h2 id="Use-Import-to-import-external-files"><a href="#Use-Import-to-import-external-files" class="headerlink" title="Use Import to import external files"></a>Use Import to import external files</h2><p>Volantis users can add various tags to head and body without modifying the theme file. <code>meta</code> and <code>link</code> correspond to the <code>&lt;meta&gt;</code> and <code>&lt;link&gt;</code> tags in the head. <code>script</code> can import js code at the end of body.</p>
 <figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">import:</span></span><br><span class="line">  <span class="attr">meta:</span></span><br><span class="line">    <span class="string">-&lt;meta</span> <span class="string">name=&quot;msapplication-TileColor&quot;</span> <span class="string">content=&quot;#ffffff&quot;&gt;</span></span><br><span class="line">    <span class="string">-&lt;meta</span> <span class="string">name=&quot;msapplication-config&quot;</span> <span class="string">content=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/browserconfig.xml&quot;&gt;</span></span><br><span class="line">    <span class="string">-&lt;meta</span> <span class="string">name=&quot;theme-color&quot;</span> <span class="string">content=&quot;#ffffff&quot;&gt;</span></span><br><span class="line">  <span class="attr">link:</span></span><br><span class="line">    <span class="string">-&lt;link</span> <span class="string">rel=&quot;apple-touch-icon&quot;</span> <span class="string">sizes=&quot;180x180&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.</span> <span class="string">png&quot;&gt;</span></span><br><span class="line">    <span class="string">-&lt;link</span> <span class="string">rel=&quot;icon&quot;</span> <span class="string">type=&quot;image/png&quot;</span> <span class="string">sizes=&quot;32x32&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon-32x32</span> <span class="string">.png&quot;&gt;</span></span><br><span class="line">    <span class="string">-&lt;link</span> <span class="string">rel=&quot;icon&quot;</span> <span class="string">type=&quot;image/png&quot;</span> <span class="string">sizes=&quot;16x16&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon-16x16</span> <span class="string">.png&quot;&gt;</span></span><br><span class="line">    <span class="string">-&lt;link</span> <span class="string">rel=&quot;manifest&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/site.webmanifest&quot;&gt;</span></span><br><span class="line">    <span class="string">-&lt;link</span> <span class="string">rel=&quot;mask-icon&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/safari-pinned-tab.svg&quot;</span> <span class="string">color=&quot;#5bbad5</span> <span class="string">&quot;&gt;</span></span><br><span class="line"><span class="string">    -&lt;link rel=&quot;</span><span class="string">shortcut</span> <span class="string">icon&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon.ico&quot;&gt;</span></span><br><span class="line">  <span class="attr">script:</span></span><br><span class="line">    <span class="string">-&lt;script&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
-
 <h2 id="More"><a href="#More" class="headerlink" title="More"></a>More</h2><div class="tag link"><a class="link-card" title="Hexo official document #Configuration" target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/configuration"><div class="left"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" srcset="data:image/png;base64,666"></div><div class="right"><p class="text">Hexo official document #Configuration</p><p class="url">https://hexo.io/docs/configuration</p></div></a></div>
   
   
@@ -1020,20 +1015,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2234,5 +2229,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

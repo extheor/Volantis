@@ -575,7 +575,7 @@
             <div class="new-meta-item date">
   <a class="notlink">
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>posted on:2020年11月13日</p>
+    <p>posted on:2021年3月21日</p>
   </a>
 </div>
 
@@ -604,39 +604,35 @@
 
   
   <p>Generally speaking, a brand new project using the default configuration is <green>normal</green> without failure. If it is not available or the effect is quite different from the example, you can use the official Hexo blog for unit testing to apply this topic to check whether the style is normal, and compare the <code>_config.yml</code> file to troubleshoot problems.</p>
-<div class="note warning yellow"><p>Hexo official unit test project: <a href="https://github.com/hexojs/hexo-theme-unit-test" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/hexojs/hexo-theme-unit-test</a></p></div>
-
+<div class="note warning yellow"><p>Hexo official unit test project: <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/hexojs/hexo-theme-unit-test">https://github.com/hexojs/hexo-theme-unit-test</a></p></div>
 <p><br><span class="btn solid large center"><a class="button" target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/issues/" title="feedback issues to developers"><i class="fas fa-paper-plane"></i>feedback issues to developers</a></span></p>
-<a id="more"></a>
-
+<span id="more"></span>
 <h2 id="How-to-update-the-theme"><a href="#How-to-update-the-theme" class="headerlink" title="How to update the theme"></a>How to update the theme</h2><p>When using themes, try to fork the theme to your GitHub, then modify and use it. The advantage of this is that when the theme undergoes an important update, you can pull and merge the code as needed, so that your DIY theme can get BUG fixes or new features through the update.</p>
 <p>If you don’t understand, please search for keywords yourself: <u>fork update</u></p>
-<div class="note idea"><p><strong>practical tips</strong></p><p>All the configuration that needs to be written in the theme configuration file can be written in the <code>theme_config:</code> of the site configuration file, after <u>Hexo 5.0</u>, it can also be written in the file <code>_config.volantis.yml</code>, see details Hexo official documents:</p><div class="tag link"><a class="link-card" title="covers theme configuration" target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9% 85%8D%E7%BD%AE"><div class="left"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" srcset="data:image/png;base64,666"></div><div class="right"><p class="text">covers theme configuration</p><p class="url">https://hexo.io/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9% 85%8D%E7%BD%AE</p></div></a></div><p>You can also directly view the wording of the site configuration file in the source code of this site: <a href="https://github.com/volantis-x/volantis-x.github.io/blob/master/_config.volantis.yml" target="_blank" rel="external nofollow noopener noreferrer">_config.volantis.yml</a></p></div>
-
+<div class="note idea"><p><strong>practical tips</strong></p><p>All the configuration that needs to be written in the theme configuration file can be written in the <code>theme_config:</code> of the site configuration file, after <u>Hexo 5.0</u>, it can also be written in the file <code>_config.volantis.yml</code>, see details Hexo official documents:</p><div class="tag link"><a class="link-card" title="covers theme configuration" target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9% 85%8D%E7%BD%AE"><div class="left"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" srcset="data:image/png;base64,666"></div><div class="right"><p class="text">covers theme configuration</p><p class="url">https://hexo.io/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9% 85%8D%E7%BD%AE</p></div></a></div><p>You can also directly view the wording of the site configuration file in the source code of this site: <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-x.github.io/blob/master/_config.volantis.yml">_config.volantis.yml</a></p></div>
 <h2 id="Unable-to-run-local-preview-successfully"><a href="#Unable-to-run-local-preview-successfully" class="headerlink" title="Unable to run local preview successfully"></a>Unable to run local preview successfully</h2><ul>
-<li>There may be no installation dependencies. Please follow the steps on the &quot;Start&quot; page to install and install the required dependencies.</li>
+<li>There may be no installation dependencies. Please follow the steps on the “Start” page to install and install the required dependencies.</li>
 <li>If some third-party services are enabled, please check whether the installation of plug-ins is required in the documentation.</li>
 <li>If the error message has <code>lastIndex</code>, you can try to find <code>highlight</code> in the blog root directory configuration file and set ʻauto_detect<code>to</code>false`.</li>
 </ul>
 <h2 id="Theme-configuration-modification-does-not-take-effect"><a href="#Theme-configuration-modification-does-not-take-effect" class="headerlink" title="Theme configuration modification does not take effect"></a>Theme configuration modification does not take effect</h2><p>Please confirm whether the document requires modification to the configuration file <code>blog/_config.yml</code> of the blog home directory or the theme configuration file <code>blog/_config.volantis.yml</code>.</p>
 <h2 id="Theme-style-modification-does-not-take-effect"><a href="#Theme-style-modification-does-not-take-effect" class="headerlink" title="Theme style modification does not take effect"></a>Theme style modification does not take effect</h2><p>If the cdn service is enabled in the theme configuration file, then the modification of the local style will not take effect, and the cdn service needs to be disabled.</p>
 <h2 id="The-modification-did-not-take-effect"><a href="#The-modification-did-not-take-effect" class="headerlink" title="The modification did not take effect"></a>The modification did not take effect</h2><p>Requires <code>hexo clean</code> and then restarts <code>hexo s</code></p>
-<p>If you install the &quot;Related Article Recommendations&quot; plugin, you need to re-<code>hexo s</code> every time you modify the md file</p>
+<p>If you install the “Related Article Recommendations” plugin, you need to re-<code>hexo s</code> every time you modify the md file</p>
 <h2 id="The-style-is-messy-after-turning-off-the-CDN"><a href="#The-style-is-messy-after-turning-off-the-CDN" class="headerlink" title="The style is messy after turning off the CDN"></a>The style is messy after turning off the CDN</h2><ul>
-<li>Please go to the &quot;Start&quot; page of the document to check whether the necessary dependencies are installed.</li>
+<li>Please go to the “Start” page of the document to check whether the necessary dependencies are installed.</li>
 </ul>
 <h2 id="Search-is-not-available"><a href="#Search-is-not-available" class="headerlink" title="Search is not available"></a>Search is not available</h2><ul>
-<li>Please go to the &quot;Start&quot; page of the document to check whether the necessary dependencies are installed.</li>
+<li>Please go to the “Start” page of the document to check whether the necessary dependencies are installed.</li>
 <li>Check the root directory configuration file for conflicts with <code>search</code> fields.</li>
 <li>If the problem cannot be found in the above two steps, please download the sample source code for comparison.</li>
 </ul>
 <h2 id="The-search-result-link-is-incorrect"><a href="#The-search-result-link-is-incorrect" class="headerlink" title="The search result link is incorrect"></a>The search result link is incorrect</h2><p>Please check whether the link in the root directory configuration file is correct, such as:</p>
 <figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://xaoxuu.com</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br></pre></td></tr></table></figure>
-
 <p><br><br></p>
 <details open><summary> tutorials and guides </summary>
               <div class="content">
-              <p><a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo official document</a> | <a href="https://valine.js.org/" target="_blank" rel="external nofollow noopener noreferrer">Valine official document</a></p><p>Please be sure to read the official documentation!</p><div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://cdn.jsdelivr.net/npm/alus@latest/8080.png" data-srcset="https://cdn.jsdelivr.net/npm/alus@latest/8080.png" srcset="data:image/png;base64,666" style="width:800px;"></div></div>
+              <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io">Hexo official document</a> | <a target="_blank" rel="external nofollow noopener noreferrer" href="https://valine.js.org">Valine official document</a></p><p>Please be sure to read the official documentation!</p><div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://cdn.jsdelivr.net/npm/alus@latest/8080.png" data-srcset="https://cdn.jsdelivr.net/npm/alus@latest/8080.png" srcset="data:image/png;base64,666" style="width:800px;"></div></div>
               </div>
             </details>
   
@@ -671,7 +667,6 @@
       
         <a class="-mob-share-qq" title rel="external nofollow noopener noreferrer" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://extheor.club/volantis/faqs/&title=FAQ - 码小余の文档&summary=Generally speaking, a brand new project using the default configuration is normal without failure. If it is not available or the effect is quite different from the example, you can use the official Hexo blog for unit testing to apply this topic to check whether the style is normal, and compare the _config.yml file to troubleshoot problems.
 Hexo official unit test project: https://github.com/hexojs/hexo-theme-unit-test
-
 feedback issues to developers">
           
             <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,666">
@@ -682,7 +677,6 @@ feedback issues to developers">
       
         <a class="-mob-share-qzone" title rel="external nofollow noopener noreferrer" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://extheor.club/volantis/faqs/&title=FAQ - 码小余の文档&summary=Generally speaking, a brand new project using the default configuration is normal without failure. If it is not available or the effect is quite different from the example, you can use the official Hexo blog for unit testing to apply this topic to check whether the style is normal, and compare the _config.yml file to troubleshoot problems.
 Hexo official unit test project: https://github.com/hexojs/hexo-theme-unit-test
-
 feedback issues to developers">
           
             <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,666">
@@ -693,7 +687,6 @@ feedback issues to developers">
       
         <a class="-mob-share-weibo" title rel="external nofollow noopener noreferrer" target="_blank" href="http://service.weibo.com/share/share.php?url=http://extheor.club/volantis/faqs/&title=FAQ - 码小余の文档&summary=Generally speaking, a brand new project using the default configuration is normal without failure. If it is not available or the effect is quite different from the example, you can use the official Hexo blog for unit testing to apply this topic to check whether the style is normal, and compare the _config.yml file to troubleshoot problems.
 Hexo official unit test project: https://github.com/hexojs/hexo-theme-unit-test
-
 feedback issues to developers">
           
             <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,666">
@@ -845,20 +838,20 @@ feedback issues to developers">
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2059,5 +2052,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

@@ -605,35 +605,20 @@
   
   <h2 id="Show-mini-music-player"><a href="#Show-mini-music-player" class="headerlink" title="Show mini music player"></a>Show mini music player</h2><p>The mini music player is displayed on the right side of the title. The supported fields are: <code>server</code>, <code>type</code>, ʻid`.</p>
 <figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">music:</span></span><br><span class="line"> <span class="attr">server:</span> <span class="string">netease</span> <span class="comment"># netease, tencent, kugou, xiami, baidu</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">song</span> <span class="comment"># song, playlist, album, search, artist</span></span><br><span class="line"> <span class="attr">id:</span> <span class="number">16846091</span> <span class="comment"># song id / playlist id / album id / search keyword</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
 <div class="note play"><p>see the actual effect: <a href="/contributors/">#contributors</a></p></div>
-
 <h2 id="Show-meta-tags"><a href="#Show-meta-tags" class="headerlink" title="Show meta tags"></a>Show meta tags</h2><p>The date, category, update date, tags, sharing, etc. at the top and bottom of the article are meta tags.</p>
 <figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">top_meta:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">bottom_meta:</span> <span class="literal">false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 <p>If a page has no title, top_meta will not be displayed, like 404, about pages can be completely hidden:</p>
 <figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">seo_title:</span> <span class="string">About</span></span><br><span class="line"><span class="attr">top_meta:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">bottom_meta:</span> <span class="literal">false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-
 <h2 id="Thumbnails-are-shown-on-the-right"><a href="#Thumbnails-are-shown-on-the-right" class="headerlink" title="Thumbnails are shown on the right"></a>Thumbnails are shown on the right</h2><figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">thumbnail:</span> <span class="string">https://img.vim-cn.com/17/0c7b02722686d1527a1df807dae0794d995860.png</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
 <p>The thumbnail is only displayed on the article list and article page, not on the archive page.</p>
 <h2 id="The-icon-is-displayed-on-the-right-side-of-the-title"><a href="#The-icon-is-displayed-on-the-right-side-of-the-title" class="headerlink" title="The icon is displayed on the right side of the title"></a>The icon is displayed on the right side of the title</h2><figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">icons:</span> [<span class="string">fas</span> <span class="string">fa-fire</span> <span class="string">red</span>, <span class="string">fas</span> <span class="string">fa-star</span> <span class="string">green</span>]</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
 <p>The icon is only displayed on the archive page and can be used to mark popular articles.</p>
 <div class="note info"><p>you can set the color of the icon through red / blue / green / yellow / orange / theme / accent</p></div>
-
-
-<h2 id="Do-you-want-to-show-cover"><a href="#Do-you-want-to-show-cover" class="headerlink" title="Do you want to show cover"></a>Do you want to show cover</h2><p>If a page needs a cover, you can write it like this:</p>
-<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">cover:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-
+<h2 id="Do-you-want-to-show-cover"><a href="#Do-you-want-to-show-cover" class="headerlink" title="Do you want to show cover"></a>Do you want to show cover</h2><p>If a page needs a cover, you can write it like this:<br><figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">cover:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="Show-sidebar"><a href="#Show-sidebar" class="headerlink" title="Show sidebar"></a>Show sidebar</h2><p>By freely setting the sidebar card to delete the redundant information of the corresponding page, increase the weight of valuable information in the page.</p>
-<p>If a page does not require a sidebar, you can write:</p>
-<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">sidebar:</span> []</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-<p>If a certain page wants to display certain sidebars, just write:</p>
-<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">sidebar:</span> [<span class="string">grid</span>, <span class="string">toc</span>, <span class="string">tags</span>] <span class="comment"># Place any sidebar widgets you want to display</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
+<p>If a page does not require a sidebar, you can write:<br><figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">sidebar:</span> []</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure></p>
+<p>If a certain page wants to display certain sidebars, just write:<br><figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">sidebar:</span> [<span class="string">grid</span>, <span class="string">toc</span>, <span class="string">tags</span>] <span class="comment"># Place any sidebar widgets you want to display</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="Close-comment"><a href="#Close-comment" class="headerlink" title="Close comment"></a>Close comment</h2><figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">comments:</span> <span class="literal">false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
   
   
@@ -1044,20 +1029,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2258,5 +2243,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

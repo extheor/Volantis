@@ -555,14 +555,11 @@
 
   
   <div class="note warning"><p>the label of this page will be refactored soon</p></div>
-
 <h2 id="Basic-button"><a href="#Basic-button" class="headerlink" title="Basic button"></a>Basic button</h2><p>Please upgrade your Volantis to version <u>2.4</u> and above.</p>
 <div class="tabs" id="btn"><ul class="nav-tabs"><li class="tab"><a class="#btn-1">syntax format</a></li><li class="tab"><a class="#btn-2">parameter list</a></li><li class="tab"><a class="#btn-3">sample effect</a></li></ul><div class="tab-content"><div class="tab-pane" id="btn-1"><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% btn style parameters (optional), title, link, icon (optional) %&#125;</span><br></pre></td></tr></table></figure>
-
 <div class="note warning"><p>optional parameters can be omitted</p></div></div><div class="tab-pane" id="btn-2"><p class="p subtitle">style parameter</p>
 
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">regular, large, center</span><br></pre></td></tr></table></figure>
-
 <p class="p subtitle">icon</p>
 
 <p>The one with <code>fa-</code> in the first or second parameter is recognized as an icon.</p></div><div class="tab-pane" id="btn-3"><p class="p subtitle">inline button</p>
@@ -580,64 +577,64 @@
 <p><span class="btn solid large"><a class="button" href="/" title="sample blog"><i class="fas fa-rss"></i>sample blog</a></span> <span class="btn solid large"><a class="button" title="sample blog"><i class="fas fa-rss"></i>sample blog</a></span></p>
 <p>Centered:</p>
 <p><span class="btn solid center large"><a class="button" target="_blank" rel="external nofollow noopener noreferrer" href="https://volantis.js.org/v3/getting-started/" title="get started"><i class="fas fa-download"></i>get started</a></span></p></div></div></div>
-
-
 <h2 id="Rich-Text-Button"><a href="#Rich-Text-Button" class="headerlink" title="Rich Text Button"></a>Rich Text Button</h2><p>Please upgrade your Volantis to version <u>2.3</u> and above.</p>
 <div class="tabs" id="btns"><ul class="nav-tabs"><li class="tab"><a class="#btns-1">syntax format</a></li><li class="tab"><a class="#btns-2">parameter list</a></li><li class="tab"><a class="#btns-3">example effect</a></li></ul><div class="tab-content"><div class="tab-pane" id="btns-1"><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% btns style parameter %&#125;</span><br><span class="line">&#123;% cell title, link, picture or icon %&#125;</span><br><span class="line">&#123;% cell title, link, picture or icon %&#125;</span><br><span class="line">&#123;% endbtns %&#125;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="btns-2"><p>The style parameter position can write the picture style, layout method, multiple style parameters are separated by spaces.</p>
 <p class="p subtitle">rounded corner style</p>
 
 <p>The default is square</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rounded, circle</span><br></pre></td></tr></table></figure>
-
-
 <p class="p subtitle">layout method</p>
 
 <p>The default is automatic width, which is suitable for situations where there is only one or two in the field of view.</p>
-<div class="table"><table>
+<div class="table"><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="left">Parameters</th>
-<th align="left">Meaning</th>
+<th style="text-align:left">Parameters</th>
+<th style="text-align:left">Meaning</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">wide</td>
-<td align="left">Wider buttons</td>
+<tbody>
+<tr>
+<td style="text-align:left">wide</td>
+<td style="text-align:left">Wider buttons</td>
 </tr>
 <tr>
-<td align="left">fill</td>
-<td align="left">Fill the layout, automatically fill at least one line, and will wrap if there is more.</td>
+<td style="text-align:left">fill</td>
+<td style="text-align:left">Fill the layout, automatically fill at least one line, and will wrap if there is more.</td>
 </tr>
 <tr>
-<td align="left">center</td>
-<td align="left">Centered, with fixed spacing between buttons.</td>
+<td style="text-align:left">center</td>
+<td style="text-align:left">Centered, with fixed spacing between buttons.</td>
 </tr>
 <tr>
-<td align="left">around</td>
-<td align="left">Centered and scattered</td>
+<td style="text-align:left">around</td>
+<td style="text-align:left">Centered and scattered</td>
 </tr>
 <tr>
-<td align="left">grid2</td>
-<td align="left">The same width is up to 2 columns, and the narrower screen will reduce the number of columns appropriately.</td>
+<td style="text-align:left">grid2</td>
+<td style="text-align:left">The same width is up to 2 columns, and the narrower screen will reduce the number of columns appropriately.</td>
 </tr>
 <tr>
-<td align="left">grid3</td>
-<td align="left">The same width is up to 3 columns, and the narrower screen will reduce the number of columns appropriately.</td>
+<td style="text-align:left">grid3</td>
+<td style="text-align:left">The same width is up to 3 columns, and the narrower screen will reduce the number of columns appropriately.</td>
 </tr>
 <tr>
-<td align="left">grid4</td>
-<td align="left">Up to 4 columns with equal width, narrower screen will reduce the number of columns appropriately.</td>
+<td style="text-align:left">grid4</td>
+<td style="text-align:left">Up to 4 columns with equal width, narrower screen will reduce the number of columns appropriately.</td>
 </tr>
 <tr>
-<td align="left">grid5</td>
-<td align="left">The same width is up to 5 columns. The narrower screen will reduce the number of columns appropriately.</td>
+<td style="text-align:left">grid5</td>
+<td style="text-align:left">The same width is up to 5 columns. The narrower screen will reduce the number of columns appropriately.</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 </div>
 
 <p class="p subtitle">add text style</p>
 
-<p>You can add <code>&lt;b&gt;title&lt;/b&gt;</code> and <code>&lt;p&gt;description text&lt;/p&gt;</code> in the container</p></div><div class="tab-pane" id="btns-3"><p>If you need to display a group of links containing avatars like &quot;team members&quot;:</p>
+<p>You can add <code>&lt;b&gt;title&lt;/b&gt;</code> and <code>&lt;p&gt;description text&lt;/p&gt;</code> in the container</p></div><div class="tab-pane" id="btns-3"><p>If you need to display a group of links containing avatars like “team members”:</p>
 <div class="btns circle grid5">
             <a class="button" target="_blank" rel="external nofollow noopener noreferrer" href="https://xaoxuu.com" title="xaoxuu"><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png" srcset="data:image/png;base64,666">xaoxuu</a>
 <a class="button" target="_blank" rel="external nofollow noopener noreferrer" href="https://xaoxuu.com" title="xaoxuu"><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png" srcset="data:image/png;base64,666">xaoxuu</a>
@@ -1082,20 +1079,20 @@ quotenote...</p>
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2296,5 +2293,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

@@ -556,20 +556,14 @@
   
   <p>This is a label that can put pictures or videos into the device frame, which can be used to display screenshots and screen recordings more elegantly.</p>
 <figure class="highlight md"><figcaption><span>This plugin was last updated in version <u>4.0</u></span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% frame frame name | img=picture link | alt=picture description (optional) | part=top/bottom (optional) %&#125;</span><br><span class="line">&#123;% frame frame name | video=video link | part=top/bottom (optional) %&#125;</span><br></pre></td></tr></table></figure>
-
-<br>
-
+<p><br></p>
 <div class="video-wrap"><div class="frame-wrap" id="iphone11" part="top"><video poster="https://gitee.com/xaoxuu/cdn-assets/raw/master/wiki/prohud/toast-loading@2x.jpg" playsinline muted loop autoplay preload="metadata"><source src="https://gitee.com/xaoxuu/cdn -assets/raw/master/wiki/prohud/toast-loading@2x.mov" type="video/mp4"></video><div class="frame"></div></div></div>
-
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% frame iphone11 | img&#x3D;https:&#x2F;&#x2F;gitee.com&#x2F;xaoxuu&#x2F;cdn-assets&#x2F;raw&#x2F;master&#x2F;wiki&#x2F;prohud&#x2F;toast-loading@2x.jpg | video&#x3D;https:&#x2F;&#x2F;gitee.com&#x2F;xaoxuu&#x2F;cdn -assets&#x2F;raw&#x2F;master&#x2F;wiki&#x2F;prohud&#x2F;toast-loading@2x.mov | part&#x3D;top %&#125;</span><br></pre></td></tr></table></figure>
-
 <p>In this example, both ʻimg<code>and</code>video` appear at the same time, then it is a video with a cover, and the video cover will be displayed before the video is loaded.</p>
 <h2 id="Device-Framework"><a href="#Device-Framework" class="headerlink" title="Device Framework"></a>Device Framework</h2><p>Currently supported are:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">iphone11</span><br></pre></td></tr></table></figure>
-
 <p>If you have the following other equipment frame diagrams (svg), welcome PR compatibility.</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">android, ipad, macbook, watch</span><br></pre></td></tr></table></figure>
-
 <h2 id="Tailoring"><a href="#Tailoring" class="headerlink" title="Tailoring"></a>Tailoring</h2><p>Set <code>part=top</code> or <code>part=bottom</code> to display the upper or lower part, otherwise the complete frame and the pictures/videos in it will be displayed.</p>
 
   
@@ -986,20 +980,20 @@ quotenote...</p>
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2200,5 +2194,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

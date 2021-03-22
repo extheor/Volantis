@@ -603,10 +603,7 @@
 
 
   
-  <p>您通过 <code>layout</code> 可以自由布局网站页脚内容 <code>aplayer</code>, <code>social</code>, <code>license</code>, <code>info</code>, <code>copyright</code>。</p>
-<figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="comment"># layout of footer: [aplayer, social, license, info, copyright]</span></span><br><span class="line">  <span class="attr">layout:</span> [<span class="string">aplayer</span>, <span class="string">social</span>, <span class="string">license</span>, <span class="string">info</span>, <span class="string">copyright</span>]</span><br><span class="line">  <span class="attr">social:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-rss</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">atom.xml</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-envelope</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">mailto:me@xaoxuu.com</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">icon:</span> <span class="string">fab</span> <span class="string">fa-github</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">https://github.com/xaoxuu</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-headphones-alt</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">https://music.163.com/#/user/home?id=63035382</span></span><br><span class="line">  <span class="attr">copyright:</span> <span class="string">&#x27;[Copyright © 2017-2020 Mr. X](https://xaoxuu.com)&#x27;</span></span><br><span class="line">  <span class="comment"># You can add your own property here. (Support markdown, for example: br: &#x27;&lt;br&gt;&#x27;)</span></span><br><span class="line">  <span class="attr">br:</span> <span class="string">&#x27;&lt;br&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
-<p>其中，<code>aplayer</code> 需要在插件部分设置中启用。您可以新增文字属性，用于展示其它文字信息，例如：</p>
-<figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="attr">layout:</span> [<span class="string">...</span>, <span class="string">br</span>, <span class="string">hello</span>, <span class="string">...</span>]</span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment"># You can add your own property here. (Support markdown, for example: br: &#x27;&lt;br&gt;&#x27;)</span></span><br><span class="line">  <span class="attr">br:</span> <span class="string">&#x27;&lt;br&gt;&#x27;</span></span><br><span class="line">  <span class="attr">hello:</span> <span class="string">&#x27;[Hello World](/)&#x27;</span></span><br></pre></td></tr></table></figure>
+  <p>您通过 <code>layout</code> 可以自由布局网站页脚内容 <code>aplayer</code>, <code>social</code>, <code>license</code>, <code>info</code>, <code>copyright</code>。<br><figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="comment"># layout of footer: [aplayer, social, license, info, copyright]</span></span><br><span class="line">  <span class="attr">layout:</span> [<span class="string">aplayer</span>, <span class="string">social</span>, <span class="string">license</span>, <span class="string">info</span>, <span class="string">copyright</span>]</span><br><span class="line">  <span class="attr">social:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-rss</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">atom.xml</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-envelope</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">mailto:me@xaoxuu.com</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">icon:</span> <span class="string">fab</span> <span class="string">fa-github</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">https://github.com/xaoxuu</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-headphones-alt</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">https://music.163.com/#/user/home?id=63035382</span></span><br><span class="line">  <span class="attr">copyright:</span> <span class="string">&#x27;[Copyright © 2017-2020 Mr. X](https://xaoxuu.com)&#x27;</span></span><br><span class="line">  <span class="comment"># You can add your own property here. (Support markdown, for example: br: &#x27;&lt;br&gt;&#x27;)</span></span><br><span class="line">  <span class="attr">br:</span> <span class="string">&#x27;&lt;br&gt;&#x27;</span></span><br></pre></td></tr></table></figure><br>其中，<code>aplayer</code> 需要在插件部分设置中启用。您可以新增文字属性，用于展示其它文字信息，例如：<br><figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="attr">layout:</span> [<span class="string">...</span>, <span class="string">br</span>, <span class="string">hello</span>, <span class="string">...</span>]</span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment"># You can add your own property here. (Support markdown, for example: br: &#x27;&lt;br&gt;&#x27;)</span></span><br><span class="line">  <span class="attr">br:</span> <span class="string">&#x27;&lt;br&gt;&#x27;</span></span><br><span class="line">  <span class="attr">hello:</span> <span class="string">&#x27;[Hello World](/)&#x27;</span></span><br></pre></td></tr></table></figure></p>
 
   
   
@@ -1052,20 +1049,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2266,5 +2263,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

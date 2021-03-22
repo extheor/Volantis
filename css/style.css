@@ -845,7 +845,8 @@ a.ghcard {
   margin: 8px;
 }
 .md .img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 img.inline {
   display: inline !important;
@@ -1220,7 +1221,8 @@ div.note.blue::before {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .md .simpleuser img+span {
   display: block;
@@ -1281,7 +1283,8 @@ div.note.blue::before {
   width: 100%;
   height: 100%;
   transition: transform 2s ease;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .site-card .info {
   margin-top: 8px;
@@ -1805,7 +1808,6 @@ pre {
 }
 .highlight figcaption {
   font-size: 13px;
-  position: -webkit-sticky;
   position: sticky;
   left: 0;
   padding: 4px 8px 4px 8px;
@@ -1859,7 +1861,6 @@ pre {
   text-align: right;
   border-width: 0;
   margin-left: 0;
-  position: -webkit-sticky;
   position: sticky;
   left: 0;
   z-index: 1;
@@ -2161,7 +2162,8 @@ div.gallery >p>.fancybox a {
 }
 div.gallery >.fancybox img,
 div.gallery >p>.fancybox img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
 }
@@ -3041,7 +3043,8 @@ article#tag .all-tags ul li span:before {
   border-radius: 2px;
   width: 100%;
   height: 120px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   filter: opacity(0.75);
 }
 .md .footer .related_posts .body .vlts-rps span {
@@ -4083,7 +4086,8 @@ img.lazyload:not(.placeholder).loaded {
   height: 24px;
   display: block;
   border-radius: 12px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .headimg-div {
   display: block;
@@ -4113,7 +4117,8 @@ img.lazyload:not(.placeholder).loaded {
   }
 }
 .headimg-div .headimg {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
   transition: transform 3s ease-out;
@@ -4148,7 +4153,6 @@ img.lazyload:not(.placeholder).loaded {
   overflow: hidden;
 }
 .l_side .widget.sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 80px;
   z-index: 1;
@@ -4664,7 +4668,6 @@ img.lazyload:not(.placeholder).loaded {
   z-index: 1;
   overflow: hidden;
   border-radius: 8px;
-  position: -webkit-sticky;
   position: sticky;
   top: 80px;
   transition: all 0.28s ease;
@@ -4678,7 +4681,6 @@ img.lazyload:not(.placeholder).loaded {
   -o-transition: all 0.28s ease;
 }
 .l_side .toc-wrapper header {
-  position: -webkit-sticky;
   position: sticky;
   width: 100%;
   top: 0;

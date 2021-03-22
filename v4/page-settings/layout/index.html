@@ -554,44 +554,47 @@
 
 
   
-  <h2 id="布局模板"><a href="#布局模板" class="headerlink" title="布局模板"></a>布局模板</h2><div class="table"><table>
+  <h2 id="布局模板"><a href="#布局模板" class="headerlink" title="布局模板"></a>布局模板</h2><div class="table"><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="left">取值</th>
-<th align="left">含义</th>
+<th style="text-align:left">取值</th>
+<th style="text-align:left">含义</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">page</td>
-<td align="left">独立页面</td>
+<tbody>
+<tr>
+<td style="text-align:left">page</td>
+<td style="text-align:left">独立页面</td>
 </tr>
 <tr>
-<td align="left">post</td>
-<td align="left">文章页面</td>
+<td style="text-align:left">post</td>
+<td style="text-align:left">文章页面</td>
 </tr>
 <tr>
-<td align="left">docs</td>
-<td align="left">文档页面</td>
+<td style="text-align:left">docs</td>
+<td style="text-align:left">文档页面</td>
 </tr>
 <tr>
-<td align="left">category</td>
-<td align="left">分类页面</td>
+<td style="text-align:left">category</td>
+<td style="text-align:left">分类页面</td>
 </tr>
 <tr>
-<td align="left">tag</td>
-<td align="left">标签页面</td>
+<td style="text-align:left">tag</td>
+<td style="text-align:left">标签页面</td>
 </tr>
 <tr>
-<td align="left">friends</td>
-<td align="left">友链页面</td>
+<td style="text-align:left">friends</td>
+<td style="text-align:left">友链页面</td>
 </tr>
 <tr>
-<td align="left">list</td>
-<td align="left">列表页面</td>
+<td style="text-align:left">list</td>
+<td style="text-align:left">列表页面</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 </div>
-
+</div>
 <h2 id="page-amp-post-amp-docs"><a href="#page-amp-post-amp-docs" class="headerlink" title="page &amp; post &amp; docs"></a>page &amp; post &amp; docs</h2><p>这三种页面相同，但是有以下细微区别：</p>
 <ul>
 <li>post 文章有 title 时，向下滚动网页，导航栏会向上移出屏幕显出文章标题，而 page 和 docs 不会。</li>
@@ -601,44 +604,29 @@
 <p>除了归档页面是自动生成的，其它独立页面都需要手动创建 md 文件。</p>
 <h2 id="归档页面"><a href="#归档页面" class="headerlink" title="归档页面"></a>归档页面</h2><p>归档页面是自动生成的，并且初始化的时候已经生成，路径如下：</p>
 <figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Directory</span></span><br><span class="line"><span class="attr">archive_dir:</span> <span class="string">archives</span></span><br></pre></td></tr></table></figure>
-
 <h2 id="关于页面"><a href="#关于页面" class="headerlink" title="关于页面"></a>关于页面</h2><figure class="highlight yaml"><figcaption><span>Create file if not exists: source/about/index.md</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">docs</span></span><br><span class="line"><span class="attr">seo_title:</span> <span class="string">关于</span></span><br><span class="line"><span class="attr">bottom_meta:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">sidebar:</span> []</span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">有什么想对我说的呢？</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"></span><br><span class="line"><span class="string">下面写关于自己的内容</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <h2 id="分类页面"><a href="#分类页面" class="headerlink" title="分类页面"></a>分类页面</h2><figure class="highlight yaml"><figcaption><span>Create file if not exists: source/categories/index.md</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">category</span></span><br><span class="line"><span class="attr">index:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">所有分类</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
 <h2 id="标签页面"><a href="#标签页面" class="headerlink" title="标签页面"></a>标签页面</h2><figure class="highlight yaml"><figcaption><span>Create file if not exists: source/tags/index.md</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">tag</span></span><br><span class="line"><span class="attr">index:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">所有标签</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
 <h2 id="列表页面"><a href="#列表页面" class="headerlink" title="列表页面"></a>列表页面</h2><figure class="highlight yaml"><figcaption><span>Create file if not exists: source/mylist/index.md</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">list</span></span><br><span class="line"><span class="attr">group:</span> <span class="string">mylist</span></span><br><span class="line"><span class="attr">index:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
 <p>结果就是筛选出所有文章中 <code>front-matter</code> 部分含有 <code>group: mylist</code> 的文章。</p>
 <h2 id="友链页面"><a href="#友链页面" class="headerlink" title="友链页面"></a>友链页面</h2><h3 id="创建页面文件"><a href="#创建页面文件" class="headerlink" title="创建页面文件"></a>创建页面文件</h3><figure class="highlight yaml"><figcaption><span>Create file if not exists: source/friends/index.md</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">friends</span> <span class="comment"># 必须</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">我的朋友们</span> <span class="comment"># 可选，这是友链页的标题</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"></span><br><span class="line"><span class="string">这里写友链上方的内容。</span></span><br><span class="line"></span><br><span class="line"><span class="string">&lt;!--</span> <span class="string">more</span> <span class="string">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="string">这里可以写友链页面下方的文字备注，例如自己的友链规范、示例等。</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <h3 id="选择布局方案"><a href="#选择布局方案" class="headerlink" title="选择布局方案"></a>选择布局方案</h3><p>在主题配置文件中找到以下内容：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">pages:</span></span><br><span class="line">  <span class="comment"># 友链页面配置</span></span><br><span class="line">  <span class="attr">friends:</span></span><br><span class="line">    <span class="attr">layout_scheme:</span> <span class="string">traditional</span> <span class="comment"># simple: 简单布局, traditional: 传统布局,  sites: 网站卡片布局</span></span><br></pre></td></tr></table></figure>
-
 <p>目前提供三种布局方案：</p>
 <ul>
 <li>simple: 简单布局，只有头像和标题。</li>
 <li>traditional: 传统布局，是 Volantis 旧版本的风格。</li>
 <li>sites: 网站卡片布局，是 Volantis 4.x 新增的网站卡片标签的样式。</li>
 </ul>
-<h3 id="设置数据源"><a href="#设置数据源" class="headerlink" title="设置数据源"></a>设置数据源</h3><div class="tabs" id="about"><ul class="nav-tabs"><li class="tab active"><a class="#about-1">静态数据源</a></li><li class="tab"><a class="#about-2">动态数据源</a></li></ul><div class="tab-content"><div class="tab-pane active" id="about-1"><p>友链的数据源写在以下路径，如果没有请自行创建：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">blog&#x2F;source&#x2F;_data&#x2F;friends.yml</span><br></pre></td></tr></table></figure>
-<p>内容格式为：</p>
-<figure class="highlight yaml"><figcaption><span>blog/source/_data/friends.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">group:</span> <span class="comment"># 分组标题</span></span><br><span class="line">  <span class="attr">description:</span>  <span class="comment"># 分组描述</span></span><br><span class="line">  <span class="attr">items:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">title:</span> <span class="comment"># 名称</span></span><br><span class="line">      <span class="attr">avatar:</span> <span class="comment"># 头像</span></span><br><span class="line">      <span class="attr">url:</span> <span class="comment"># 链接</span></span><br><span class="line">      <span class="attr">screenshot:</span> <span class="comment"># 截图</span></span><br><span class="line">      <span class="attr">keywords:</span> <span class="comment"># 关键词</span></span><br><span class="line">      <span class="attr">description:</span> <span class="comment"># 描述</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">title:</span> <span class="comment"># 名称</span></span><br><span class="line">      <span class="attr">avatar:</span> <span class="comment"># 头像</span></span><br><span class="line">      <span class="attr">url:</span> <span class="comment"># 链接</span></span><br><span class="line">      <span class="attr">screenshot:</span> <span class="comment"># 截图</span></span><br><span class="line">      <span class="attr">keywords:</span> <span class="comment"># 关键词</span></span><br><span class="line">      <span class="attr">description:</span> <span class="comment"># 描述</span></span><br></pre></td></tr></table></figure>
-
+<h3 id="设置数据源"><a href="#设置数据源" class="headerlink" title="设置数据源"></a>设置数据源</h3><div class="tabs" id="about"><ul class="nav-tabs"><li class="tab active"><a class="#about-1">静态数据源</a></li><li class="tab"><a class="#about-2">动态数据源</a></li></ul><div class="tab-content"><div class="tab-pane active" id="about-1"><p>友链的数据源写在以下路径，如果没有请自行创建：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">blog&#x2F;source&#x2F;_data&#x2F;friends.yml</span><br></pre></td></tr></table></figure><br>内容格式为：<br><figure class="highlight yaml"><figcaption><span>blog/source/_data/friends.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">group:</span> <span class="comment"># 分组标题</span></span><br><span class="line">  <span class="attr">description:</span>  <span class="comment"># 分组描述</span></span><br><span class="line">  <span class="attr">items:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">title:</span> <span class="comment"># 名称</span></span><br><span class="line">      <span class="attr">avatar:</span> <span class="comment"># 头像</span></span><br><span class="line">      <span class="attr">url:</span> <span class="comment"># 链接</span></span><br><span class="line">      <span class="attr">screenshot:</span> <span class="comment"># 截图</span></span><br><span class="line">      <span class="attr">keywords:</span> <span class="comment"># 关键词</span></span><br><span class="line">      <span class="attr">description:</span> <span class="comment"># 描述</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">title:</span> <span class="comment"># 名称</span></span><br><span class="line">      <span class="attr">avatar:</span> <span class="comment"># 头像</span></span><br><span class="line">      <span class="attr">url:</span> <span class="comment"># 链接</span></span><br><span class="line">      <span class="attr">screenshot:</span> <span class="comment"># 截图</span></span><br><span class="line">      <span class="attr">keywords:</span> <span class="comment"># 关键词</span></span><br><span class="line">      <span class="attr">description:</span> <span class="comment"># 描述</span></span><br></pre></td></tr></table></figure></p>
 <p>不同的布局方式，会用到一部分的字段，一般来说，<code>title</code>、<code>avatar</code> 和 <code>url</code> 都是必须的。这些数据被转成 HTML 标签插入到友链页面的 <code>&lt;!-- more --&gt;</code> 部分。</p></div><div class="tab-pane" id="about-2"><p>使用 issues 标签可以从 issues 中获取 JSON 数据解析并生成 HTML 填充到页面中，使用方法如下：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% issues sites | api&#x3D;https:&#x2F;&#x2F;api.github.com&#x2F;repos&#x2F;xaoxuu&#x2F;friends&#x2F;issues?sort&#x3D;updated&amp;state&#x3D;open&amp;page&#x3D;1&amp;per_page&#x3D;100&amp;labels&#x3D;active %&#125;</span><br></pre></td></tr></table></figure>
-
 <p>这样添加友链的方式就变成了：对方提 Issue ，自己审核，然后添加 <code>active</code> 标签，然后刷新网页就生效了。更新友链内容也变得十分方便， Issue 的创建者拥有修改和关闭的权限。</p>
 <p>新建一个 GitHub 或者 Gitee 仓库，创建 Issues 模板，如下：</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;title&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;screenshot&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;url&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;avatar&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;keywords&quot;</span>: <span class="string">&quot;&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>关于如何使用 issues 标签，详见这篇文章：</p>
 <div class="tag link"><a class="link-card" title="静态博客使用 Issues API 发布动态、友链、书签" target="_blank" rel="external nofollow noopener noreferrer" href="https://xaoxuu.com/blog/2020-08-23-issues-api/"><div class="left"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" srcset="data:image/png;base64,666"></div><div class="right"><p class="text">静态博客使用 Issues API 发布动态、友链、书签</p><p class="url">https://xaoxuu.com/blog/2020-08-23-issues-api/</p></div></a></div></div></div></div>
-
 <div class="note idea"><p><strong>建议</strong></p><ul><li>两者是可以同时使用的哦，建议开放 issues 友链给大家，常联系的自己再保存到静态友链。</li><li>实测 GitHub API 速度和稳定性不如 Gitee ，如果追求稳定建议使用 Gitee。</li></ul></div>
-
 <h2 id="404页面"><a href="#404页面" class="headerlink" title="404页面"></a>404页面</h2><figure class="highlight yaml"><figcaption><span>Create file if not exists: source/404.md</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">cover:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">robots:</span> <span class="string">noindex,nofollow</span></span><br><span class="line"><span class="attr">sitemap:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">seo_title:</span> <span class="number">404</span> <span class="string">Not</span> <span class="string">Found</span></span><br><span class="line"><span class="attr">bottom_meta:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">sidebar:</span> []</span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">/404.html</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">请留言告诉我您要访问哪个页面找不到了</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"></span><br><span class="line">&#123;<span class="string">%</span> <span class="string">p</span> <span class="string">logo</span> <span class="string">center</span> <span class="string">huge</span>, <span class="number">404</span> <span class="string">%</span>&#125;</span><br><span class="line">&#123;<span class="string">%</span> <span class="string">p</span> <span class="string">center</span> <span class="string">bold</span>, <span class="string">很抱歉，您访问的页面不存在</span> <span class="string">%</span>&#125;</span><br><span class="line">&#123;<span class="string">%</span> <span class="string">p</span> <span class="string">center</span> <span class="string">small</span>, <span class="string">可能是输入地址有误或该地址已被删除</span> <span class="string">%</span>&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
   
@@ -1045,20 +1033,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2259,5 +2247,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

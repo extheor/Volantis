@@ -556,17 +556,12 @@
   
   <p>NoteBlock is an enhanced version of Blockquote, with icons displayed on the left and colors can be customized. Note is a simple way of writing NoteBlock.</p>
 <figure class="highlight md"><figcaption><span>was last updated in version <u>4.0</u></span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% noteblock style parameter (optional), title (optional) %&#125;</span><br><span class="line">Text paragraph</span><br><span class="line">&#123;% endnoteblock %&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="Demo-effect"><a href="#Demo-effect" class="headerlink" title="Demo effect"></a>Demo effect</h2><p>Some complicated structures can be placed in the block, and nesting is supported.</p>
-<div class="note "><p><strong>title (optional)</strong></p><p>Windows 10 is not designed for everyone, but for everyone</p><div class="note done"><p>Nested test: Please sit down and relax, I&#39;m doing everything for you...</p></div><details yellow><summary> Folding test: Click to see more </summary>              <div class="content">              <div class="note warning"><p>don&#39;t say we haven&#39;t warned you</p></div><div class="note bug red"><p>We all have troubles</p></div>              </div>            </details></div>
-
+<div class="note "><p><strong>title (optional)</strong></p><p></p><p>Windows 10 is not designed for everyone, but for everyone</p><p></p><p><div class="note done"><p>Nested test: Please sit down and relax, I’m doing everything for you…</p></div></p><details yellow><summary> Folding test: Click to see more </summary>              <div class="content">              <div class="note warning"><p>don’t say we haven’t warned you</p></div><div class="note bug red"><p>We all have troubles</p></div>              </div>            </details></div>
 <h2 id="Source-code-of-the-above-example"><a href="#Source-code-of-the-above-example" class="headerlink" title="Source code of the above example"></a>Source code of the above example</h2><figure class="highlight md"><figcaption><span>example:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% noteblock, title (optional) %&#125;</span><br><span class="line"></span><br><span class="line">Windows 10 is not designed for everyone, but for everyone</span><br><span class="line"></span><br><span class="line">&#123;% noteblock done %&#125;</span><br><span class="line">Nested test: Please sit down and relax, I&#x27;m helping you with everything...</span><br><span class="line">&#123;% endnoteblock %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% folding yellow, Folding test: click to see more %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning, don&#x27;t say we haven&#x27;t warned you %&#125;</span><br><span class="line">&#123;% noteblock bug red %&#125;</span><br><span class="line">We all have troubles</span><br><span class="line">&#123;% endnoteblock %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br><span class="line">&#123;% endnoteblock %&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="Supportable-parameters"><a href="#Supportable-parameters" class="headerlink" title="Supportable parameters"></a>Supportable parameters</h2><p>The position of style parameters can be written with icons and colors. Multiple style parameters are separated by spaces.</p>
 <h3 id="icon"><a href="#icon" class="headerlink" title="icon"></a>icon</h3><figure class="highlight md"><figcaption><span>color</span></figcaption><table><tr><td class="code"><pre><span class="line">quote, info, warning, done/success, error/danger</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight md"><figcaption><span>gray, color can also be specified</span></figcaption><table><tr><td class="code"><pre><span class="line">radiation, bug, idea, link, paperclip, todo, message, guide, download, up, undo</span><br></pre></td></tr></table></figure>
-
 <h3 id="colour"><a href="#colour" class="headerlink" title="colour"></a>colour</h3><figure class="highlight md"><figcaption><span>specify color</span></figcaption><table><tr><td class="code"><pre><span class="line">clear, light, gray, red, yellow, green, cyan, blue</span><br></pre></td></tr></table></figure>
   
   
@@ -982,20 +977,20 @@ quotenote...</p>
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2196,5 +2191,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

@@ -604,8 +604,7 @@
 
   
   <figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">service:</span> <span class="string">hexo</span>  <span class="comment"># hexo, google, algolia, azure, baidu</span></span><br><span class="line">  <span class="attr">js:</span> <span class="string">https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2.6.4/js/search.js</span></span><br><span class="line">  <span class="attr">google:</span></span><br><span class="line">    <span class="attr">apiKey:</span></span><br><span class="line">    <span class="attr">engineId:</span></span><br><span class="line">  <span class="attr">algolia:</span></span><br><span class="line">    <span class="attr">applicationID:</span></span><br><span class="line">    <span class="attr">apiKey:</span></span><br><span class="line">    <span class="attr">indexName:</span></span><br><span class="line">  <span class="attr">azure:</span></span><br><span class="line">    <span class="attr">serviceName:</span></span><br><span class="line">    <span class="attr">indexName:</span></span><br><span class="line">    <span class="attr">queryKey:</span></span><br><span class="line">  <span class="attr">baidu:</span></span><br><span class="line">    <span class="attr">apiId:</span></span><br></pre></td></tr></table></figure>
-<p>默认配置为 Hexo 搜索，但是需要安装插件才能使用：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm i -S hexo-generator-search hexo-generator-json-content</span><br></pre></td></tr></table></figure>
+<p>默认配置为 Hexo 搜索，但是需要安装插件才能使用：<br><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm i -S hexo-generator-search hexo-generator-json-content</span><br></pre></td></tr></table></figure></p>
 
   
   
@@ -1051,20 +1050,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2265,5 +2264,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

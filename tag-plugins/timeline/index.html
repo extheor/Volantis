@@ -555,18 +555,16 @@
 
   
   <figure class="highlight md"><figcaption><span>was last updated in version <u>3.0</u></span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% timeline title (optional) %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% timenode time node (title) %&#125;</span><br><span class="line"></span><br><span class="line">Text content</span><br><span class="line"></span><br><span class="line">&#123;% endtimenode %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% timenode time node (title) %&#125;</span><br><span class="line"></span><br><span class="line">Text content</span><br><span class="line"></span><br><span class="line">&#123;% endtimenode %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="Demo-effect"><a href="#Demo-effect" class="headerlink" title="Demo effect"></a>Demo effect</h2><div class="timeline">
-<div class="timenode"><div class="meta"><p></p><p>2020-07-24 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases" target="_blank" rel="external nofollow noopener noreferrer">2.6.6 -&gt; 3.0</a></p>
+<div class="timenode"><div class="meta"><p></p><p>2020-07-24 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/releases">2.6.6 -&gt; 3.0</a></p>
 <p></p></div><div class="body"><ol><li>If there is a <code>hexo-lazyload-image</code> plugin, you need to delete and reinstall the latest version, set <code>lazyload.isSPA: true</code>.</li><li>The 2.x version of css and js are not applicable to the 3.x version. If you use ʻuse_cdn: true`, you need to delete them.</li><li>The fancybox tag of the 2.x version was renamed to gallery in the 3.x version.</li><li>In the 2.x version, the top <code>top: true</code> is changed to <code>pin: true</code>, and it is also applicable to the page of <code>layout: page</code>.</li><li>If you use the <code>hexo-offline</code> plug-in, it is recommended to uninstall it. The pjax service is enabled by default in version 3.0.</li></ol></div></div>
 
-<div class="timenode"><div class="meta"><p></p><p>2020-05-15 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.6" target="_blank" rel="external nofollow noopener noreferrer">2.6.3 -&gt; 2.6.6</a></p>
+<div class="timenode"><div class="meta"><p></p><p>2020-05-15 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.6">2.6.3 -&gt; 2.6.6</a></p>
 <p></p></div><div class="body"><p>No additional processing is required.</p></div></div>
 
-<div class="timenode"><div class="meta"><p></p><p>2020-04-20 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.3" target="_blank" rel="external nofollow noopener noreferrer">2.6.2 -&gt; 2.6.3</a></p>
-<p></p></div><div class="body"><ol><li>Search globally for <code>seotitle</code> and replace with <code>seo_title</code>.</li><li>The index rule of the group component has changed. In the article using the group component, the component name corresponding to <code>group: group_name</code> must be <code>group_name</code>.</li><li>The list name of the group component first displays the article&#39;s <code>short_title</code> followed by <code>title</code>.</li></ol></div></div>
+<div class="timenode"><div class="meta"><p></p><p>2020-04-20 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.3">2.6.2 -&gt; 2.6.3</a></p>
+<p></p></div><div class="body"><ol><li>Search globally for <code>seotitle</code> and replace with <code>seo_title</code>.</li><li>The index rule of the group component has changed. In the article using the group component, the component name corresponding to <code>group: group_name</code> must be <code>group_name</code>.</li><li>The list name of the group component first displays the article’s <code>short_title</code> followed by <code>title</code>.</li></ol></div></div>
 </div>
-
 <h2 id="Source-code-of-the-above-example"><a href="#Source-code-of-the-above-example" class="headerlink" title="Source code of the above example"></a>Source code of the above example</h2><figure class="highlight md"><figcaption><span>example:</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% timeline %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% timenode 2020-07-24 [<span class="string">2.6.6 -&gt; 3.0</span>](<span class="link">https://github.com/volantis-x/hexo-theme-volantis/releases</span>) %&#125;</span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> If there is a <span class="code">`hexo-lazyload-image`</span> plugin, you need to delete and reinstall the latest version, set <span class="code">`lazyload.isSPA: true`</span>.</span><br><span class="line"><span class="bullet">2.</span> The 2.x version of css and js are not applicable to the 3.x version. If you use ʻuse<span class="emphasis">_cdn: true`, you need to delete them.</span></span><br><span class="line"><span class="emphasis">3. The 2.x version of the fancybox label was renamed to gallery in the 3.x version.</span></span><br><span class="line"><span class="emphasis">4. In the 2.x version, the top `top: true` is changed to `pin: true`, and it is also applicable to the page of `layout: page`.</span></span><br><span class="line"><span class="emphasis">5. If the `hexo-offline` plug-in is used, it is recommended to uninstall it. The pjax service is enabled by default in version 3.0.</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">&#123;% endtimenode %&#125;</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">&#123;% timenode 2020-05-15 [<span class="string">2.6.3 -&gt; 2.6.6</span>](<span class="link">https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.6</span>) %&#125;</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">No additional processing is required.</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">&#123;% endtimenode %&#125;</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">&#123;% timenode 2020-04-20 [<span class="string">2.6.2 -&gt; 2.6.3</span>](<span class="link">https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.3</span>) %&#125;</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">1. Search globally for `seotitle` and replace with `seo_</span>title`.</span><br><span class="line"><span class="bullet">2.</span> The indexing rules of the group component have changed. In articles using the group component, the component name corresponding to <span class="code">`group: group_name`</span> must be <span class="code">`group_name`</span>.</span><br><span class="line"><span class="bullet">2.</span> The list name of the group component first displays the <span class="code">`short_title`</span> of the article followed by <span class="code">`title`</span>.</span><br><span class="line"></span><br><span class="line">&#123;% endtimenode %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure>
   
   
@@ -982,20 +980,20 @@ quotenote...</p>
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2196,5 +2194,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

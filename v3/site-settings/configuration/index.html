@@ -604,104 +604,105 @@
 
   
   <h2 id="网站标题"><a href="#网站标题" class="headerlink" title="网站标题"></a>网站标题</h2><figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># 网站标题</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">my</span> <span class="string">blog</span></span><br></pre></td></tr></table></figure>
-
 <h2 id="网站图标"><a href="#网站图标" class="headerlink" title="网站图标"></a>网站图标</h2><div class="tabs" id="favicon"><ul class="nav-tabs"><li class="tab"><a class="#favicon-1">简单方式</a></li><li class="tab active"><a class="#favicon-2">完全自定义</a></li></ul><div class="tab-content"><div class="tab-pane" id="favicon-1"><figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># 网站图标，更多尺寸等图标请使用import方式批量导入</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicon.ico</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane active" id="favicon-2"><figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">import:</span></span><br><span class="line">  <span class="attr">meta:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;meta</span> <span class="string">name=&quot;msapplication-TileColor&quot;</span> <span class="string">content=&quot;#ffffff&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;meta</span> <span class="string">name=&quot;msapplication-config&quot;</span> <span class="string">content=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/browserconfig.xml&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;meta</span> <span class="string">name=&quot;theme-color&quot;</span> <span class="string">content=&quot;#ffffff&quot;&gt;</span></span><br><span class="line">  <span class="attr">link:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;apple-touch-icon&quot;</span> <span class="string">sizes=&quot;180x180&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;icon&quot;</span> <span class="string">type=&quot;image/png&quot;</span> <span class="string">sizes=&quot;32x32&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon-32x32.png&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;icon&quot;</span> <span class="string">type=&quot;image/png&quot;</span> <span class="string">sizes=&quot;16x16&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon-16x16.png&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;manifest&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/site.webmanifest&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;mask-icon&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/safari-pinned-tab.svg&quot;</span> <span class="string">color=&quot;#5bbad5&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;shortcut</span> <span class="string">icon&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon.ico&quot;&gt;</span></span><br></pre></td></tr></table></figure></div></div></div>
-
-
 <h2 id="多语言设置"><a href="#多语言设置" class="headerlink" title="多语言设置"></a>多语言设置</h2><figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">language:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">en</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">zh-HK</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">zh-TW</span></span><br></pre></td></tr></table></figure>
-
 <p>对应的翻译文件路径： <code>themes/volantis/languages/</code></p>
 <h2 id="Import-导入外部文件"><a href="#Import-导入外部文件" class="headerlink" title="Import 导入外部文件"></a>Import 导入外部文件</h2><p>可以在无需修改主题文件的情况下在 head 和 body 中添加各种标签。<code>meta</code> 和 <code>link</code> 对应 head 中的 <code>&lt;meta&gt;</code> 和 <code>&lt;link&gt;</code> 标签。<code>script</code> 可以在 body 末尾导入 js 文件。</p>
 <figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">import:</span></span><br><span class="line">  <span class="attr">meta:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;meta</span> <span class="string">name=&quot;msapplication-TileColor&quot;</span> <span class="string">content=&quot;#ffffff&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;meta</span> <span class="string">name=&quot;msapplication-config&quot;</span> <span class="string">content=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/browserconfig.xml&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;meta</span> <span class="string">name=&quot;theme-color&quot;</span> <span class="string">content=&quot;#ffffff&quot;&gt;</span></span><br><span class="line">  <span class="attr">link:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;apple-touch-icon&quot;</span> <span class="string">sizes=&quot;180x180&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;icon&quot;</span> <span class="string">type=&quot;image/png&quot;</span> <span class="string">sizes=&quot;32x32&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon-32x32.png&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;icon&quot;</span> <span class="string">type=&quot;image/png&quot;</span> <span class="string">sizes=&quot;16x16&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon-16x16.png&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;manifest&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/site.webmanifest&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;mask-icon&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/safari-pinned-tab.svg&quot;</span> <span class="string">color=&quot;#5bbad5&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;shortcut</span> <span class="string">icon&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon.ico&quot;&gt;</span></span><br><span class="line">  <span class="attr">script:</span></span><br></pre></td></tr></table></figure>
-
-
-<h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><table>
+<h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left"><code>title</code></td>
-<td align="left">网站标题</td>
+<tbody>
+<tr>
+<td style="text-align:left"><code>title</code></td>
+<td style="text-align:left">网站标题</td>
 </tr>
 <tr>
-<td align="left"><code>subtitle</code></td>
-<td align="left">网站副标题</td>
+<td style="text-align:left"><code>subtitle</code></td>
+<td style="text-align:left">网站副标题</td>
 </tr>
 <tr>
-<td align="left"><code>description</code></td>
-<td align="left">网站描述</td>
+<td style="text-align:left"><code>description</code></td>
+<td style="text-align:left">网站描述</td>
 </tr>
 <tr>
-<td align="left"><code>keywords</code></td>
-<td align="left">网站的关键词。支援多个关键词。</td>
+<td style="text-align:left"><code>keywords</code></td>
+<td style="text-align:left">网站的关键词。支援多个关键词。</td>
 </tr>
 <tr>
-<td align="left"><code>author</code></td>
-<td align="left">您的名字</td>
+<td style="text-align:left"><code>author</code></td>
+<td style="text-align:left">您的名字</td>
 </tr>
 <tr>
-<td align="left"><code>language</code></td>
-<td align="left">网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 <code>zh-Hans</code>和 <code>zh-CN</code>。</td>
+<td style="text-align:left"><code>language</code></td>
+<td style="text-align:left">网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 <code>zh-Hans</code>和 <code>zh-CN</code>。</td>
 </tr>
 <tr>
-<td align="left"><code>timezone</code></td>
-<td align="left">网站时区。Hexo 默认使用您电脑的时区。请参考 <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="external nofollow noopener noreferrer">时区列表</a> 进行设置，如 <code>America/New_York</code>, <code>Japan</code>, 和 <code>UTC</code> 。一般的，对于中国大陆地区可以使用 <code>Asia/Shanghai</code>。</td>
+<td style="text-align:left"><code>timezone</code></td>
+<td style="text-align:left">网站时区。Hexo 默认使用您电脑的时区。请参考 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">时区列表</a> 进行设置，如 <code>America/New_York</code>, <code>Japan</code>, 和 <code>UTC</code> 。一般的，对于中国大陆地区可以使用 <code>Asia/Shanghai</code>。</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>其中，<code>description</code>主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。<code>author</code>参数用于主题显示文章的作者。</p>
-<h2 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h2><table>
+<h2 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h2><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-<th align="left">默认值</th>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left"><code>url</code></td>
-<td align="left">网址</td>
-<td align="left"></td>
+<tbody>
+<tr>
+<td style="text-align:left"><code>url</code></td>
+<td style="text-align:left">网址</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td align="left"><code>root</code></td>
-<td align="left">网站根目录</td>
-<td align="left"></td>
+<td style="text-align:left"><code>root</code></td>
+<td style="text-align:left">网站根目录</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td align="left"><code>permalink</code></td>
-<td align="left">文章的 <a href="https://hexo.io/zh-cn/docs/permalinks.html" target="_blank" rel="external nofollow noopener noreferrer">永久链接</a> 格式</td>
-<td align="left"><code>:year/:month/:day/:title/</code></td>
+<td style="text-align:left"><code>permalink</code></td>
+<td style="text-align:left">文章的 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/zh-cn/docs/permalinks.html">永久链接</a> 格式</td>
+<td style="text-align:left"><code>:year/:month/:day/:title/</code></td>
 </tr>
 <tr>
-<td align="left"><code>permalink_defaults</code></td>
-<td align="left">永久链接中各部分的默认值</td>
-<td align="left"></td>
+<td style="text-align:left"><code>permalink_defaults</code></td>
+<td style="text-align:left">永久链接中各部分的默认值</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td align="left"><code>pretty_urls</code></td>
-<td align="left">改写 <a href="https://hexo.io/zh-cn/docs/variables.html" target="_blank" rel="external nofollow noopener noreferrer">permalink</a> 的值来美化 URL</td>
-<td align="left"></td>
+<td style="text-align:left"><code>pretty_urls</code></td>
+<td style="text-align:left">改写 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/zh-cn/docs/variables.html">permalink</a> 的值来美化 URL</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td align="left"><code>pretty_urls.trailing_index</code></td>
-<td align="left">是否在永久链接中保留尾部的 <code>index.html</code>，设置为 <code>false</code> 时去除</td>
-<td align="left"><code>true</code></td>
+<td style="text-align:left"><code>pretty_urls.trailing_index</code></td>
+<td style="text-align:left">是否在永久链接中保留尾部的 <code>index.html</code>，设置为 <code>false</code> 时去除</td>
+<td style="text-align:left"><code>true</code></td>
 </tr>
 <tr>
-<td align="left"><code>pretty_urls.trailing_html</code></td>
-<td align="left">是否在永久链接中保留尾部的 <code>.html</code>, 设置为 <code>false</code> 时去除 (<em>对尾部的 <code>index.html</code>无效</em>)</td>
-<td align="left"><code>true</code></td>
+<td style="text-align:left"><code>pretty_urls.trailing_html</code></td>
+<td style="text-align:left">是否在永久链接中保留尾部的 <code>.html</code>, 设置为 <code>false</code> 时去除 (_对尾部的 <code>index.html</code>无效_)</td>
+<td style="text-align:left"><code>true</code></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <div class="note info"><p><strong>网站存放在子目录</strong></p><p>如果您的网站存放在子目录中，例如 <code>http://yoursite.com/blog</code>，则请将您的 <code>url</code> 设为 <code>http://yoursite.com/blog</code> 并把 <code>root</code> 设为 <code>/blog/</code>。</p></div>
-
 <p>例如：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 比如，一个页面的永久链接是 http://example.com/foo/bar/index.html</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># 此时页面的永久链接会变为 http://example.com/foo/bar/</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><table>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>参数</th>
@@ -709,7 +710,8 @@
 <th>默认值</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>source_dir</code></td>
 <td>资源文件夹，这个文件夹用来存放内容。</td>
 <td><code>source</code></td>
@@ -746,16 +748,17 @@
 </tr>
 <tr>
 <td><code>skip_render</code></td>
-<td>跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 <code>public</code> 目录中。您可使用 <a href="https://github.com/micromatch/micromatch#extended-globbing" target="_blank" rel="external nofollow noopener noreferrer">glob 表达式</a> 来匹配路径。</td>
+<td>跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 <code>public</code> 目录中。您可使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/micromatch/micromatch#extended-globbing">glob 表达式</a> 来匹配路径。</td>
 <td></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>例如：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">skip_render:</span> <span class="string">&quot;mypage/**/*&quot;</span></span><br><span class="line"><span class="comment"># 将会直接将 `source/mypage/index.html` 和 `source/mypage/code.js` 不做改动地输出到 &#x27;public&#x27; 目录</span></span><br><span class="line"><span class="comment"># 你也可以用这种方法来跳过对指定文章文件的渲染</span></span><br><span class="line"><span class="attr">skip_render:</span> <span class="string">&quot;_posts/test-post.md&quot;</span></span><br><span class="line"><span class="comment"># 这将会忽略对 &#x27;test-post.md&#x27; 的渲染</span></span><br></pre></td></tr></table></figure>
-
 <div class="note info"><p><strong>提示</strong></p><p>如果您刚刚开始接触 Hexo，通常没有必要修改这一部分的值。</p></div>
-
-<h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><table>
+<h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>参数</th>
@@ -763,7 +766,8 @@
 <th>默认值</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>new_post_name</code></td>
 <td>新文章的文件名称</td>
 <td>:title.md</td>
@@ -815,7 +819,7 @@
 </tr>
 <tr>
 <td><code>post_asset_folder</code></td>
-<td>启动 <a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="external nofollow noopener noreferrer">Asset 文件夹</a></td>
+<td>启动 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/zh-cn/docs/asset-folders.html">Asset 文件夹</a></td>
 <td>false</td>
 </tr>
 <tr>
@@ -830,18 +834,20 @@
 </tr>
 <tr>
 <td><code>highlight</code></td>
-<td>代码块的设置, see <a href="https://hexo.io/zh-cn/docs/syntax-highlight#Highlight-js" target="_blank" rel="external nofollow noopener noreferrer">Highlight.js</a> section for usage guide</td>
+<td>代码块的设置, see <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/zh-cn/docs/syntax-highlight#Highlight-js">Highlight.js</a> section for usage guide</td>
 <td></td>
 </tr>
 <tr>
 <td><code>prismjs</code></td>
-<td>代码块的设置, see <a href="https://hexo.io/zh-cn/docs/syntax-highlight#PrismJS" target="_blank" rel="external nofollow noopener noreferrer">PrismJS</a> section for usage guide</td>
+<td>代码块的设置, see <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/zh-cn/docs/syntax-highlight#PrismJS">PrismJS</a> section for usage guide</td>
 <td></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <div class="note info"><p><strong>相对地址</strong></p><p>默认情况下，Hexo 生成的超链接都是绝对地址。例如，如果您的网站域名为 <code>example.com</code>,您有一篇文章名为 <code>hello</code>，那么绝对链接可能像这样：<code>http://example.com/hello.html</code>，它是<strong>绝对</strong>于域名的。相对链接像这样：<code>/hello.html</code>，也就是说，无论用什么域名访问该站点，都没有关系，这在进行反向代理时可能用到。通常情况下，建议使用绝对地址。</p></div>
-
-<h2 id="分类-amp-标签"><a href="#分类-amp-标签" class="headerlink" title="分类 &amp; 标签"></a>分类 &amp; 标签</h2><table>
+<h2 id="分类-amp-标签"><a href="#分类-amp-标签" class="headerlink" title="分类 &amp; 标签"></a>分类 &amp; 标签</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>参数</th>
@@ -849,7 +855,8 @@
 <th>默认值</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>default_category</code></td>
 <td>默认分类</td>
 <td><code>uncategorized</code></td>
@@ -864,8 +871,11 @@
 <td>标签别名</td>
 <td></td>
 </tr>
-</tbody></table>
-<h2 id="日期-时间格式"><a href="#日期-时间格式" class="headerlink" title="日期 / 时间格式"></a>日期 / 时间格式</h2><p>Hexo 使用 <a href="http://momentjs.com/" target="_blank" rel="external nofollow noopener noreferrer">Moment.js</a> 来解析和显示时间。</p>
+</tbody>
+</table>
+</div>
+<h2 id="日期-时间格式"><a href="#日期-时间格式" class="headerlink" title="日期 / 时间格式"></a>日期 / 时间格式</h2><p>Hexo 使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="http://momentjs.com/">Moment.js</a> 来解析和显示时间。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -874,7 +884,8 @@
 <th>默认值</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>date_format</code></td>
 <td>日期格式</td>
 <td><code>YYYY-MM-DD</code></td>
@@ -886,14 +897,16 @@
 </tr>
 <tr>
 <td><code>updated_option</code></td>
-<td>当 Front Matter 中没有指定 <a href="https://hexo.io/zh-cn/docs/variables#%E9%A1%B5%E9%9D%A2%E5%8F%98%E9%87%8F" target="_blank" rel="external nofollow noopener noreferrer">updated</a> 时 <code>updated</code> 的取值</td>
+<td>当 Front Matter 中没有指定 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/zh-cn/docs/variables#页面变量">updated</a> 时 <code>updated</code> 的取值</td>
 <td><code>mtime</code></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <div class="note info"><p><strong>updated_option</strong></p><p><code>updated_option</code> 控制了当 Front Matter 中没有指定 <code>updated</code> 时，<code>updated</code> 如何取值：</p><ul><li><code>mtime</code>: 使用文件的最后修改时间。这是从 Hexo 3.0.0 开始的默认行为。</li><li><code>date</code>: 使用 <code>date</code> 作为 <code>updated</code> 的值。可被用于 Git 工作流之中，因为使用 Git 管理站点时，文件的最后修改日期常常会发生改变</li><li><code>empty</code>: 直接删除 <code>updated</code>。使用这一选项可能会导致大部分主题和插件无法正常工作。</li></ul><p><code>use_date_for_updated</code> 选项已经被废弃，将会在下个重大版本发布时去除。请改为使用 <code>updated_option: &#39;date&#39;</code>。</p></div>
-
 <p><code>use_date_for_updated</code> | 启用以后，如果 Front Matter 中没有指定 <code>updated</code>， <a href><code>post.updated</code></a> 将会使用 <code>date</code> 的值而不是文件的创建时间。在 Git 工作流中这个选项会很有用 | <code>true</code>  </p>
-<h2 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h2><table>
+<h2 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>参数</th>
@@ -901,7 +914,8 @@
 <th>默认值</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>per_page</code></td>
 <td>每页显示的文章量 (0 = 关闭分页功能)</td>
 <td><code>10</code></td>
@@ -911,15 +925,19 @@
 <td>分页目录</td>
 <td><code>page</code></td>
 </tr>
-</tbody></table>
-<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><table>
+</tbody>
+</table>
+</div>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>参数</th>
 <th>描述</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>theme</code></td>
 <td>当前主题名称。值为<code>false</code>时禁用主题</td>
 </tr>
@@ -933,11 +951,14 @@
 </tr>
 <tr>
 <td><code>meta_generator</code></td>
-<td><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta#%E5%B1%9E%E6%80%A7" target="_blank" rel="external nofollow noopener noreferrer">Meta generator</a> 标签。 值为 <code>false</code> 时 Hexo 不会在头部插入该标签</td>
+<td><a target="_blank" rel="external nofollow noopener noreferrer" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta#%E5%B1%9E%E6%80%A7">Meta generator</a> 标签。 值为 <code>false</code> 时 Hexo 不会在头部插入该标签</td>
 </tr>
-</tbody></table>
-<h3 id="包括或不包括目录和文件"><a href="#包括或不包括目录和文件" class="headerlink" title="包括或不包括目录和文件"></a>包括或不包括目录和文件</h3><p>在 Hexo 配置文件中，通过设置 include/exclude 可以让 Hexo 进行处理或忽略某些目录和文件夹。你可以使用 <a href="https://github.com/isaacs/minimatch" target="_blank" rel="external nofollow noopener noreferrer">glob 表达式</a> 对目录和文件进行匹配。</p>
+</tbody>
+</table>
+</div>
+<h3 id="包括或不包括目录和文件"><a href="#包括或不包括目录和文件" class="headerlink" title="包括或不包括目录和文件"></a>包括或不包括目录和文件</h3><p>在 Hexo 配置文件中，通过设置 include/exclude 可以让 Hexo 进行处理或忽略某些目录和文件夹。你可以使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/isaacs/minimatch">glob 表达式</a> 对目录和文件进行匹配。</p>
 <p><code>include</code> and <code>exclude</code> options only apply to the <code>source/</code> folder, whereas <code>ignore</code> option applies to all folders.</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -945,7 +966,8 @@
 <th>描述</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>include</code></td>
 <td>Hexo 默认会忽略隐藏文件和文件夹（包括名称以下划线和 <code>.</code> 开头的文件和文件夹，Hexo 的 <code>_posts</code> 和 <code>_data</code> 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 <code>source</code> 目录下。</td>
 </tr>
@@ -957,19 +979,18 @@
 <td><code>ignore</code></td>
 <td>Ignore files/folders</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>举例：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Include/Exclude Files/Folders</span></span><br><span class="line"><span class="attr">include:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&quot;.nojekyll&quot;</span></span><br><span class="line">  <span class="comment"># 包括 &#x27;source/css/_typing.css&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&quot;css/_typing.css&quot;</span></span><br><span class="line">  <span class="comment"># 包括 &#x27;source/_css/&#x27; 中的任何文件，但不包括子目录及其其中的文件。</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&quot;_css/*&quot;</span></span><br><span class="line">  <span class="comment"># 包含 &#x27;source/_css/&#x27; 中的任何文件和子目录下的任何文件</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&quot;_css/**/*&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">exclude:</span></span><br><span class="line">  <span class="comment"># 不包括 &#x27;source/js/test.js&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&quot;js/test.js&quot;</span></span><br><span class="line">  <span class="comment"># 不包括 &#x27;source/js/&#x27; 中的文件、但包括子目录下的所有目录和文件</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&quot;js/*&quot;</span></span><br><span class="line">  <span class="comment"># 不包括 &#x27;source/js/&#x27; 中的文件和子目录下的任何文件</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&quot;js/**/*&quot;</span></span><br><span class="line">  <span class="comment"># 不包括 &#x27;source/js/&#x27; 目录下的所有文件名以 &#x27;test&#x27; 开头的文件，但包括其它文件和子目录下的单文件</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&quot;js/test*&quot;</span></span><br><span class="line">  <span class="comment"># 不包括 &#x27;source/js/&#x27; 及其子目录中任何以 &#x27;test&#x27; 开头的文件</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&quot;js/**/test*&quot;</span></span><br><span class="line">  <span class="comment"># 不要用 exclude 来忽略 &#x27;source/_posts/&#x27; 中的文件。你应该使用 &#x27;skip_render&#x27;，或者在要忽略的文件的文件名之前加一个下划线 &#x27;_&#x27;</span></span><br><span class="line">  <span class="comment"># 在这里配置一个 - &quot;_posts/hello-world.md&quot; 是没有用的。</span></span><br><span class="line"></span><br><span class="line"><span class="attr">ignore:</span></span><br><span class="line">  <span class="comment"># Ignore any folder named &#x27;foo&#x27;.</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&quot;**/foo&quot;</span></span><br><span class="line">  <span class="comment"># Ignore &#x27;foo&#x27; folder in &#x27;themes/&#x27; only.</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&quot;**/themes/*/foo&quot;</span></span><br><span class="line">  <span class="comment"># Same as above, but applies to every subfolders of &#x27;themes/&#x27;.</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&quot;**/themes/**/foo&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>列表中的每一项都必须用单引号或双引号包裹起来。</p>
 <p><code>include</code> 和 <code>exclude</code> 并不适用于 <code>themes/</code> 目录下的文件。如果需要忽略 <code>themes/</code> 目录下的部分文件或文件夹，可以使用 <code>ignore</code> 或在文件名之前添加下划线 <code>_</code>。</p>
 <h3 id="使用代替配置文件"><a href="#使用代替配置文件" class="headerlink" title="使用代替配置文件"></a>使用代替配置文件</h3><p>可以在 hexo-cli 中使用 <code>--config</code> 参数来指定自定义配置文件的路径。你可以使用一个 YAML 或 JSON 文件的路径，也可以使用逗号分隔（无空格）的多个 YAML 或 JSON 文件的路径。例如：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># use &#x27;custom.yml&#x27; in place of &#x27;_config.yml&#x27;</span></span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"><span class="comment"># use &#x27;custom.yml&#x27; &amp; &#x27;custom2.json&#x27;, prioritizing &#x27;custom3.yml&#x27;, then &#x27;custom2.json&#x27;</span></span><br><span class="line">$ hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
-
 <p>当你指定了多个配置文件以后，Hexo 会按顺序将这部分配置文件合并成一个 <code>_multiconfig.yml</code>。如果遇到重复的配置，排在后面的文件的配置会覆盖排在前面的文件的配置。这个原则适用于任意数量、任意深度的 YAML 和 JSON 文件。</p>
 <p>例如，使用 <code>--options</code> 指定了两个自定义配置文件：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo generate --config custom.yml,custom2.json</span><br></pre></td></tr></table></figure>
-
 <p>如果 <code>custom.yml</code> 中指定了 <code>foo: bar</code>，在 custom2.json 中指定了 <code>&quot;foo&quot;: &quot;dinosaur&quot;</code>，那么在 <code>_multiconfig.yml</code> 中你会得到 <code>foo: dinosaur</code>。</p>
 <h3 id="使用代替主题配置文件"><a href="#使用代替主题配置文件" class="headerlink" title="使用代替主题配置文件"></a>使用代替主题配置文件</h3><p>通常情况下，Hexo 主题是一个独立的项目，并拥有一个独立的 <code>_config.yml</code> 配置文件。</p>
 <p>除了自行维护独立的主题配置文件，你也可以在其它地方对主题进行配置。</p>
@@ -978,26 +999,19 @@
 <p>该特性自 Hexo 2.8.2 起提供</p>
 </blockquote>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># _config.yml</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">&quot;my-theme&quot;</span></span><br><span class="line"><span class="attr">theme_config:</span></span><br><span class="line">  <span class="attr">bio:</span> <span class="string">&quot;My awesome bio&quot;</span></span><br><span class="line">  <span class="attr">foo:</span></span><br><span class="line">    <span class="attr">bar:</span> <span class="string">&#x27;a&#x27;</span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># themes/my-theme/_config.yml</span></span><br><span class="line"><span class="attr">bio:</span> <span class="string">&quot;Some generic bio&quot;</span></span><br><span class="line"><span class="attr">logo:</span> <span class="string">&quot;a-cool-image.png&quot;</span></span><br><span class="line">  <span class="attr">foo:</span></span><br><span class="line">    <span class="attr">baz:</span> <span class="string">&#x27;b&#x27;</span></span><br></pre></td></tr></table></figure>
-
 <p>最终主题配置的输出是：</p>
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  bio: &quot;My awesome bio&quot;,</span><br><span class="line">  logo: &quot;a-cool-image.png&quot;,</span><br><span class="line">  foo: &#123;</span><br><span class="line">    bar: &quot;a&quot;,</span><br><span class="line">    baz: &quot;b&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p><strong>独立的 <code>_config.[theme].yml</code> 文件</strong></p>
 <blockquote>
 <p>该特性自 Hexo 5.0.0 起提供</p>
 </blockquote>
 <p>独立的主题配置文件应放置于站点根目录下，支持 <code>yml</code> 或 <code>json</code> 格式。需要配置站点 <code>_config.yml</code> 文件中的 <code>theme</code> 以供 Hexo 寻找 <code>_config.[theme].yml</code> 文件。</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># _config.yml</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">&quot;my-theme&quot;</span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># _config.my-theme.yml</span></span><br><span class="line"><span class="attr">bio:</span> <span class="string">&quot;My awesome bio&quot;</span></span><br><span class="line"><span class="attr">foo:</span></span><br><span class="line">  <span class="attr">bar:</span> <span class="string">&#x27;a&#x27;</span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># themes/my-theme/_config.yml</span></span><br><span class="line"><span class="attr">bio:</span> <span class="string">&quot;Some generic bio&quot;</span></span><br><span class="line"><span class="attr">logo:</span> <span class="string">&quot;a-cool-image.png&quot;</span></span><br><span class="line">  <span class="attr">foo:</span></span><br><span class="line">    <span class="attr">baz:</span> <span class="string">&#x27;b&#x27;</span></span><br></pre></td></tr></table></figure>
-
 <p>最终主题配置的输出是：</p>
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  bio: &quot;My awesome bio&quot;,</span><br><span class="line">  logo: &quot;a-cool-image.png&quot;,</span><br><span class="line">  foo: &#123;</span><br><span class="line">    bar: &quot;a&quot;,</span><br><span class="line">    baz: &quot;b&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <div class="note "><p>我们强烈建议你将所有的主题配置集中在一处。如果你不得不在多处配置你的主题，那么这些信息对你将会非常有用：Hexo 在合并主题配置时，Hexo 配置文件中的 <code>theme_config</code> 的优先级最高，其次是 <code>_config.[theme].yml</code> 文件，最后是位于主题目录下的 <code>_config.yml</code> 文件。</p></div>
 
   
@@ -1458,20 +1472,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2672,5 +2686,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

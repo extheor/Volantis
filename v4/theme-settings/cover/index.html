@@ -604,39 +604,38 @@
 
   
   <h2 id="封面高度"><a href="#封面高度" class="headerlink" title="封面高度"></a>封面高度</h2><figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">cover:</span></span><br><span class="line">  <span class="attr">height_scheme:</span> <span class="string">full</span> <span class="comment"># full, half</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure>
-
 <p>目前主题提供两种首页封面高度方案，其它页面均为半屏幕高度。</p>
 <h2 id="封面布局方案"><a href="#封面布局方案" class="headerlink" title="封面布局方案"></a>封面布局方案</h2><figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">cover:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="attr">scheme:</span> <span class="string">dock</span> <span class="comment"># search (搜索), dock (坞), featured (精选), focus (焦点)</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure>
-
-<div class="table"><table>
+<div class="table"><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="left">布局方案</th>
-<th align="left">适合场景</th>
+<th style="text-align:left">布局方案</th>
+<th style="text-align:left">适合场景</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">search</td>
-<td align="left">注重搜索</td>
+<tbody>
+<tr>
+<td style="text-align:left">search</td>
+<td style="text-align:left">注重搜索</td>
 </tr>
 <tr>
-<td align="left">dock</td>
-<td align="left">入口选项比较多</td>
+<td style="text-align:left">dock</td>
+<td style="text-align:left">入口选项比较多</td>
 </tr>
 <tr>
-<td align="left">featured</td>
-<td align="left">选项在4个左右</td>
+<td style="text-align:left">featured</td>
+<td style="text-align:left">选项在4个左右</td>
 </tr>
 <tr>
-<td align="left">focus</td>
-<td align="left">选项在4个左右</td>
+<td style="text-align:left">focus</td>
+<td style="text-align:left">选项在4个左右</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 </div>
-
-
+</div>
 <h2 id="默认显示设置"><a href="#默认显示设置" class="headerlink" title="默认显示设置"></a>默认显示设置</h2><figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">cover:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="attr">display:</span></span><br><span class="line">    <span class="attr">home:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">archive:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">others:</span> <span class="literal">false</span> <span class="comment"># can be written in front-matter &#x27;cover: true&#x27;</span></span><br></pre></td></tr></table></figure>
-
 <p>由于主页、归档是 hexo 自动生成的，您需要在主题配置文件中设置是否显示封面，而其它页面则可以在 <code>front-matter</code> 中通过设置 <code>cover: true/false</code> 来决定显示封面或者不显示封面。</p>
 
   
@@ -1043,20 +1042,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2257,5 +2256,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

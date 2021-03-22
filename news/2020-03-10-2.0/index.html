@@ -625,13 +625,9 @@ npm install hexo-renderer-s...">
 </li>
 <li><p>安装 <code>stylus</code></p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure>
-
-
 </li>
 </ol>
-<a id="more"></a>
-
-
+<span id="more"></span>
 <h2 id="新功能"><a href="#新功能" class="headerlink" title="新功能"></a>新功能</h2><h3 id="导航栏"><a href="#导航栏" class="headerlink" title="导航栏"></a>导航栏</h3><p>导航栏获得了史诗级的增强，可以设置<u><strong>N级</strong></u>子菜单。考虑到实用性，不太建议使用过多或者过深的菜单（超出屏幕的部分无法被看到）。</p>
 <h3 id="样式设置"><a href="#样式设置" class="headerlink" title="样式设置"></a>样式设置</h3><p>现在可以在主题配置文件中设置更多的样式：</p>
 <ul>
@@ -691,8 +687,6 @@ npm uninstall hexo-renderer-less --save
 安装 stylus
 npm install hexo-renderer-stylus --save
 
-
-
 ">
           
             <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,666">
@@ -709,8 +703,6 @@ npm uninstall hexo-renderer-less --save
 安装 stylus
 npm install hexo-renderer-stylus --save
 
-
-
 ">
           
             <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,666">
@@ -726,8 +718,6 @@ npm uninstall hexo-renderer-less --save
 
 安装 stylus
 npm install hexo-renderer-stylus --save
-
-
 
 ">
           
@@ -769,13 +759,11 @@ npm install hexo-renderer-stylus --save
           <p class="title">新版本「2.0」测试版发布<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
           <p class="content"> Beta6 
               
-               导航栏N级菜单支持分割线和小标题，详见我的个人博客。
+              [x] 导航栏N级菜单支持分割线和小标题，详见我的个人博客。
               
             
 
-
-
- ...</p>
+...</p>
         </a>
       
     </div>
@@ -914,20 +902,20 @@ npm install hexo-renderer-stylus --save
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2128,5 +2116,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

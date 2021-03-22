@@ -603,9 +603,7 @@
 
 
   
-  <p>您可以自由决定每个页面是否显示侧边栏，侧边栏显示什么小部件，正文区域显示什么卡片，文章卡片显示什么 meta 信息。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">layout:</span></span><br><span class="line">  <span class="comment"># The following can be written in `blog/source/_data/layout.yml`</span></span><br><span class="line">  <span class="comment"># 文章列表（主页、自定义的列表）布局</span></span><br><span class="line">  <span class="attr">on_list:</span></span><br><span class="line">    <span class="comment"># 列表中每一篇文章的meta信息</span></span><br><span class="line">    <span class="attr">meta:</span> [<span class="string">title</span>, <span class="string">author</span>, <span class="string">date</span>, <span class="string">category</span>, <span class="string">top</span>]</span><br><span class="line">    <span class="comment"># 列表类页面的侧边栏</span></span><br><span class="line">    <span class="attr">sidebar:</span> [<span class="string">blogger</span>, <span class="string">category</span>, <span class="string">tagcloud</span>, <span class="string">qrcode</span>]</span><br><span class="line">  <span class="comment"># 页面布局</span></span><br><span class="line">  <span class="attr">on_page:</span></span><br><span class="line">    <span class="comment"># 文章页面主体元素，你也可以在页面的Front-matter中设置</span></span><br><span class="line">    <span class="attr">body:</span> [<span class="string">article</span>, <span class="string">comments</span>]</span><br><span class="line">    <span class="comment"># 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示</span></span><br><span class="line">    <span class="comment"># 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示</span></span><br><span class="line">    <span class="comment"># 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）</span></span><br><span class="line">    <span class="attr">meta:</span></span><br><span class="line">      <span class="attr">header:</span> [<span class="string">title</span>, <span class="string">author</span>, <span class="string">category</span>, <span class="string">date</span>, <span class="string">top</span>]</span><br><span class="line">      <span class="attr">footer:</span> [<span class="string">updated</span>, <span class="string">tags</span>, <span class="string">btns</span>, <span class="string">share</span>]</span><br><span class="line">    <span class="comment"># 文章页面的侧边栏</span></span><br><span class="line">    <span class="attr">sidebar:</span> [<span class="string">qrcode</span>, <span class="string">toc</span>]</span><br><span class="line">  <span class="comment"># 文章布局，参数继承自 on_page</span></span><br><span class="line">  <span class="attr">on_post:</span></span><br><span class="line">    <span class="comment"># 文章页脚，自动在每一篇文章末尾添加</span></span><br><span class="line">    <span class="attr">article_footer:</span> [<span class="string">copyright</span>, <span class="string">donate</span>]</span><br><span class="line">  <span class="comment"># 其他的页面布局暂时等于 on_list</span></span><br></pre></td></tr></table></figure>
-<p>其中 <code>meta</code> 部分的取值自 <code>meta</code> 库， 其余部分取值自 <code>widget</code> 库， （ <code>body</code> 除了可以从 <code>widget</code> 库中取值外，还可以选择 <code>article</code> 和 <code>comments</code> ）。</p>
+  <p>您可以自由决定每个页面是否显示侧边栏，侧边栏显示什么小部件，正文区域显示什么卡片，文章卡片显示什么 meta 信息。<br><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">layout:</span></span><br><span class="line">  <span class="comment"># The following can be written in `blog/source/_data/layout.yml`</span></span><br><span class="line">  <span class="comment"># 文章列表（主页、自定义的列表）布局</span></span><br><span class="line">  <span class="attr">on_list:</span></span><br><span class="line">    <span class="comment"># 列表中每一篇文章的meta信息</span></span><br><span class="line">    <span class="attr">meta:</span> [<span class="string">title</span>, <span class="string">author</span>, <span class="string">date</span>, <span class="string">category</span>, <span class="string">top</span>]</span><br><span class="line">    <span class="comment"># 列表类页面的侧边栏</span></span><br><span class="line">    <span class="attr">sidebar:</span> [<span class="string">blogger</span>, <span class="string">category</span>, <span class="string">tagcloud</span>, <span class="string">qrcode</span>]</span><br><span class="line">  <span class="comment"># 页面布局</span></span><br><span class="line">  <span class="attr">on_page:</span></span><br><span class="line">    <span class="comment"># 文章页面主体元素，你也可以在页面的Front-matter中设置</span></span><br><span class="line">    <span class="attr">body:</span> [<span class="string">article</span>, <span class="string">comments</span>]</span><br><span class="line">    <span class="comment"># 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示</span></span><br><span class="line">    <span class="comment"># 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示</span></span><br><span class="line">    <span class="comment"># 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）</span></span><br><span class="line">    <span class="attr">meta:</span></span><br><span class="line">      <span class="attr">header:</span> [<span class="string">title</span>, <span class="string">author</span>, <span class="string">category</span>, <span class="string">date</span>, <span class="string">top</span>]</span><br><span class="line">      <span class="attr">footer:</span> [<span class="string">updated</span>, <span class="string">tags</span>, <span class="string">btns</span>, <span class="string">share</span>]</span><br><span class="line">    <span class="comment"># 文章页面的侧边栏</span></span><br><span class="line">    <span class="attr">sidebar:</span> [<span class="string">qrcode</span>, <span class="string">toc</span>]</span><br><span class="line">  <span class="comment"># 文章布局，参数继承自 on_page</span></span><br><span class="line">  <span class="attr">on_post:</span></span><br><span class="line">    <span class="comment"># 文章页脚，自动在每一篇文章末尾添加</span></span><br><span class="line">    <span class="attr">article_footer:</span> [<span class="string">copyright</span>, <span class="string">donate</span>]</span><br><span class="line">  <span class="comment"># 其他的页面布局暂时等于 on_list</span></span><br></pre></td></tr></table></figure><br>其中 <code>meta</code> 部分的取值自 <code>meta</code> 库， 其余部分取值自 <code>widget</code> 库， （ <code>body</code> 除了可以从 <code>widget</code> 库中取值外，还可以选择 <code>article</code> 和 <code>comments</code> ）。</p>
 <p>请别着急，具体的库配置将在下文详细讲解。</p>
 
   
@@ -1052,20 +1050,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2266,5 +2264,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

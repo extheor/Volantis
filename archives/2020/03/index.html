@@ -582,8 +582,6 @@
 </li>
 <li><p>安装 <code>stylus</code></p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure>
-
-
 </li>
 </ol>
     
@@ -634,7 +632,7 @@
     
       <details open><summary> Beta6 </summary>
               <div class="content">
-              <ul><li><input checked disabled type="checkbox"> 导航栏N级菜单支持分割线和小标题，详见我的个人博客。</li></ul>
+              <ul><li>[x] 导航栏N级菜单支持分割线和小标题，详见我的个人博客。</li></ul>
               </div>
             </details>
     
@@ -684,11 +682,10 @@
   <div class="md">
     
       
-        <p>5、测试Tomcat是否配置成功：打开浏览器，输入在地址栏中输入： <a href="http://localhost:8080/" target="_blank" rel="external nofollow noopener noreferrer">http://localhost:8080</a> 的运行结果如下图即为即为配置成功！（因为Tomcat已经在运行再次打开会报错）</p>
-<p>相关 Issue： <a href="https://github.com/volantis-x/hexo-theme-volantis/issues/164" target="_blank" rel="external nofollow noopener noreferrer">#164</a></p>
+        <p>5、测试Tomcat是否配置成功：打开浏览器，输入在地址栏中输入： <a target="_blank" rel="external nofollow noopener noreferrer" href="http://localhost:8080">http://localhost:8080</a> 的运行结果如下图即为即为配置成功！（因为Tomcat已经在运行再次打开会报错）</p>
+<p>相关 Issue： <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/issues/164">#164</a></p>
 <div class="note success"><p>结论：存在这篇文章的情况下能够成功 deploy ，说明这不是主题的 BUG。</p></div>
-
-<div class="note "><p><code>markdwon</code> 解析插件为 <code>hexo-renderer-marked</code> 时此插件默认会自动识别 URL ，且原文链接前后没有空格，所以链接前后增加一个空格或者在根目录配置文件中设置 <code>autolink: false</code> 都可以避免 deploy 报错。<br>插件：<a href="https://github.com/hexojs/hexo-renderer-marked" target="_blank" rel="external nofollow noopener noreferrer">hexo-renderer-marked</a></p></div>
+<div class="note "><p><code>markdwon</code> 解析插件为 <code>hexo-renderer-marked</code> 时此插件默认会自动识别 URL ，且原文链接前后没有空格，所以链接前后增加一个空格或者在根目录配置文件中设置 <code>autolink: false</code> 都可以避免 deploy 报错。<br>插件：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a></p></div>
 
       
     
@@ -762,6 +759,8 @@
 
     <div class="content">
       <ul class="entry navigation">
+        
+          <li><a class="flat-box" title="/volantis/categories/regression-case-study/" href="/volantis/categories/regression-case-study/" id="volantiscategoriesregression-case-study"><div class="name">Regression - Case Study</div><div class="badge">(1)</div></a></li>
         
           <li><a class="flat-box" title="/volantis/categories/%E5%AE%98%E6%96%B9%E8%B5%84%E8%AE%AF/" href="/volantis/categories/%E5%AE%98%E6%96%B9%E8%B5%84%E8%AE%AF/" id="volantiscategoriesE5AE98E696B9E8B584E8AEAF"><div class="name">官方资讯</div><div class="badge">(10)</div></a></li>
         
@@ -896,20 +895,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2110,5 +2109,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

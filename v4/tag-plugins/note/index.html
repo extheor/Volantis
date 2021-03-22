@@ -605,14 +605,12 @@
   
   <p>NoteBlock 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。而 Note 是 NoteBlock 的简便写法。</p>
 <figure class="highlight md"><figcaption><span>最后更新于 <u>2.3</u> 版本</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% note 样式参数, 文本内容 %&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="演示效果"><a href="#演示效果" class="headerlink" title="演示效果"></a>演示效果</h2><h3 id="经典用法"><a href="#经典用法" class="headerlink" title="经典用法"></a>经典用法</h3><div class="note "><p>可以在配置文件中设置默认样式，为简单的一句话提供最的简便写法。</p></div>
 <div class="note quote"><p>note quote 适合引用一段话</p></div>
 <div class="note info"><p>note info 默认主题色，适合中性的信息</p></div>
 <div class="note warning"><p>note warning 默认黄色，适合警告性的信息</p></div>
 <div class="note danger"><p>note error/danger 默认红色，适合危险性的信息</p></div>
 <div class="note success"><p>note done/success 默认绿色，适合正确操作的信息</p></div>
-
 <h3 id="更多图标"><a href="#更多图标" class="headerlink" title="更多图标"></a>更多图标</h3><p>这些都是默认样式，可以手动加上颜色：</p>
 <div class="note radiation"><p>note radiation 默认样式</p></div>
 <div class="note radiation yellow"><p>note radiation yellow 可以加上颜色</p></div>
@@ -625,14 +623,10 @@
 <div class="note message gray"><p>note message gray 一段消息</p></div>
 <div class="note up"><p>note up 可以说明如何进行更新</p></div>
 <div class="note undo light"><p>note undo light 可以说明如何撤销或者回退</p></div>
-
 <h2 id="上述示例的源码"><a href="#上述示例的源码" class="headerlink" title="上述示例的源码"></a>上述示例的源码</h2><figure class="highlight md"><figcaption><span>example:</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="section">### 经典用法</span></span><br><span class="line"></span><br><span class="line">&#123;% note, 可以在配置文件中设置默认样式，为简单的一句话提供最的简便写法。 %&#125;</span><br><span class="line">&#123;% note quote, note quote 适合引用一段话 %&#125;</span><br><span class="line">&#123;% note info, note info 默认主题色，适合中性的信息 %&#125;</span><br><span class="line">&#123;% note warning, note warning 默认黄色，适合警告性的信息 %&#125;</span><br><span class="line">&#123;% note danger, note error/danger 默认红色，适合危险性的信息 %&#125;</span><br><span class="line">&#123;% note success, note done/success 默认绿色，适合正确操作的信息 %&#125;</span><br><span class="line"></span><br><span class="line"><span class="section">### 更多图标</span></span><br><span class="line"></span><br><span class="line">这些都是默认样式，可以手动加上颜色：</span><br><span class="line"></span><br><span class="line">&#123;% note radiation, note radiation 默认样式 %&#125;</span><br><span class="line">&#123;% note radiation yellow, note radiation yellow 可以加上颜色 %&#125;</span><br><span class="line">&#123;% note bug red, note bug red 说明还存在的一些故障 %&#125;</span><br><span class="line">&#123;% note link green, note link green 可以放置一些链接 %&#125;</span><br><span class="line">&#123;% note paperclip blue, note paperclip blue 放置一些附件链接 %&#125;</span><br><span class="line">&#123;% note todo, note todo 待办事项 %&#125;</span><br><span class="line">&#123;% note guide clear, note guide clear 可以加上一段向导 %&#125;</span><br><span class="line">&#123;% note download, note download 可以放置下载链接 %&#125;</span><br><span class="line">&#123;% note message gray, note message gray 一段消息 %&#125;</span><br><span class="line">&#123;% note up, note up 可以说明如何进行更新 %&#125;</span><br><span class="line">&#123;% note undo light, note undo light 可以说明如何撤销或者回退 %&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="可以支持的参数"><a href="#可以支持的参数" class="headerlink" title="可以支持的参数"></a>可以支持的参数</h2><p>样式参数位置可以写图标和颜色，多个样式参数用空格隔开。</p>
 <h3 id="图标"><a href="#图标" class="headerlink" title="图标"></a>图标</h3><figure class="highlight md"><figcaption><span>彩色的</span></figcaption><table><tr><td class="code"><pre><span class="line">quote, info, warning, done/success, error/danger</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight md"><figcaption><span>灰色的，也可以指定颜色</span></figcaption><table><tr><td class="code"><pre><span class="line">radiation, bug, idea, link, paperclip, todo, message, guide, download, up, undo</span><br></pre></td></tr></table></figure>
-
 <h3 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h3><figure class="highlight md"><figcaption><span>指定颜色</span></figcaption><table><tr><td class="code"><pre><span class="line">clear, light, gray, red, yellow, green, cyan, blue</span><br></pre></td></tr></table></figure>
 
   
@@ -1039,20 +1033,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2253,5 +2247,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

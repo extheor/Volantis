@@ -120,13 +120,6 @@
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/tag-plugins/p/</loc>
-        <lastmod>2020-11-13T08:51:58.887Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
         <loc>http://extheor.club/volantis/tag-plugins/radio/</loc>
         <lastmod>2020-11-13T08:51:58.887Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -135,6 +128,13 @@
     
     <url>
         <loc>http://extheor.club/volantis/tag-plugins/site/</loc>
+        <lastmod>2020-11-13T08:51:58.887Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://extheor.club/volantis/tag-plugins/p/</loc>
         <lastmod>2020-11-13T08:51:58.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -183,14 +183,14 @@
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/tag-plugins/ghcard/</loc>
+        <loc>http://extheor.club/volantis/tag-plugins/gallery/</loc>
         <lastmod>2020-11-13T08:51:58.884Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/tag-plugins/gallery/</loc>
+        <loc>http://extheor.club/volantis/tag-plugins/ghcard/</loc>
         <lastmod>2020-11-13T08:51:58.884Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -274,14 +274,14 @@
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/page-settings/front-matter/</loc>
+        <loc>http://extheor.club/volantis/page-settings/body/</loc>
         <lastmod>2020-11-13T08:51:58.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/page-settings/body/</loc>
+        <loc>http://extheor.club/volantis/page-settings/front-matter/</loc>
         <lastmod>2020-11-13T08:51:58.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

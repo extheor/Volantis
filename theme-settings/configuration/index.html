@@ -609,7 +609,7 @@
 <p></p></div><div class="body"><p>Create a new file next to the <code>_config.yml</code> file in the blog root directory: <code>_config.volantis.yml</code>, the configuration information in this file has priority over the configuration files in the theme folder.</p></div></div>
 
 <div class="timenode"><div class="meta"><p></p><p>Step 2/2: Overwrite custom configuration</p>
-<p></p></div><div class="body"><p>When you need to modify something, such as the navigation bar menu, then you need to find the relevant content in the theme configuration file and copy it into the configuration file you created:</p><figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">navbar:</span></span><br><span class="line">  <span class="attr">visiable:</span> <span class="string">auto</span> <span class="comment"># always, auto</span></span><br><span class="line">  <span class="attr">logo:</span> <span class="comment"># choose [img] or [icon + title]</span></span><br><span class="line">    <span class="attr">img:</span> <span class="string">https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png</span></span><br><span class="line">    <span class="attr">icon:</span></span><br><span class="line">    <span class="attr">title:</span></span><br><span class="line">  <span class="attr">menu:</span></span><br><span class="line">    <span class="string">-name:</span> <span class="string">blog</span></span><br><span class="line">      <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-rss</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">/</span></span><br></pre></td></tr></table></figure><div class="note idea yellow"><p><strong>hint</strong><br>For themes installed using &quot;<code>npm i hexo-theme-volantis</code>&quot;, the theme configuration file is in &quot;<code>blog/node_modules/hexo-theme-volantis/_config.yml</code>&quot;<br>The theme installed in the traditional way, the theme configuration file is in &quot;<code>blog/themes/volantis/_config.yml</code>&quot;</p></div></div></div>
+<p></p></div><div class="body"><p>When you need to modify something, such as the navigation bar menu, then you need to find the relevant content in the theme configuration file and copy it into the configuration file you created:</p><figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">navbar:</span></span><br><span class="line">  <span class="attr">visiable:</span> <span class="string">auto</span> <span class="comment"># always, auto</span></span><br><span class="line">  <span class="attr">logo:</span> <span class="comment"># choose [img] or [icon + title]</span></span><br><span class="line">    <span class="attr">img:</span> <span class="string">https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png</span></span><br><span class="line">    <span class="attr">icon:</span></span><br><span class="line">    <span class="attr">title:</span></span><br><span class="line">  <span class="attr">menu:</span></span><br><span class="line">    <span class="string">-name:</span> <span class="string">blog</span></span><br><span class="line">      <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-rss</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">/</span></span><br></pre></td></tr></table></figure><div class="note idea yellow"><p><strong>hint</strong><br>For themes installed using “<code>npm i hexo-theme-volantis</code>“, the theme configuration file is in “<code>blog/node_modules/hexo-theme-volantis/_config.yml</code>“<br>The theme installed in the traditional way, the theme configuration file is in “<code>blog/themes/volantis/_config.yml</code>“</p></div></div></div>
 </div>
   
   
@@ -1006,20 +1006,20 @@
       
     
       
-        <p>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6" target="_blank" rel="external nofollow noopener noreferrer">Volantis</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/volantis-x/volantis-docs" target="_blank" rel="external nofollow noopener noreferrer">本站源码</a>。</p>
+        <p>本站使用 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.6">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次&lt;/span&gt; <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人&lt;/span&gt;</span></span></p>
 </div>
         
       
     
       
         <div class="copyright">
-        <p><a href="https://github.com/volantis-x/" target="_blank" rel="external nofollow noopener noreferrer">Copyright © 2017-2020 码小余の文档</a></p>
+        <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/">Copyright © 2017-2020 码小余の文档</a></p>
 
         </div>
       
@@ -2220,5 +2220,20 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
