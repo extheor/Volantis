@@ -690,11 +690,11 @@ w^* =arg\ min_wL(w)</script><p>我们的目标就是找到这个使Loss最小的
 </li>
 <li><p>因此每次参数更新的大小是$\eta\frac{dL}{dw}$ ，为了满足斜率为负时w变大，斜率为正时w变小，应当使原来的w减去更新的数值，即</p>
 <script type="math/tex; mode=display">
-w^1=w^0-\eta\frac{dL}{dw}|_ {w=w^0} \tag{1} \\
-w^2=w^1-\eta\frac{dL}{dw}|_ {w=w^1} \\
-w^3=w^2-\eta\frac{dL}{dw}|_ {w=w^2} \\
-... \\
-w^{i+1}=w^i-\eta\frac{dL}{dw}|_ {w=w^i} \\
+w^1=w^0-\eta\frac{dL}{dw}|_ {w=w^0} \tag{1} \\ 
+w^2=w^1-\eta\frac{dL}{dw}|_ {w=w^1} \\ 
+w^3=w^2-\eta\frac{dL}{dw}|_ {w=w^2} \\ 
+... \\ 
+w^{i+1}=w^i-\eta\frac{dL}{dw}|_ {w=w^i} \\ 
 if(\frac{dL}{dw}|_ {w=w^i}==0)\ then\ stop;</script></li>
 </ul>
 <p>  此时对应的斜率为0，我们找到了一个极小值local minima，这就出现了一个问题，当微分为0的时候，参数就会一直卡在这个点上没有办法再更新了，因此通过gradient descent找出来的solution其实并不是最佳解global minima</p>
@@ -711,14 +711,14 @@ if(\frac{dL}{dw}|_ {w=w^i}==0)\ then\ stop;</script></li>
 <script type="math/tex; mode=display">
 w^1=w^0-\eta \frac{\partial L}{\partial w}|_ {w=w^0,b=b^0} \tag{2}
 \ \ \ \ \ \ \ \ 
-b^1=b^0-\eta \frac{\partial L}{\partial b}|_ {w=w^0,b=b^0} \\
+b^1=b^0-\eta \frac{\partial L}{\partial b}|_ {w=w^0,b=b^0} \\ 
 w^2=w^1-\eta \frac{\partial L}{\partial w}|_ {w=w^1,b=b^1}
 \ \ \ \ \ \ \ \ 
-b^2=b^1-\eta \frac{\partial L}{\partial b}|_ {w=w^1,b=b^1} \\
-... \\
+b^2=b^1-\eta \frac{\partial L}{\partial b}|_ {w=w^1,b=b^1} \\ 
+... \\ 
 w^{i+1}=w^i-\eta \frac{\partial L}{\partial w}|_ {w=w^i,b=b^i}
 \ \ \ \ \ \ \ \ 
-b^{i+1}=b^i-\eta \frac{\partial L}{\partial b}|_ {w=w^i,b=b^i} \\
+b^{i+1}=b^i-\eta \frac{\partial L}{\partial b}|_ {w=w^i,b=b^i} \\ 
 if(\frac{\partial L}{\partial w}== 0\&\&\frac{\partial L}{\partial b}== 0)\ then\ stop</script></li>
 </ul>
 <p>实际上，L 的gradient就是微积分中的那个梯度的概念，即</p>
