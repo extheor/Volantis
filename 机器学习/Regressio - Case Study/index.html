@@ -690,14 +690,14 @@ w^* =arg\ min_wL(w)</script><p>我们的目标就是找到这个使Loss最小的
 </li>
 <li><p>因此每次参数更新的大小是$\eta\frac{dL}{dw}$ ，为了满足斜率为负时w变大，斜率为正时w变小，应当使原来的w减去更新的数值，即</p>
 <script type="math/tex; mode=display">
-\begin{matrix} 
+\begin{bmatrix} 
 w^1=w^0-\eta\frac{dL}{dw}|_ {w=w^0} \tag{1} \\ 
 w^2=w^1-\eta\frac{dL}{dw}|_ {w=w^1} \\ 
 w^3=w^2-\eta\frac{dL}{dw}|_ {w=w^2} \\ 
 ... \\ 
 w^{i+1}=w^i-\eta\frac{dL}{dw}|_ {w=w^i} \\ 
 if(\frac{dL}{dw}|_ {w=w^i}==0)\ then\ stop;
-\end{matrix}</script></li>
+\end{bmatrix}</script></li>
 </ul>
 <p>  此时对应的斜率为0，我们找到了一个极小值local minima，这就出现了一个问题，当微分为0的时候，参数就会一直卡在这个点上没有办法再更新了，因此通过gradient descent找出来的solution其实并不是最佳解global minima</p>
 <p>  但幸运的是，在linear regression上，是没有local minima的，因此可以使用这个方法</p>
