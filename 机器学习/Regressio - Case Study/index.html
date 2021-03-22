@@ -690,12 +690,14 @@ w^* =arg\ min_wL(w)</script><p>我们的目标就是找到这个使Loss最小的
 </li>
 <li><p>因此每次参数更新的大小是$\eta\frac{dL}{dw}$ ，为了满足斜率为负时w变大，斜率为正时w变小，应当使原来的w减去更新的数值，即</p>
 <script type="math/tex; mode=display">
+\begin{bmatrix}
 w^1=w^0-\eta\frac{dL}{dw}|_ {w=w^0} \tag{1} \\ 
 w^2=w^1-\eta\frac{dL}{dw}|_ {w=w^1} \\ 
 w^3=w^2-\eta\frac{dL}{dw}|_ {w=w^2} \\ 
 ... \\ 
 w^{i+1}=w^i-\eta\frac{dL}{dw}|_ {w=w^i} \\ 
-if(\frac{dL}{dw}|_ {w=w^i}==0)\ then\ stop;</script></li>
+if(\frac{dL}{dw}|_ {w=w^i}==0)\ then\ stop;
+\end{bmatrix}</script></li>
 </ul>
 <p>  此时对应的斜率为0，我们找到了一个极小值local minima，这就出现了一个问题，当微分为0的时候，参数就会一直卡在这个点上没有办法再更新了，因此通过gradient descent找出来的solution其实并不是最佳解global minima</p>
 <p>  但幸运的是，在linear regression上，是没有local minima的，因此可以使用这个方法</p>
@@ -723,8 +725,7 @@ if(\frac{\partial L}{\partial w}== 0\&\&\frac{\partial L}{\partial b}== 0)\ then
 </ul>
 <p>实际上，L 的gradient就是微积分中的那个梯度的概念，即</p>
 <script type="math/tex; mode=display">
-\nabla L=\begin{bmatrix}\frac{\partial L}{\partial w} \tag{3} \\ \frac{\partial L}{\partial b}\end{bmatrix}_ {gradient}</script><script type="math/tex; mode=display">
-\nabla L=\frac{\partial L}{\partial w} \tag{3} \\ \frac{\partial L}{\partial b}</script><p>可视化效果如下：(三维坐标显示在二维图像中，loss的值用颜色来表示)</p>
+\nabla L=\begin{bmatrix}\frac{\partial L}{\partial w} \tag{3} \\ \frac{\partial L}{\partial b}\end{bmatrix}_ {gradient}</script><p>可视化效果如下：(三维坐标显示在二维图像中，loss的值用颜色来表示)</p>
 <p>横坐标是b，纵坐标是w，颜色代表loss的值，越偏蓝色表示loss越小，越偏红色表示loss越大</p>
 <p><strong>每次计算得到的梯度gradient，即由</strong>$\frac{\partial L}{\partial b}$<strong>和</strong>$\frac{\partial L}{\partial w}$<strong>组成的vector向量，就是该等高线的法线方向(对应图中红色箭头的方向)；而</strong>$(-\eta \frac{\partial L}{\partial b},-\eta \frac{\partial L}{\partial w})$<strong>的作用就是让原先的</strong>$(w^i,b^i)$<strong>朝着gradient的方向即等高线法线方向前进，其中η(learning rate)的作用是每次更新的跨度(对应图中红色箭头的长度)；经过多次迭代，最终gradient达到极小值点</strong></p>
 <p>注：这里两个方向的η(learning rate)必须保持一致，这样每次更新坐标的step size是等比例缩放的，保证坐标前进的方向始终和梯度下降的方向一致；否则坐标前进的方向将会发生偏移</p>
