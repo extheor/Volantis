@@ -672,9 +672,9 @@ w^* ,b^* =arg\ min_ {w,b}\ L(w,b)=arg\ min_ {w,b}\ \sum_ {n=1}^{10}(y^n-(b+w* x^
 <h5 id="单个参数的问题"><a href="#单个参数的问题" class="headerlink" title="单个参数的问题"></a>单个参数的问题</h5><p>以只带单个参数w的Loss Function <code>L(w)</code>为例，首先保证是$L(w)$<strong>可微</strong>的  </p>
 <script type="math/tex; mode=display">
 w^* =arg\ min_wL(w)</script><p>我们的目标就是找到这个使Loss最小的$w^* $，实际上就是寻找切线L斜率为0的global minima最小值点(注意，存在一些local minima极小值点，其斜率也是0)</p>
-<p>有一个暴力的方法是，穷举所有的w值，去找到使loss最小的$w^* $，但是这样做是没有效率的；而gradient descent就是用来解决这个效率问题的</p>
+<p>有一个暴力的方法是，穷举所有的w值，去找到使loss最小的<script type="math/tex">w^*</script>，但是这样做是没有效率的；而gradient descent就是用来解决这个效率问题的</p>
 <ul>
-<li><p>首先随机选取一个初始的点$w^0$ (当然也不一定要随机选取，如果有办法可以得到比较接近$w^<em>$的表现得比较好的$w^0$当初始点，可以有效地提高查找$w^</em> $的效率)</p>
+<li><p>首先随机选取一个初始的点<script type="math/tex">w^0</script> (当然也不一定要随机选取，如果有办法可以得到比较接近$w^<em>$的表现得比较好的$w^0$当初始点，可以有效地提高查找$$w^</em> $$的效率)</p>
 </li>
 <li><p>计算在$w=w^0$的位置的微分，即$\frac{dL}{dw}|_{w=w^0}$，几何意义就是切线的斜率</p>
 </li>
@@ -702,8 +702,9 @@ if(\frac{dL}{dw}|_ {w=w^i}==0)\ then\ stop;
 <p>  此时对应的斜率为0，我们找到了一个极小值local minima，这就出现了一个问题，当微分为0的时候，参数就会一直卡在这个点上没有办法再更新了，因此通过gradient descent找出来的solution其实并不是最佳解global minima</p>
 <p>  但幸运的是，在linear regression上，是没有local minima的，因此可以使用这个方法</p>
 <p>  <img src="https://gitee.com/Sakura-gh/ML-notes/raw/master/img/gradient-descent.png" class="lazyload" data-srcset="https://gitee.com/Sakura-gh/ML-notes/raw/master/img/gradient-descent.png" srcset="data:image/png;base64,666" alt="gradient-descent"></p>
-<h5 id="两个参数的问题"><a href="#两个参数的问题" class="headerlink" title="两个参数的问题"></a>两个参数的问题</h5><p>今天要解决的关于宝可梦的问题，是含有two parameters的问题，即$(w^<em> ,b^</em> )=arg min_ {w,b}L(w,b)$</p>
-<p>当然，它本质上处理单个参数的问题是一样的</p>
+<h5 id="两个参数的问题"><a href="#两个参数的问题" class="headerlink" title="两个参数的问题"></a>两个参数的问题</h5><p>今天要解决的关于宝可梦的问题，是含有two parameters的问题，即</p>
+<script type="math/tex; mode=display">
+(w^* ,b^* )=arg\ min_ {w,b}L(w,b)</script><p>当然，它本质上处理单个参数的问题是一样的</p>
 <ul>
 <li><p>首先，也是随机选取两个初始值，$w^0$和$b^0$</p>
 </li>

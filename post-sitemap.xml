@@ -72,6 +72,14 @@
     </url>
 
     <url>
+        <loc>http://extheor.club/volantis/test/hello-world/</loc>
+        <lastmod>2020-11-13T08:51:58.869Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://extheor.club/volantis/test/gallery-post/</loc>
         <lastmod>2020-11-13T08:51:58.869Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -104,7 +112,7 @@
     </url>
 
     <url>
-        <loc>http://extheor.club/volantis/test/hello-world/</loc>
+        <loc>http://extheor.club/volantis/test/images/</loc>
         <lastmod>2020-11-13T08:51:58.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -121,14 +129,6 @@
 
     <url>
         <loc>http://extheor.club/volantis/test/link-post/</loc>
-        <lastmod>2020-11-13T08:51:58.869Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://extheor.club/volantis/test/images/</loc>
         <lastmod>2020-11-13T08:51:58.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -160,7 +160,7 @@
     </url>
 
     <url>
-        <loc>http://extheor.club/volantis/news/2020-03-10-2.0/</loc>
+        <loc>http://extheor.club/volantis/news/2020-03-06-2.0-beta/</loc>
         <lastmod>2020-11-13T08:51:58.867Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -168,7 +168,7 @@
     </url>
 
     <url>
-        <loc>http://extheor.club/volantis/news/2020-03-06-2.0-beta/</loc>
+        <loc>http://extheor.club/volantis/news/2020-03-10-2.0/</loc>
         <lastmod>2020-11-13T08:51:58.867Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -192,7 +192,7 @@
     </url>
 
     <url>
-        <loc>http://extheor.club/volantis/news/2020-02-21/</loc>
+        <loc>http://extheor.club/volantis/news/2020-02-22/</loc>
         <lastmod>2020-11-13T08:51:58.866Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -200,7 +200,7 @@
     </url>
 
     <url>
-        <loc>http://extheor.club/volantis/news/2020-02-22/</loc>
+        <loc>http://extheor.club/volantis/news/2020-02-21/</loc>
         <lastmod>2020-11-13T08:51:58.866Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
