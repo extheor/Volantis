@@ -712,6 +712,7 @@ if(\frac{dL}{dw}|_ {w=w^i}==0)\ then\ stop;
 </li>
 <li><p>更新参数，当迭代跳出时，$(w^i,b^i)$对应着极小值点</p>
 <script type="math/tex; mode=display">
+\begin{matrix}
 w^1=w^0-\eta \frac{\partial L}{\partial w}|_ {w=w^0,b=b^0} \tag{2}
 \ \ \ \ \ \ \ \ 
 b^1=b^0-\eta \frac{\partial L}{\partial b}|_ {w=w^0,b=b^0} \\ 
@@ -722,7 +723,8 @@ b^2=b^1-\eta \frac{\partial L}{\partial b}|_ {w=w^1,b=b^1} \\
 w^{i+1}=w^i-\eta \frac{\partial L}{\partial w}|_ {w=w^i,b=b^i}
 \ \ \ \ \ \ \ \ 
 b^{i+1}=b^i-\eta \frac{\partial L}{\partial b}|_ {w=w^i,b=b^i} \\ 
-if(\frac{\partial L}{\partial w}== 0\&\&\frac{\partial L}{\partial b}== 0)\ then\ stop</script></li>
+if(\frac{\partial L}{\partial w}== 0\&\&\frac{\partial L}{\partial b}== 0)\ then\ stop
+\end{matrix}</script></li>
 </ul>
 <p>实际上，L 的gradient就是微积分中的那个梯度的概念，即</p>
 <script type="math/tex; mode=display">
@@ -737,9 +739,11 @@ if(\frac{\partial L}{\partial w}== 0\&\&\frac{\partial L}{\partial b}== 0)\ then
 <p>但是！在<font style="background: yellow;">linear regression</font>里，loss function实际上是<strong>convex</strong>的，是一个<strong>凸函数</strong>，是没有local optimal局部最优解的，他只有一个global minima，visualize出来的图像就是从里到外一圈一圈包围起来的椭圆形的等高线(就像前面的等高线图)，因此随便选一个起始点，根据gradient descent最终找出来的，都会是同一组参数</p>
 <h4 id="回到pokemon的问题上来"><a href="#回到pokemon的问题上来" class="headerlink" title="回到pokemon的问题上来"></a>回到pokemon的问题上来</h4><h5 id="偏微分的计算"><a href="#偏微分的计算" class="headerlink" title="偏微分的计算"></a>偏微分的计算</h5><p>现在我们来求具体的L对w和b的偏微分</p>
 <script type="math/tex; mode=display">
+\begin{matrix}
 L(w,b)=\sum^{10}_ {n=1}(\hat{y}^n-(b+w*x^n_ {cp}))^2 \tag{4} \\
 \frac{\partial L}{\partial w}=\sum_ {n=1}^{10}2(\hat{y}^n-(b+w*x^n_ {cp}))(-x_ {cp}^n) \\
-\frac{\partial L}{\partial b}=\sum_ {n=1}^{10}2(\hat{y}^n-(b+w*x^n_ {cp}))(-1)</script><h5 id="How’s-the-results"><a href="#How’s-the-results" class="headerlink" title="How’s the results?"></a>How’s the results?</h5><p>根据gradient descent，我们得到的$y=b+w*x_{cp}$中最好的参数是b=-188.4, w=2.7</p>
+\frac{\partial L}{\partial b}=\sum_ {n=1}^{10}2(\hat{y}^n-(b+w*x^n_ {cp}))(-1)
+\end{matrix}</script><h5 id="How’s-the-results"><a href="#How’s-the-results" class="headerlink" title="How’s the results?"></a>How’s the results?</h5><p>根据gradient descent，我们得到的$y=b+w*x_{cp}$中最好的参数是b=-188.4, w=2.7</p>
 <p>我们需要有一套评估系统来评价我们得到的最后这个function和实际值的误差error的大小；这里我们将training data里每一只宝可梦 $i$ 进化后的实际cp值与预测值之差的绝对值叫做$e^i$，而这些误差之和Average Error on Training Data为$\sum_{i=1}^{10}e^i=31.9$</p>
 <blockquote>
 <p>What we really care about is the error on new data (testing data)</p>
@@ -762,21 +766,25 @@ L(w,b)=\sum^{10}_ {n=1}(\hat{y}^n-(b+w*x^n_ {cp}))^2 \tag{4} \\
 <p><img src="https://gitee.com/Sakura-gh/ML-notes/raw/master/img/hidden-factors.png" class="lazyload" data-srcset="https://gitee.com/Sakura-gh/ML-notes/raw/master/img/hidden-factors.png" srcset="data:image/png;base64,666" alt="hidden-factors"></p>
 <p>因此我们重新设计model：</p>
 <script type="math/tex; mode=display">
+\begin{matrix}
 if\ x_ s=Pidgey:\ \ \ \ \ \ \ y=b_ 1+w_ 1*x_ {cp} \tag{5} \\
 if\ x_ s=Weedle:\ \ \ \ \ \ y=b_ 2+w_ 2*x_ {cp} \\
 if\ x_ s=Caterpie:\ \ \ \ y=b_ 3+w_ 3*x_ {cp} \\
-if\ x_ s=Eevee:\ \ \ \ \ \ \ \ \ y=b_ 4+w_ 4*x_ {cp}</script><p>也就是根据不同的物种，设计不同的linear model(这里$x_ s=species of x$)，那如何将上面的四个if语句合并成一个linear model呢？</p>
+if\ x_ s=Eevee:\ \ \ \ \ \ \ \ \ y=b_ 4+w_ 4*x_ {cp}
+\end{matrix}</script><p>也就是根据不同的物种，设计不同的linear model(这里$x_ s=species of x$)，那如何将上面的四个if语句合并成一个linear model呢？</p>
 <p>这里引入$\delta$条件表达式的概念，当条件表达式为true，则δ为1；当条件表达式为false，则δ为0，因此可以通过下图的方式，将4个if语句转化成同一个linear model</p>
 <p><img src="https://gitee.com/Sakura-gh/ML-notes/raw/master/img/new-model.png" class="lazyload" data-srcset="https://gitee.com/Sakura-gh/ML-notes/raw/master/img/new-model.png" srcset="data:image/png;base64,666" alt="new-model"></p>
 <p>有了上面这个model以后，我们分别得到了在training data和testing data上测试的结果：</p>
 <p><img src="https://gitee.com/Sakura-gh/ML-notes/raw/master/img/new-results.png" class="lazyload" data-srcset="https://gitee.com/Sakura-gh/ML-notes/raw/master/img/new-results.png" srcset="data:image/png;base64,666" alt="new-results"></p>
 <h6 id="Hp值-x-hp-、height值-x-g-、weight值-x-w-的影响"><a href="#Hp值-x-hp-、height值-x-g-、weight值-x-w-的影响" class="headerlink" title="Hp值$x_ {hp}$、height值$x_ g$、weight值$x_ w$的影响"></a>Hp值$x_ {hp}$、height值$x_ g$、weight值$x_ w$的影响</h6><p>考虑所有可能有影响的参数，设计出这个最复杂的model：</p>
 <script type="math/tex; mode=display">
+\begin{matrix}
 if\ x_s=Pidgey:\ \ \ \ \ y'=b_1+w_1*x_{cp}+w5*(x_{cp})^2 \tag{6} \\
 if\ x_s=Weedle:\ \ \ \ y'=b_2+w_2*x_{cp}+w6*(x_{cp})^2 \\
 if\ x_s=Pidgey:\ \ \ \ \ y'=b_3+w_3*x_{cp}+w7*(x_{cp})^2 \\
 if\ x_s=Eevee:\ \ \ \ \ \ y'=b_4+w_4*x_{cp}+w8*(x_{cp})^2 \\
-y=y'+w_9*x_{hp}+w_{10}*(x_{hp})^2+w_{11}*x_h+w_{12}*(x_h)^2+w_{13}*x_w+w_{14}*(x_w)^2</script><p>算出的training error=1.9，但是，testing error=102.3！<strong>这么复杂的model很大概率会发生overfitting</strong>(按照我的理解，overfitting实际上是我们多使用了一些input的变量或是变量的高次项使曲线跟training data拟合的更好，但不幸的是这些项并不是实际情况下被使用的，于是这个model在testing data上会表现得很糟糕)，overfitting就相当于是那个范围更大的韦恩图，它包含了更多的函数更大的范围，代价就是在准确度上表现得更糟糕</p>
+y=y'+w_9*x_{hp}+w_{10}*(x_{hp})^2+w_{11}*x_h+w_{12}*(x_h)^2+w_{13}*x_w+w_{14}*(x_w)^2
+\end{matrix}</script><p>算出的training error=1.9，但是，testing error=102.3！<strong>这么复杂的model很大概率会发生overfitting</strong>(按照我的理解，overfitting实际上是我们多使用了一些input的变量或是变量的高次项使曲线跟training data拟合的更好，但不幸的是这些项并不是实际情况下被使用的，于是这个model在testing data上会表现得很糟糕)，overfitting就相当于是那个范围更大的韦恩图，它包含了更多的函数更大的范围，代价就是在准确度上表现得更糟糕</p>
 <h6 id="regularization解决overfitting-L2正则化解决过拟合问题"><a href="#regularization解决overfitting-L2正则化解决过拟合问题" class="headerlink" title="regularization解决overfitting(L2正则化解决过拟合问题)"></a>regularization解决overfitting(L2正则化解决过拟合问题)</h6><blockquote>
 <p>regularization可以使曲线变得更加smooth，training data上的error变大，但是 testing data上的error变小。有关regularization的具体原理说明详见下一部分</p>
 </blockquote>
@@ -801,16 +809,19 @@ y=y'+w_9*x_{hp}+w_{10}*(x_{hp})^2+w_{11}*x_h+w_{12}*(x_h)^2+w_{13}*x_w+w_{14}*(x
 </li>
 <li><p>考虑包括进化前cp值、species、hp等各方面变量属性以及高次项的影响，我们的model可以采用这些input的一次项和二次型之和的形式，如：</p>
 <script type="math/tex; mode=display">
+\begin{matrix}
 if\ x_ s=Pidgey:\ \ \ \ \ y'=b_ 1+w_ 1*x_ {cp}+w5*(x_ {cp})^2 \tag{7} \\
 if\ x_ s=Weedle:\ \ \ \ y'=b_ 2+w_ 2*x_ {cp}+w6*(x_ {cp})^2 \\
 if\ x_ s=Pidgey:\ \ \ \ \ y'=b_ 3+w_ 3*x_ {cp}+w7*(x_ {cp})^2 \\
 if\ x_ s=Eevee:\ \ \ \ \ \ y'=b_ 4+w_ 4*x_ {cp}+w8*(x_ {cp})^2 \\
-y=y'+w_ 9*x_ {hp}+w_ {10}*(x_ {hp})^2+w_ {11}*x_ h+w_ {12}*(x_ h)^2+w_ {13}*x_ w+w_ {14}*(x_ w)^2</script></li>
+y=y'+w_ 9*x_ {hp}+w_ {10}*(x_ {hp})^2+w_ {11}*x_ h+w_ {12}*(x_ h)^2+w_ {13}*x_ w+w_ {14}*(x_ w)^2
+\end{matrix}</script></li>
 </ul>
 <p>  而为了保证function的平滑性，loss function应使用regularization，即$L=\sum_ {i=1}^n(\hat{y}^i-y^i)^2+\lambda \sum_ j(w_ j)^2$，注意bias——参数b对function平滑性无影响，因此不额外再次计入loss function(y的表达式里已包含w、b)</p>
 <ul>
 <li><p>利用gradient descent对regularization版本的loss function进行梯度下降迭代处理，每次迭代都减去L对该参数的微分与learning rate之积，假设所有参数合成一个vector：$\begin{bmatrix} w_ 0,w_ 1,w_ 2,…w_ j,…,b \end{bmatrix}^T$，那么每次梯度下降的表达式如下：</p>
 <script type="math/tex; mode=display">
+\begin{matrix}
 梯度:
 \nabla L=\begin{bmatrix}
 \frac{\partial L}{\partial{w_0}} \\
@@ -858,7 +869,8 @@ _{L=L_0}
 \frac{\partial L}{\partial{b}} \\
 \end{bmatrix}
 _{L=L_0}
-\tag{8}</script></li>
+\tag{8}
+\end{matrix}</script></li>
 </ul>
 <p>  当梯度稳定不变时，即$\nabla L$为0时，gradient descent便停止，此时如果采用的model是linear的，那么vector必然落于global minima处(凸函数)；如果采用的model是Non-linear的，vector可能会落于local minima处(此时需要采取其他办法获取最佳的function)</p>
 <p>  假定我们已经通过各种方法到达了global minima的地方，此时的vector：$\begin{bmatrix}w_ 0,w_ 1,w_ 2,…,w_ j,…b\end{bmatrix}^T$所确定的那个唯一的function就是在该λ下的最佳$f^*$，即loss最小</p>
