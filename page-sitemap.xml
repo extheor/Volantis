@@ -99,14 +99,14 @@
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/tag-plugins/span/</loc>
+        <loc>http://extheor.club/volantis/tag-plugins/tab/</loc>
         <lastmod>2020-11-13T08:51:58.888Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/tag-plugins/tab/</loc>
+        <loc>http://extheor.club/volantis/tag-plugins/span/</loc>
         <lastmod>2020-11-13T08:51:58.888Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -183,14 +183,14 @@
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/tag-plugins/gallery/</loc>
+        <loc>http://extheor.club/volantis/tag-plugins/ghcard/</loc>
         <lastmod>2020-11-13T08:51:58.884Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/tag-plugins/ghcard/</loc>
+        <loc>http://extheor.club/volantis/tag-plugins/gallery/</loc>
         <lastmod>2020-11-13T08:51:58.884Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -218,14 +218,14 @@
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/tag-plugins/checkbox/</loc>
+        <loc>http://extheor.club/volantis/tag-plugins/button/</loc>
         <lastmod>2020-11-13T08:51:58.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/tag-plugins/button/</loc>
+        <loc>http://extheor.club/volantis/tag-plugins/checkbox/</loc>
         <lastmod>2020-11-13T08:51:58.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -239,14 +239,14 @@
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/tag-plugins/aplayer/</loc>
+        <loc>http://extheor.club/volantis/tag-plugins/audio/</loc>
         <lastmod>2020-11-13T08:51:58.881Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/tag-plugins/audio/</loc>
+        <loc>http://extheor.club/volantis/tag-plugins/aplayer/</loc>
         <lastmod>2020-11-13T08:51:58.881Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -260,14 +260,14 @@
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/page-settings/math/</loc>
+        <loc>http://extheor.club/volantis/page-settings/layout/</loc>
         <lastmod>2020-11-13T08:51:58.878Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://extheor.club/volantis/page-settings/layout/</loc>
+        <loc>http://extheor.club/volantis/page-settings/math/</loc>
         <lastmod>2020-11-13T08:51:58.878Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

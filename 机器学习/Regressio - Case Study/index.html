@@ -740,15 +740,15 @@ if(\frac{\partial L}{\partial w}== 0\&\&\frac{\partial L}{\partial b}== 0)\ then
 <h4 id="回到pokemon的问题上来"><a href="#回到pokemon的问题上来" class="headerlink" title="回到pokemon的问题上来"></a>回到pokemon的问题上来</h4><h5 id="偏微分的计算"><a href="#偏微分的计算" class="headerlink" title="偏微分的计算"></a>偏微分的计算</h5><p>现在我们来求具体的L对w和b的偏微分</p>
 <script type="math/tex; mode=display">
 \begin{matrix}
-L(w,b)=\sum^{10}_ {n=1}(\hat{y}^n-(b+w*x^n_ {cp}))^2 \tag{4} \\
-\frac{\partial L}{\partial w}=\sum_ {n=1}^{10}2(\hat{y}^n-(b+w*x^n_ {cp}))(-x_ {cp}^n) \\
-\frac{\partial L}{\partial b}=\sum_ {n=1}^{10}2(\hat{y}^n-(b+w*x^n_ {cp}))(-1)
+L(w,b)=\sum\limits^{10}_ {n=1}(\hat{y}^n-(b+w*x^n_ {cp}))^2 \tag{4} \\
+\frac{\partial L}{\partial w}=\sum\limits_ {n=1}^{10}2(\hat{y}^n-(b+w*x^n_ {cp}))(-x_ {cp}^n) \\
+\frac{\partial L}{\partial b}=\sum\limits_ {n=1}^{10}2(\hat{y}^n-(b+w*x^n_ {cp}))(-1)
 \end{matrix}</script><h5 id="How’s-the-results"><a href="#How’s-the-results" class="headerlink" title="How’s the results?"></a>How’s the results?</h5><p>根据gradient descent，我们得到的$y=b+w*x_{cp}$中最好的参数是b=-188.4, w=2.7</p>
-<p>我们需要有一套评估系统来评价我们得到的最后这个function和实际值的误差error的大小；这里我们将training data里每一只宝可梦 $i$ 进化后的实际cp值与预测值之差的绝对值叫做$e^i$，而这些误差之和Average Error on Training Data为$\sum_{i=1}^{10}e^i=31.9$</p>
+<p>我们需要有一套评估系统来评价我们得到的最后这个function和实际值的误差error的大小；这里我们将training data里每一只宝可梦 $i$ 进化后的实际cp值与预测值之差的绝对值叫做$e^i$，而这些误差之和Average Error on Training Data为$\sum\limits_{i=1}^{10}e^i=31.9$</p>
 <blockquote>
 <p>What we really care about is the error on new data (testing data)</p>
 </blockquote>
-<p>当然我们真正关心的是generalization的case，也就是用这个model去估测新抓到的pokemon，误差会有多少，这也就是所谓的testing data的误差；于是又抓了10只新的pokemon，算出来的Average Error on Testing Data为$\sum_ {i=1}^{10}e^i=35.0$；可见training data里得到的误差一般是要比testing data要小，这也符合常识</p>
+<p>当然我们真正关心的是generalization的case，也就是用这个model去估测新抓到的pokemon，误差会有多少，这也就是所谓的testing data的误差；于是又抓了10只新的pokemon，算出来的Average Error on Testing Data为$\sum\limits_ {i=1}^{10}e^i=35.0$；可见training data里得到的误差一般是要比testing data要小，这也符合常识</p>
 <p><img src="https://gitee.com/Sakura-gh/ML-notes/raw/master/img/results.png" class="lazyload" data-srcset="https://gitee.com/Sakura-gh/ML-notes/raw/master/img/results.png" srcset="data:image/png;base64,666" alt="results"></p>
 <h5 id="How-can-we-do-better"><a href="#How-can-we-do-better" class="headerlink" title="How can we do better?"></a>How can we do better?</h5><p>我们有没有办法做得更好呢？这时就需要我们重新去设计model；如果仔细观察一下上图的data，就会发现在原先的cp值比较大和比较小的地方，预测值是相当不准的</p>
 <p>实际上，从结果来看，最终的function可能不是一条直线，可能是稍微更复杂一点的曲线</p>
@@ -788,10 +788,10 @@ y=y'+w_9*x_{hp}+w_{10}*(x_{hp})^2+w_{11}*x_h+w_{12}*(x_h)^2+w_{13}*x_w+w_{14}*(x
 <h6 id="regularization解决overfitting-L2正则化解决过拟合问题"><a href="#regularization解决overfitting-L2正则化解决过拟合问题" class="headerlink" title="regularization解决overfitting(L2正则化解决过拟合问题)"></a>regularization解决overfitting(L2正则化解决过拟合问题)</h6><blockquote>
 <p>regularization可以使曲线变得更加smooth，training data上的error变大，但是 testing data上的error变小。有关regularization的具体原理说明详见下一部分</p>
 </blockquote>
-<p>原来的loss function只考虑了prediction的error，即$\sum_ i^n(\hat{y}^i-(b+\sum_ jw_ jx_ j))^2$；而regularization则是在原来的loss function的基础上加上了一项$\lambda\sum(w_ i)^2$，就是把这个model里面所有的$w_i$的平方和用λ加权(其中i代表遍历n个training data，j代表遍历model的每一项)</p>
+<p>原来的loss function只考虑了prediction的error，即$\sum\limits_ i^n(\hat{y}^i-(b+\sum\limits_ jw_ jx_ j))^2$；而regularization则是在原来的loss function的基础上加上了一项$\lambda\sum\limits(w_ i)^2$，就是把这个model里面所有的$w_i$的平方和用λ加权(其中i代表遍历n个training data，j代表遍历model的每一项)</p>
 <p>也就是说，<strong>我们期待参数$w_i$越小甚至接近于0的function，为什么呢？</strong></p>
 <p>因为参数值接近0的function，是比较平滑的；所谓的平滑的意思是，当今天的输入有变化的时候，output对输入的变化是比较不敏感的</p>
-<p>举例来说，对$y=b+\sum w_ ix_ i$这个model，当input变化$\Delta x_ i$，output的变化就是$w_ i\Delta x_ i$，也就是说，如果$w_ i$越小越接近0的话，输出对输入就越不sensitive敏感，我们的function就是一个越平滑的function；说到这里你会发现，我们之前没有把bias——b这个参数考虑进去的原因是<strong>bias的大小跟function的平滑程度是没有关系的</strong>，bias值的大小只是把function上下移动而已</p>
+<p>举例来说，对$y=b+\sum\limits w_ ix_ i$这个model，当input变化$\Delta x_ i$，output的变化就是$w_ i\Delta x_ i$，也就是说，如果$w_ i$越小越接近0的话，输出对输入就越不sensitive敏感，我们的function就是一个越平滑的function；说到这里你会发现，我们之前没有把bias——b这个参数考虑进去的原因是<strong>bias的大小跟function的平滑程度是没有关系的</strong>，bias值的大小只是把function上下移动而已</p>
 <p><strong>那为什么我们喜欢比较平滑的function呢？</strong></p>
 <p>如果我们有一个比较平滑的function，由于输出对输入是不敏感的，测试的时候，一些noises噪声对这个平滑的function的影响就会比较小，而给我们一个比较好的结果</p>
 <p><img src="https://gitee.com/Sakura-gh/ML-notes/raw/master/img/regularization.png" class="lazyload" data-srcset="https://gitee.com/Sakura-gh/ML-notes/raw/master/img/regularization.png" srcset="data:image/png;base64,666" alt="regularization"></p>
@@ -800,7 +800,7 @@ y=y'+w_9*x_{hp}+w_{10}*(x_{hp})^2+w_{11}*x_h+w_{12}*(x_h)^2+w_{13}*x_w+w_{14}*(x
 <p>观察下图可知，当我们的λ越大的时候，在training data上得到的error其实是越大的，但是这件事情是非常合理的，因为当λ越大的时候，我们就越倾向于考虑w的值而越少考虑error的大小；但是有趣的是，虽然在training data上得到的error越大，但是在testing data上得到的error可能会是比较小的</p>
 <p>下图中，当λ从0到100变大的时候，training error不断变大，testing error反而不断变小；但是当λ太大的时候(&gt;100)，在testing data上的error就会越来越大</p>
 <p><font style="background: yellow;">我们喜欢比较平滑的function，因为它对noise不那么sensitive；但是我们又不喜欢太平滑的function，因为它就失去了对data拟合的能力；而function的平滑程度，就需要通过调整λ来决定</font>，就像下图中，当λ=100时，在testing data上的error最小，因此我们选择λ=100</p>
-<p>注：这里的error指的是$\frac{1}{n}\sum_ {i=1}^n|\hat{y}^i-y^i|$</p>
+<p>注：这里的error指的是$\frac{1}{n}\sum\limits_{i=1}^n|\hat{y}^i-y^i|$</p>
 <p><img src="https://gitee.com/Sakura-gh/ML-notes/raw/master/img/regularization-performance.png" class="lazyload" data-srcset="https://gitee.com/Sakura-gh/ML-notes/raw/master/img/regularization-performance.png" srcset="data:image/png;base64,666" alt="regularization-performance"></p>
 <h4 id="conclusion总结"><a href="#conclusion总结" class="headerlink" title="conclusion总结"></a>conclusion总结</h4><h5 id="关于pokemon的cp值预测的流程总结："><a href="#关于pokemon的cp值预测的流程总结：" class="headerlink" title="关于pokemon的cp值预测的流程总结："></a>关于pokemon的cp值预测的流程总结：</h5><ul>
 <li><p>根据已有的data特点(labeled data，包含宝可梦及进化后的cp值)，确定使用supervised learning监督学习</p>
@@ -817,7 +817,7 @@ if\ x_ s=Eevee:\ \ \ \ \ \ y'=b_ 4+w_ 4*x_ {cp}+w8*(x_ {cp})^2 \\
 y=y'+w_ 9*x_ {hp}+w_ {10}*(x_ {hp})^2+w_ {11}*x_ h+w_ {12}*(x_ h)^2+w_ {13}*x_ w+w_ {14}*(x_ w)^2
 \end{matrix}</script></li>
 </ul>
-<p>  而为了保证function的平滑性，loss function应使用regularization，即$L=\sum_ {i=1}^n(\hat{y}^i-y^i)^2+\lambda \sum_ j(w_ j)^2$，注意bias——参数b对function平滑性无影响，因此不额外再次计入loss function(y的表达式里已包含w、b)</p>
+<p>  而为了保证function的平滑性，loss function应使用regularization，即$L=\sum\limits_ {i=1}^n(\hat{y}^i-y^i)^2+\lambda \sum\limits_ j(w_ j)^2$，注意bias——参数b对function平滑性无影响，因此不额外再次计入loss function(y的表达式里已包含w、b)</p>
 <ul>
 <li><p>利用gradient descent对regularization版本的loss function进行梯度下降迭代处理，每次迭代都减去L对该参数的微分与learning rate之积，假设所有参数合成一个vector：$\begin{bmatrix} w_ 0,w_ 1,w_ 2,…w_ j,…,b \end{bmatrix}^T$，那么每次梯度下降的表达式如下：</p>
 <script type="math/tex; mode=display">
@@ -876,7 +876,7 @@ _{L=L_0}
 <p>  假定我们已经通过各种方法到达了global minima的地方，此时的vector：$\begin{bmatrix}w_ 0,w_ 1,w_ 2,…,w_ j,…b\end{bmatrix}^T$所确定的那个唯一的function就是在该λ下的最佳$f^*$，即loss最小</p>
 <ul>
 <li><p>这里λ的最佳数值是需要通过我们不断调整来获取的，因此令λ等于0，10，100，1000，…不断使用gradient descent或其他算法得到最佳的parameters：$\begin{bmatrix}w_ 0,w_ 1,w_ 2,…,w_ j,…b\end{bmatrix}^T$，并计算出这组参数确定的function——$f^* $对training data和testing data上的error值，直到找到那个使testing data的error最小的λ，(这里一开始λ=0，就是没有使用regularization时的loss function)</p>
-<p>注：引入评价<script type="math/tex">f^*</script>的error机制，令error=$\frac{1}{n}\sum_ {i=1}{n}|\hat{y}^i-y^i|$，分别计算该<script type="math/tex">f^*</script>对training data和testing data(more important)的<script type="math/tex">error(f^* )</script>大小</p>
+<p>注：引入评价<script type="math/tex">f^*</script>的error机制，令error=$\frac{1}{n}\sum\limits_ {i=1}{n}|\hat{y}^i-y^i|$，分别计算该<script type="math/tex">f^*</script>对training data和testing data(more important)的<script type="math/tex">error(f^* )</script>大小</p>
 <blockquote>
 <p>先设定λ-&gt;确定loss function-&gt;找到使loss最小的$\begin{bmatrix}w_ 0,w_ 1,w_ 2,…,w_ j,…b\end{bmatrix}^T$-&gt;确定function-&gt;计算error-&gt;重新设定新的λ重复上述步骤-&gt;使testing data上的error最小的λ所对应的$\begin{bmatrix}w_ 0,w_ 1,w_ 2,…,w_ j,…b\end{bmatrix}^T$所对应的function就是我们能够找到的最佳的function</p>
 </blockquote>
@@ -924,8 +924,8 @@ _{L=L_0}
 <p>那我们如何保证能学出来这样的参数呢? 这就是 L1 L2 正规化出现的原因.</p>
 <p>之前的loss function仅考虑了$(\hat{y}-y)^2$这一误差衡量标准，而<strong>L1 L2正规化</strong>就是在这个loss function的后面多加了一个东西，即model中跟高次项系数有关的表达式；</p>
 <ul>
-<li>L1正规化即加上$\lambda\sum|w_ j|$这一项，loss function变成$L=\sum_ {i=1}^n(\hat{y}^i-y^i)^2+\lambda\sum|w_ j|$，即n个training data里的数据的真实值与预测值差值的平方和加上λ权重下的model表达式中所有项系数的绝对值之和</li>
-<li>L2正规化即加上$\lambda\sum(w_ j)^2$这一项，loss function变成$L=\sum_ {i=1}^n(\hat{y}^i-y^i)^2+\lambda\sum(w_ j)^2$，即n个training data里的数据的真实值与预测值差值的平方和加上λ权重下的model表达式中所有项系数的平方和</li>
+<li>L1正规化即加上$\lambda\sum\limits|w_ j|$这一项，loss function变成$L=\sum\limits_ {i=1}^n(\hat{y}^i-y^i)^2+\lambda\sum\limits|w_ j|$，即n个training data里的数据的真实值与预测值差值的平方和加上λ权重下的model表达式中所有项系数的绝对值之和</li>
+<li>L2正规化即加上$\lambda\sum\limits(w_ j)^2$这一项，loss function变成$L=\sum\limits_ {i=1}^n(\hat{y}^i-y^i)^2+\lambda\sum\limits(w_ j)^2$，即n个training data里的数据的真实值与预测值差值的平方和加上λ权重下的model表达式中所有项系数的平方和</li>
 </ul>
 <p>相对来说，L2要更稳定一些，L1的结果则不那么稳定，如果用p表示正规化程度，上面两式可总结如下：</p>
 <script type="math/tex; mode=display">
